@@ -1,0 +1,47 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# enseResp
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of enseResp is to provide information about the Spanish National Health Survey (ENSE). This survey is composed of three main samples corresponding to adults, children and families.
+
+## Installation
+
+You can install the released version of enseResp from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("enseResp")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("edugonzaloalmorox/enseResp")
+```
+## Example
+
+Loading the adults sample is:
+
+```{r example}
+library(enseResp)
+adults = data(adults)
+## basic example code
+```
+
+
