@@ -13,3 +13,8 @@ usethis::use_package_doc()
 devtools::document()
 
 package?enseResp
+
+browse_github_pat()
+
+
+use_github(protocol = "https", auth_token = "63b9b9a3384cf2a77f8ef90d10637e129eb2af07")
