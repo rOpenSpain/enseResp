@@ -1,4 +1,4 @@
-# Clean datasets
+## code to prepare `adults` dataset goes here
 
 library(tidyverse)
 library(readxl)
@@ -12,7 +12,7 @@ names(info_adults) = info_adults[6, ]
 
 info_adults = info_adults %>% janitor::clean_names()
 
-test = info_adults %>%
+adults_info_final = info_adults %>%
   filter(!is.na(variable_ine), variable_ine != "VARIABLE INE") %>%
   mutate(tipo_variable = ifelse(is.na(longitud), variable_ine, NA),
          modulo = ifelse(str_detect(tipo_variable, "^M??DULO"), tipo_variable, NA)) %>%
@@ -20,7 +20,8 @@ test = info_adults %>%
   fill(modulo, .direction = "down") %>%
   filter(!is.na(longitud), longitud != "LONGITUD")
 
-test = test %>% mutate_at(vars(posicion_inicio, posicion_final, longitud), funs(as.numeric))
+adults_info_final = adults_info_final %>%
+  mutate_at(vars(posicion_inicio, posicion_final, longitud), funs(as.numeric))
 
 
 
@@ -28,9 +29,12 @@ test = test %>% mutate_at(vars(posicion_inicio, posicion_final, longitud), funs(
 # Load microdata
 
 adults = readr::read_fwf(file = "MICRODAT.CA.txt",
-                  skip = 0,
-                  #fwf_widths(test$longitud, test$variable_ine),
-                  fwf_positions(test$posicion_inicio, test$posicion_final, test$variable_ine))
+                         skip = 0,
+                         #fwf_widths(adults_info_final$longitud, adults_info_final$variable_ine),
+                         fwf_positions(adults_info_final$posicion_inicio, adults_info_final$posicion_final, adults_info_final$variable_ine))
 
+
+
+usethis::use_data(adults, adults_info_final, overwrite = T)
 
 
