@@ -3,9 +3,9 @@ Type: Package
 Title: Information on the Spanish Health Survey
 Version: 0.1.0
 Author: Edu Gonzalo Almorox
-Maintainer: Edu Gonzalo Almorox <yourself@somewhere.net>
+Maintainer: Edu Gonzalo Almorox <eduardogonzaloalmorox@gmail.com>
 Description: This package provides information in the Spanish Health Survey. It contains three
-   samples: adults, family and kids. 
+   samples: adults, households and kids. 
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
