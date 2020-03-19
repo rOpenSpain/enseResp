@@ -1,3 +1,19 @@
+#' Get variables per Spanish region (comunidad autonoma)
+#'
+#' @description This function provides information of the survey regarding particular regions.
+#' @param region Character string. Include the name of the region in lower case.
+#'  It accepts the following names: andalucia, aragon, asturias, baleares, canarias, cantabria,
+#'  castilla_leon, castilla la mancha, cataluna, comunidad valenciana, extremadura, galicia, madrid,
+#'  murcia, navarra, pais vasco, rioja, ceuta, melilla
+#' @keywords regions
+#' @examples
+#' get_region(adult, region = 'madrid')
+#' get_region(adult, region = 'castilla_mancha')
+#'
+
+
+
+
 get_region = function(df, region){
 
   if (region == "andalucia") {

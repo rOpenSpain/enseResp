@@ -1,5 +1,5 @@
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title adults_19_info
+#' @description Design of the survey. Variable characteristics of
 #' @format A data frame with 455 rows and 7 variables:
 #' \describe{
 #'   \item{\code{variable_ine}}{character COLUMN_DESCRIPTION}
@@ -11,5 +11,5 @@
 #'   \item{\code{modulo}}{logical COLUMN_DESCRIPTION}
 #'}
 #' @details DETAILS
-"adults_info_final"
+"adults_19_info"
 

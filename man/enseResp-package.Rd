@@ -6,7 +6,15 @@
 \alias{enseResp-package}
 \title{enseResp: Information on the Spanish Health Survey}
 \description{
-More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+This package provides information in the Spanish Health Survey. It contains three
+   samples: adults, family and kids.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/edugonzaloalmorox/enseResp}
+  \item Report bugs at \url{https://github.com/edugonzaloalmorox/enseResp/issues}
+}
+
 }
 \keyword{internal}
