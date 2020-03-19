@@ -4,8 +4,11 @@ use_r("get_variable")
 
 use_data_raw()
 
-sinew::makeOxygen(adults)
-sinew::makeOxygen(adults_info)
+sinew::makeOxygen(children_19)
+sinew::makeOxygen(children_19_info)
+sinew::makeOxygen(household_19)
+sinew::makeOxygen(household_19_info)
+
 
 devtools::load_all()
 

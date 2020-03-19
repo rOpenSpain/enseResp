@@ -1,5 +1,5 @@
 #' @title adults_19
-#' @description Variables of adults survey of the ENSE 2017/19
+#' @description Variables of adult survey of the ENSE 2017/19
 #' @format A data frame with 23089 rows and 455 variables:
 #' \describe{
 #'   \item{\code{CCAA}}{character COLUMN_DESCRIPTION}

@@ -1,5 +1,5 @@
 #' @title adults_19_info
-#' @description Design of the survey. Variable characteristics of
+#' @description Design of the survey. Variable characteristics of adult survey.
 #' @format A data frame with 455 rows and 7 variables:
 #' \describe{
 #'   \item{\code{variable_ine}}{character COLUMN_DESCRIPTION}
