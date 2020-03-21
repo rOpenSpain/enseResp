@@ -6,7 +6,9 @@
 \alias{enseResp-package}
 \title{enseResp: Information on the Spanish Health Survey}
 \description{
+
 \if{html}{\figure{logo.png}{options: align='right'}}
+
 
 This package provides information in the Spanish Health Survey. It contains three
    samples: adults, family and kids.
