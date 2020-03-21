@@ -2,14 +2,18 @@
 % Please edit documentation in R/get_region.R
 \name{get_region}
 \alias{get_region}
+
 \title{Get variables per Spanish region (comunidad autonoma)}
+
 \usage{
 get_region(df, region)
 }
 \arguments{
 \item{region}{Character string. Include the name of the region in lower case.
 It accepts the following names: andalucia, aragon, asturias, baleares, canarias, cantabria,
+
 castilla_leon, castilla la mancha, cataluna, comunidad valenciana, extremadura, galicia, madrid,
+
 murcia, navarra, pais vasco, rioja, ceuta, melilla}
 }
 \description{
