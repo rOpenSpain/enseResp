@@ -9,7 +9,11 @@
 
 The goal of enseResp is to provide information about the Spanish
 National Health Survey (ENSE). This survey is composed of three main
-samples corresponding to adults, children and families.
+samples: 
+
+- Adults 
+- Children
+- households
 
 ## Installation
 
@@ -33,6 +37,6 @@ Loading the adults sample is:
 
 ``` r
 library(enseResp)
-adults = data(adults)
-## basic example code
+adults = enseResp::adults_19
+
 ```

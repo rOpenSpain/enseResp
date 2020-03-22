@@ -1,5 +1,9 @@
 library(usethis)
+library(devtools)
+devtools::install_github("r-lib/pkgdown")
+library(pkgdown)
 
+pkgdown::build_site()
 
 use_r("get_variable")
 

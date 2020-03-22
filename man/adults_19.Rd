@@ -467,6 +467,6 @@
 adults_19
 }
 \description{
-Variables of adults survey of the ENSE 2017/19
+Variables of adult survey of the ENSE 2017/19
 }
 \keyword{datasets}
