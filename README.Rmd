@@ -13,12 +13,14 @@ knitr::opts_chunk$set(
 )
 ```
 
-# enseResp
+# enseResp <img src='man/figures/logo.png' align="right" height="138.5" />
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
-The goal of enseResp is to ...
+`enseResp` is a R package to tidily access healthcare data from the Spanish Health Survey released by the Spanish Health Ministry. The main goal of `enseResp` is to provide data ready for analysis for researchers or other stakeholders interested in exploring health microdata in Spain. The current version of `enseResp` consists of the survey corresponding to 2017/19 and compiles the surveys associated with the adult, children and household samples.
+
 
 ## Installation
 
@@ -40,7 +42,9 @@ This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 library(enseResp)
-## basic example code
+library(dplyr)
+
+enseResp::adults_19
 ```
 
 What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
