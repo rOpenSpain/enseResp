@@ -18,7 +18,7 @@
 adults_19_info
 }
 \description{
-Design of the survey. Variable characteristics of
+Design of the survey. Variable characteristics of adult survey.
 }
 \details{
 DETAILS

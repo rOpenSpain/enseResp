@@ -34,9 +34,8 @@
 
 
 
-
-
 get_variable = function(df, type){
+require(dplyr)
 
   # Define sub dataframe
   vars_economic_activity = df %>%
@@ -109,7 +108,55 @@ get_variable = function(df, type){
 
 
 
- df_final = df
+  if(type == "demographic" )              {
+    df_out <- vars_demographic
+  } else if (type == "economic_activity") {
+    df_out <- vars_economic_activity
+  } else if (type == "health")             {
+    df_out <- vars_health
+  } else if (type == "accidents")          {
+    df_out <- vars_accidents
+  } else if (type == "activity_restriction") {
+  df_out <- vars_activity_restriction
+  } else if (type == "limitations")       {
+    df_out <- vars_limitations
+  } else if (type == "daily_limitations") {
+    df_out <- vars_daily_limitations
+  } else if (type == "mental") {
+    df_out <- vars_mental
+  } else if (type == "doctor") {
+    df_out <- vars_doctor
+  } else if (type == "hospital") {
+    df_out <- vars_hospital
+  } else if (type == "drugs") {
+    df_out <- vars_drugs
+  } else if (type == "prevention") {
+    df_out <- vars_prevention
+  } else if (type == "lack") {
+    df_out <- vars_lack_medical
+  } else if (type == "physical") {
+    df_out <- vars_physical_activity
+  } else if (type == "physical_activity") {
+    df_out <- vars_physical_activity
+  } else if (type == "nutrition") {
+    df_out <- vars_nutrition
+  } else if (type == "dental") {
+    df_out <- vars_dental
+  } else if (type == "smoking") {
+    df_out <- vars_smoking
+  } else if (type == "alcohol") {
+    df_out <- vars_alcohol
+  } else if (type == "support") {
+    df_out <- vars_support
+  } else if (type == "care") {
+    df_out <- vars_care
+  } else if (type == "other") {
+    df_out <- vars_other
+  } else {stop("Correct type?")}
+
+
+
+ df_final = df_out
 
   return(df_final)
 
