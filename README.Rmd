@@ -36,29 +36,26 @@ And the development version from [GitHub](https://github.com/) with:
 # install.packages("devtools")
 devtools::install_github("edugonzaloalmorox/enseResp")
 ```
-## Example
+## Load main datasets
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example of how to obtain a dataset. For example, the survey of adults corresponding to 2017-19 survey. 
 
-```{r example}
+```{r adults}
 library(enseResp)
 library(dplyr)
+
 
 enseResp::adults_19
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+`adults_19` contains 455 variables. `adults_19_info` provides information about the description of every variable (in Spanish). In addition it offers other information such as the type of variable, the positions in the text archive or the module the variable belongs to (European Health Survey)
 
-```{r cars}
-summary(cars)
+```{r adults_info}
+library(enseResp)
+library(dplyr)
+library(knitr)
+
+enseResp::adults_19_info %>% 
+  select(variable_ine, descripcion_del_campo) %>% kable()
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
