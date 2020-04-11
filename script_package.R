@@ -6,7 +6,7 @@ library(pkgdown)
 pkgdown::build_site()
 
 use_r("get_variable")
-use_r()
+use_r("adults_11")
 
 use_data_raw()
 
