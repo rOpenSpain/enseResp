@@ -152,7 +152,7 @@ require(dplyr)
     df_out <- vars_care
   } else if (type == "other") {
     df_out <- vars_other
-  } else {stop("Correct type?")}
+  } else {stop("Correct variable type?")}
 
 
 

@@ -14,6 +14,7 @@ sinew::makeOxygen(children_19)
 sinew::makeOxygen(children_19_info)
 sinew::makeOxygen(household_19)
 sinew::makeOxygen(household_19_info)
+sinew::makeOxygen(regional_map)
 
 use_r("get_region")
 
