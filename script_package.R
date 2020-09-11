@@ -6,7 +6,7 @@ library(pkgdown)
 pkgdown::build_site()
 
 use_r("get_variable")
-use_r()
+use_r("adults_11")
 
 use_data_raw()
 
@@ -14,6 +14,7 @@ sinew::makeOxygen(children_19)
 sinew::makeOxygen(children_19_info)
 sinew::makeOxygen(household_19)
 sinew::makeOxygen(household_19_info)
+sinew::makeOxygen(regional_map)
 
 use_r("get_region")
 
