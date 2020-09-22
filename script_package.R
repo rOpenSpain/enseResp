@@ -1,6 +1,9 @@
 library(usethis)
+install.packages(c("devtools", "pkgdown"))
+
 library(devtools)
 devtools::install_github("r-lib/pkgdown")
+remotes::install_github('metrumresearchgroup/sinew')
 library(pkgdown)
 
 pkgdown::build_site()
@@ -24,6 +27,8 @@ use_data_raw()
 
 sinew::makeOxygen(adults, add_fields = "CCAA")
 sinew::makeOxygen(adult_info)
+sinew::makeOxygen(adults_12_labels)
+
 
 # Document functions
 

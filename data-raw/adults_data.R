@@ -62,13 +62,13 @@ adults_11_labels = read_excel("Adulto-ENSE-2011-12/DisenoAdultos.xls", sheet = 2
 
 
 
-# Information on adults -----------------------------------
+# Information on adults info -----------------------------------
 
 adults_19_info = adults_info(adults_17, variable_ine)
 
 adults_12_info = adults_info(adults_11, campo)
 
-# Information on adults -----------------------------------
+# Information on adults labels -----------------------------------
 
 adults_19_labels = adults_labels(adults_17_labels)
 
