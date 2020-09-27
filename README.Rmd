@@ -53,7 +53,7 @@ enseResp::adults_19
 
 `adults_19` contains 455 variables. `adults_19_info` provides information about the description of every variable (in Spanish). In addition it offers other information such as the type of variable, the positions in the text archive or the module the variable belongs to (for example, European Health Survey)
 
-```{r adults_info}
+```{r adults_info, message= FALSE, warning = FALSE}
 library(enseResp)
 library(dplyr)
 library(knitr)
@@ -66,7 +66,7 @@ enseResp::adults_19_info %>%
 ## Variables values
 
 
-`enseResp` also provides information on the values for each variable. This is given by the `labels` datasets. For example, `adults_19_labels` renders information on the values associated with the variables that compose `adults_19`.
+`enseResp` also provides information on the values for each variable. This is given by the `labels` datasets. `adults_19_labels` renders information on the values associated with the variables that compose `adults_19`. For example, lets check the values in the level of physical activity (variable `T111`)
 
 ```{r adults_labels}
 library(enseResp)
@@ -74,6 +74,6 @@ library(dplyr)
 library(knitr)
 
 enseResp::adults_19_labels %>% 
-  head(25) %>%
+  filter(variable_ine == "T111") %>%
  kable()
 ```
