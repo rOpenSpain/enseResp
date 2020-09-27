@@ -4,21 +4,71 @@ library(tidyverse)
 library(readxl)
 library(janitor)
 
+# Functions --------------------------------------------------------
 
-info_children <- read_excel("Menores_ENSE17/Diseno registro MENOR ENSE 2017_PUBLICACION.xls", range = "A9:E372")  %>%
+children_info = function(df, filter_var){
+
+  df %>%
+    filter(!is.na({{ filter_var }})) %>%
+    mutate(tipo_variable =  ifelse(is.na(longitud), {{ filter_var }}, NA)) %>%
+    fill(tipo_variable, .direction = "down") %>%
+    filter(!is.na(longitud), longitud != "LONGITUD") %>%
+    mutate_at(vars(posicion_inicio, posicion_final, longitud), list(as.numeric))
+
+
+
+}
+
+
+children_labels = function(df){
+
+  x = df %>%
+    rename(var1 = `...1`,
+           var2 = `...2`,
+           var3 = `...3`) %>%
+    mutate(var4  = ifelse(var1 == "Variable" | var1 == "Variable:" & !is.na(var2), var2, NA),
+           var4 = ifelse(var2 == "CLASE_PR", "CLASE_PR", var4 )) %>%
+    fill(var4, .direction = "down") %>%
+    filter(!is.na(var2) & var1 == "Valores"  | var1 == "Valores:"  | is.na(var1)) %>%
+    mutate(var5 = ifelse(is.na(var1) & is.na(var2) & is.na(var3) & !is.na(var4), TRUE, FALSE )) %>%
+    filter(var5 == FALSE) %>%
+    select(valores_ine = var2, valores = var3, variable_ine = var4)
+
+  return(x)
+
+}
+
+
+# Load raw data ---------------------------------------------
+
+# ENSE 19
+
+
+children_17 <- read_excel("Menores_ENSE17/Diseno registro MENOR ENSE 2017_PUBLICACION.xls", range = "A9:E372")  %>%
+  janitor::clean_names()
+
+children_17_labels = read_excel("Menores_ENSE17/Diseno registro MENOR ENSE 2017_PUBLICACION.xls", sheet = 2, range = "A7:C2228")
+
+
+
+# ENSE 12
+
+
+children_12 <- read_excel("", range = "A9:E372")  %>%
   janitor::clean_names()
 
 
-children_info_final = info_children %>%
-  filter(!is.na(variable_ine), variable_ine != "VARIABLE INE") %>%
-  mutate(tipo_variable = ifelse(is.na(longitud), variable_ine, NA)) %>%
-  fill(tipo_variable, .direction = "down") %>%
-  filter(!is.na(longitud), longitud != "LONGITUD") %>%
-  mutate(tipo_variable = ifelse(is.na(tipo_variable), "DATOS DE IDENTIFICACION", tipo_variable))
+# Children info ---------------------------
 
-children_19_info = children_info_final %>%
-  mutate_at(vars(posicion_inicio, posicion_final, longitud), list(as.numeric))
 
+children_19_info = children_info(children_17, variable_ine)
+
+
+
+# Children labels ---------------------------
+
+
+children_19_labels = children_labels(children_17_labels)
 
 
 
@@ -29,4 +79,4 @@ children_19 = readr::read_fwf(file = "Menores_ENSE17/MICRODAT.CM.txt",
                             #fwf_widths(adults_info_final$longitud, adults_info_final$variable_ine),
                             fwf_positions(children_19_info$posicion_inicio, children_19_info$posicion_final, children_19_info$variable_ine))
 
-usethis::use_data(children_19, children_19_info, overwrite = T)
+usethis::use_data(children_19, children_19_info, children_19_labels, overwrite = T)
