@@ -26,7 +26,8 @@ children_labels = function(df){
     rename(var1 = `...1`,
            var2 = `...2`,
            var3 = `...3`) %>%
-    mutate(var4  = ifelse(var1 == "Variable" | var1 == "Variable:" & !is.na(var2), var2, NA)) %>%
+    mutate(var4  = ifelse(var1 == "Variable" | var1 == "Variable:" & !is.na(var2), var2, NA),
+           var4 = ifelse(var2 == "CLASE_PR", "CLASE_PR", var4 )) %>%
     fill(var4, .direction = "down") %>%
     filter(!is.na(var2) & var1 == "Valores"  | var1 == "Valores:"  | is.na(var1)) %>%
     mutate(var5 = ifelse(is.na(var1) & is.na(var2) & is.na(var3) & !is.na(var4), TRUE, FALSE )) %>%
