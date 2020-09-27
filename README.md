@@ -120,9 +120,10 @@ enseResp::adults_19_info %>%
 ## Variables values
 
 `enseResp` also provides information on the values for each variable.
-This is given by the `labels` datasets. For example, `adults_19_labels`
-renders information on the values associated with the variables that
-compose `adults_19`.
+This is given by the `labels` datasets. `adults_19_labels` renders
+information on the values associated with the variables that compose
+`adults_19`. For example, lets check the values in the level of physical
+activity (variable `T111`)
 
 ``` r
 library(enseResp)
@@ -130,34 +131,16 @@ library(dplyr)
 library(knitr)
 
 enseResp::adults_19_labels %>% 
-  head(25) %>%
+  filter(variable_ine == "T111") %>%
  kable()
 ```
 
-| valores\_ine        | valores                     | variable\_ine |
-| :------------------ | :-------------------------- | :------------ |
-| 01                  | Andalucía                   | CCAA          |
-| 02                  | Aragón                      | CCAA          |
-| 03                  | Asturias, Principado de     | CCAA          |
-| 04                  | Balears, Illes              | CCAA          |
-| 05                  | Canarias                    | CCAA          |
-| 06                  | Cantabria                   | CCAA          |
-| 07                  | Castilla y León             | CCAA          |
-| 08                  | Castilla - La Mancha        | CCAA          |
-| 09                  | Cataluña                    | CCAA          |
-| 10                  | Comunitat Valenciana        | CCAA          |
-| 11                  | Extremadura                 | CCAA          |
-| 12                  | Galicia                     | CCAA          |
-| 13                  | Madrid, Comunidad de        | CCAA          |
-| 14                  | Murcia, Región de           | CCAA          |
-| 15                  | Navarra, Comunidad Foral de | CCAA          |
-| 16                  | País Vasco                  | CCAA          |
-| 17                  | Rioja, La                   | CCAA          |
-| 18                  | Ceuta                       | CCAA          |
-| 19                  | Melilla                     | CCAA          |
-| 00000001 a 99999999 | NA                          | IDENTHOGAR    |
-| 01 a 15             | NA                          | A7\_2a        |
-| 1                   | Hombre                      | SEXOa         |
-| 2                   | Mujer                       | SEXOa         |
-| 015 a 120           | NA                          | EDADa         |
-| 1                   | Trabajando                  | ACTIVa        |
+| valores\_ine | valores                                                                              | variable\_ine |
+| :----------- | :----------------------------------------------------------------------------------- | :------------ |
+| 1            | Sentado/a la mayor parte de la jornada                                               | T111          |
+| 2            | De pie la mayor parte de la jornada sin efectuar grandes desplazamientos o esfuerzos | T111          |
+| 3            | Caminando, llevando algún peso, efectuando desplazamientos frecuentes                | T111          |
+| 4            | Realizando tareas que requieren gran esfuerzo físico                                 | T111          |
+| 5            | No aplicable                                                                         | T111          |
+| 8            | No sabe                                                                              | T111          |
+| 9            | No contesta                                                                          | T111          |
