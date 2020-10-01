@@ -38,6 +38,8 @@ children_labels = function(df){
 
 }
 
+parse_microdata =  function()
+
 
 # Load raw data ---------------------------------------------
 
@@ -54,8 +56,11 @@ children_17_labels = read_excel("Menores_ENSE17/Diseno registro MENOR ENSE 2017_
 # ENSE 12
 
 
-children_12 <- read_excel("", range = "A9:E372")  %>%
+children_11 <- read_excel("disreg_ensalud12/DISENO MENORES ENSE 2011-2012.xls", sheet = 1,  range = "A10:E387")  %>%
   janitor::clean_names()
+
+
+children_11_labels = read_excel("disreg_ensalud12/DISENO MENORES ENSE 2011-2012.xls", sheet = 2, range = "A9:C2167")
 
 
 # Children info ---------------------------
@@ -63,12 +68,18 @@ children_12 <- read_excel("", range = "A9:E372")  %>%
 
 children_19_info = children_info(children_17, variable_ine)
 
+children_12_info = children_info(children_11, campo)
+
+
 
 
 # Children labels ---------------------------
 
 
 children_19_labels = children_labels(children_17_labels)
+
+children_12_labels = children_labels(children_11_labels)
+
 
 
 
@@ -78,5 +89,12 @@ children_19 = readr::read_fwf(file = "Menores_ENSE17/MICRODAT.CM.txt",
                             skip = 0,
                             #fwf_widths(adults_info_final$longitud, adults_info_final$variable_ine),
                             fwf_positions(children_19_info$posicion_inicio, children_19_info$posicion_final, children_19_info$variable_ine))
+
+
+
+children_12 = readr::read_fwf(file = "datos_ensalud12/MICRODATO MENOR ANONIMIZADO.txt",
+                              skip = 0,
+                              fwf_positions(children_12_info[[3]], children_12_info[[4]], children_12_info[[1]]))
+
 
 usethis::use_data(children_19, children_19_info, children_19_labels, overwrite = T)
