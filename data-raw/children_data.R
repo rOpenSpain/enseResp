@@ -38,7 +38,16 @@ children_labels = function(df){
 
 }
 
-parse_microdata =  function()
+parse_microdata =  function(df, path){
+
+  x = readr::read_fwf(file = path,
+                      skip = 0,
+                      fwf_positions(df[[3]], df[[4]], df[[1]]))
+
+  return(x)
+
+
+}
 
 
 # Load raw data ---------------------------------------------
@@ -85,16 +94,10 @@ children_12_labels = children_labels(children_11_labels)
 
 # Load microdata
 
-children_19 = readr::read_fwf(file = "Menores_ENSE17/MICRODAT.CM.txt",
-                            skip = 0,
-                            #fwf_widths(adults_info_final$longitud, adults_info_final$variable_ine),
-                            fwf_positions(children_19_info$posicion_inicio, children_19_info$posicion_final, children_19_info$variable_ine))
+
+children_19 = parse_microdata(children_19_info, path = "Menores_ENSE17/MICRODAT.CM.txt" )
+
+children_12 = parse_microdata(children_12_info, path = "datos_ensalud12/MICRODATO MENOR ANONIMIZADO.txt")
 
 
-
-children_12 = readr::read_fwf(file = "datos_ensalud12/MICRODATO MENOR ANONIMIZADO.txt",
-                              skip = 0,
-                              fwf_positions(children_12_info[[3]], children_12_info[[4]], children_12_info[[1]]))
-
-
-usethis::use_data(children_19, children_19_info, children_19_labels, overwrite = T)
+usethis::use_data(children_19, children_19_info, children_19_labels, children_12, children_12_info, children_12_labels, overwrite = T)
