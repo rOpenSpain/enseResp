@@ -39,6 +39,17 @@ adults_labels = function(df){
 
 }
 
+parse_microdata =  function(df, path){
+
+  x = readr::read_fwf(file = path,
+                      skip = 0,
+                      fwf_positions(df[[3]], df[[4]], df[[1]]))
+
+  return(x)
+
+
+}
+
 
 
 

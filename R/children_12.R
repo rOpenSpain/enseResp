@@ -1,5 +1,5 @@
 #' @title children_12
-#' @description Dataset Children Survey ENSE 2011/12
+#' @description Variables of children survey ENSE 2011/12
 #' @format A data frame with 5495 rows and 271 variables:
 #' \describe{
 #'   \item{\code{CCAA}}{character COLUMN_DESCRIPTION}
