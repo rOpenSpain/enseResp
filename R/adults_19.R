@@ -2,7 +2,7 @@
 #' @description Variables of adult survey of the ENSE 2017/19
 #' @format A data frame with 23089 rows and 455 variables:
 #' \describe{
-#'   \item{\code{CCAA}}{character COLUMN_DESCRIPTION}
+#'   \item{\code{CCAA}}{factor: provides region}
 #'   \item{\code{IDENTHOGAR}}{character COLUMN_DESCRIPTION}
 #'   \item{\code{A7_2a}}{character COLUMN_DESCRIPTION}
 #'   \item{\code{SEXOa}}{double COLUMN_DESCRIPTION}
