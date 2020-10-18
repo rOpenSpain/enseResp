@@ -19,7 +19,7 @@ parse_labels =  function(df){
     rename(var1 = `...1`,
            var2 = `...2`,
            var3 = `...3`) %>%
-    mutate(var4  = ifelse(var1 == "Variable" | var1 == "Variable:" & !is.na(var2), var2, NA),
+    mutate(var4  = ifelse(var1 == "Variable" | var1 == "Variable:" | var1 == "Contenido" & !is.na(var2) & is.na(lag(var2)), var2, NA),
            var4 = ifelse(var2 == "CLASE_PR", "CLASE_PR", var4 )) %>%
     fill(var4, .direction = "down") %>%
     filter(!is.na(var2) & var1 == "Valores"  | var1 == "Valores:"  | is.na(var1)) %>%

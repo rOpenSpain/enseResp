@@ -13,21 +13,21 @@ source("funs/funs_data.R")
 # ENSE 19
 
 
-children_17 <- read_excel("Menores_ENSE17/Diseno registro MENOR ENSE 2017_PUBLICACION.xls", range = "A9:E372")  %>%
+children_17 <- read_excel("documentation/ense17/Menores_ENSE17/Diseno registro MENOR ENSE 2017_PUBLICACION.xls", range = "A9:E372")  %>%
   janitor::clean_names()
 
-children_17_labels = read_excel("Menores_ENSE17/Diseno registro MENOR ENSE 2017_PUBLICACION.xls", sheet = 2, range = "A7:C2228")
+children_17_labels = read_excel("documentation/ense17/Menores_ENSE17/Diseno registro MENOR ENSE 2017_PUBLICACION.xls", sheet = 2, range = "A7:C2228")
 
 
 
 # ENSE 12
 
 
-children_11 <- read_excel("disreg_ensalud12/DISENO MENORES ENSE 2011-2012.xls", sheet = 1,  range = "A10:E387")  %>%
+children_11 <- read_excel("documentation/ense12/disreg_ensalud12/DISENO MENORES ENSE 2011-2012.xls", sheet = 1,  range = "A10:E387")  %>%
   janitor::clean_names()
 
 
-children_11_labels = read_excel("disreg_ensalud12/DISENO MENORES ENSE 2011-2012.xls", sheet = 2, range = "A9:C2167")
+children_11_labels = read_excel("documentation/ense12/disreg_ensalud12/DISENO MENORES ENSE 2011-2012.xls", sheet = 2, range = "A9:C2167")
 
 
 # Children info ---------------------------
