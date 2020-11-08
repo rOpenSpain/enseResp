@@ -4,7 +4,7 @@ library(tidyverse)
 library(readxl)
 library(janitor)
 
-
+source("funs/funs_data.R")
 
 # Functions ---------------------------------------------
 
@@ -72,6 +72,10 @@ adults_11 <- read_excel("Adulto-ENSE-2011-12/DisenoAdultos.xls", range = "A10:E7
 adults_11_labels = read_excel("Adulto-ENSE-2011-12/DisenoAdultos.xls", sheet = 2,  range = "A9:C4531")
 
 
+# ENSE 2006
+
+adults_06_info = read_csv("documentation/ense06/Adulto-ENSE-2006/variables_registro_adultos_2006.csv")
+
 
 # Information on adults info -----------------------------------
 
@@ -100,11 +104,13 @@ adults_12 = readr::read_fwf(file = "Adulto-ENSE-2011-12/MicrodatoAdultos.txt",
 
 
 
+adults_06 = parse_microdata(adults_06_info, "documentation/ense06/Adulto-ENSE-2006/ADULTO06.txt")
+
 # Final datasets
 
 usethis::use_data(adults_19, adults_19_info, adults_19_labels, adults_12, adults_12_info, adults_12_labels, overwrite = T)
 
-
+usethis::use_data(adults_06)
 
 
 
