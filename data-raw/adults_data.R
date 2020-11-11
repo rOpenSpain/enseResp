@@ -105,12 +105,17 @@ adults_12 = readr::read_fwf(file = "Adulto-ENSE-2011-12/MicrodatoAdultos.txt",
 
 
 adults_06 = parse_microdata(adults_06_info, "documentation/ense06/Adulto-ENSE-2006/ADULTO06.txt")
+colnames(adults_06) = gsub("K", "J", colnames(adults_06)) # correct_typo
+
+
+
+
 
 # Final datasets
 
-usethis::use_data(adults_19, adults_19_info, adults_19_labels, adults_12, adults_12_info, adults_12_labels, overwrite = T)
+usethis::use_data(adults_19, adults_19_info, adults_19_labels, adults_12, adults_12_info, adults_12_labels, adults_06, overwrite = T)
 
-usethis::use_data(adults_06)
+usethis::use_data(adults_06, overwrite = T)
 
 
 
