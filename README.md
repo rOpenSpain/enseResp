@@ -5,9 +5,18 @@
 
 <!-- badges: start -->
 
+[![](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://github.com/edugonzaloalmorox/enseResp)
+[![Lifecycle:
+maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 <!-- badges: end -->
 
-`enseResp` is a R package to tidily access health data from the Spanish Health Survey released by the Spanish Health Ministry. The main goal of `enseResp` is to provide data ready for analysis to researchers or other stakeholders interested in exploring health microdata in Spain. The current version of `enseResp` includes the studies for 2017/19 and 2011/12 and compiles the surveys associated with the adult, children and household samples.
+`enseResp` is a R package to tidily access healthcare data from the
+Spanish Health Survey released by the Spanish Health Ministry. The main
+goal of `enseResp` is to provide data ready for analysis for researchers
+or other stakeholders interested in exploring health microdata in Spain.
+The current version of `enseResp` consists of the survey corresponding
+to 2017/19 and compiles the surveys associated with the adult, children
+and household samples.
 
 ## Installation
 
@@ -26,16 +35,6 @@ devtools::install_github("edugonzaloalmorox/enseResp")
 ```
 
 ## Load main datasets
-
-
-Current datasets in the `enseResp` include: 
-
-  - `adults_19`: Adults survey for 2017/19
-  - `children_19`: Children survey for 2017/19
-  - `household_19`: Household survey for 2017/19
-  - `adults_12`: Adults survey for 2011/12
-  - `children_12`: Children survey for 2012/12
-  - `household_12`: Household survey for 2011/12
 
 This is a basic example of how to obtain a dataset. For example, the
 survey of adults corresponding to 2017-19 survey.

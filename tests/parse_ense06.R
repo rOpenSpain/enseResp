@@ -66,7 +66,7 @@ info_adults_clean = bind_rows(bit1, bit2, bit3, bit4) %>% select(-row_n)
 
 write_csv(info_adults_clean, "documentation/ense06/Adulto-ENSE-2006/variables_registro_adultos_2006.csv")
 
-# Parse pdf
+# Parse pdf for info ------------------------------
 
 library(pdftools)
 
@@ -155,4 +155,17 @@ prueba = prueba %>%
          descripcion_del_campo = contenido, valores_validos)
 
 write_csv(prueba, "documentation/ense06/Adulto-ENSE-2006/adultos_2006_info.csv")
+
+# Labels ----------------------------------
+
+values = test3 %>%
+  filter(type_var == "valores") %>%
+  select(var_clean, cont_clean) %>%
+  mutate(cont_clean = str_trim(cont_clean, "both"),
+         cont_clean = str_to_sentence(cont_clean)) %>%
+  filter(cont_clean != "") %>%
+  rename(variable_ine = var_clean, valores_ine = cont_clean)
+
+
+write_csv(values, "documentation/ense06/Adulto-ENSE-2006/adultos_2006_labels.csv")
 
