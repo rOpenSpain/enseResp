@@ -7,7 +7,7 @@
 
 [![](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://github.com/edugonzaloalmorox/enseResp)
 [![Lifecycle:
-maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 `enseResp` is a R package to tidily access healthcare data from the
