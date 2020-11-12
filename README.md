@@ -20,14 +20,8 @@ and household samples.
 
 ## Installation
 
-You can install the released version of enseResp from
-[CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("enseResp")
-```
-
-And the development version from [GitHub](https://github.com/) with:
+You can install the devlopment version from
+[GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
