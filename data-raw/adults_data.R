@@ -76,7 +76,7 @@ adults_11_labels = read_excel("Adulto-ENSE-2011-12/DisenoAdultos.xls", sheet = 2
 
 adults_06_info = read_csv("documentation/ense06/Adulto-ENSE-2006/variables_registro_adultos_2006.csv")
 
-
+adults_06_labels = read_csv("documentation/ense06/Adulto-ENSE-2006/adultos_2006_labels.csv")
 # Information on adults info -----------------------------------
 
 adults_19_info = adults_info(adults_17, variable_ine)
@@ -113,9 +113,9 @@ colnames(adults_06) = gsub("K", "J", colnames(adults_06)) # correct_typo
 
 # Final datasets
 
-usethis::use_data(adults_19, adults_19_info, adults_19_labels, adults_12, adults_12_info, adults_12_labels, adults_06, overwrite = T)
+usethis::use_data(adults_19, adults_19_info, adults_19_labels, adults_12, adults_12_info, adults_12_labels, adults_06, adults_06_info, adults_06_labels, overwrite = T)
 
-usethis::use_data(adults_06, overwrite = T)
+
 
 
 
