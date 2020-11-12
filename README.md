@@ -20,7 +20,7 @@ and household samples.
 
 ## Installation
 
-You can install the devlopment version from
+You can install the development version from
 [GitHub](https://github.com/) with:
 
 ``` r
