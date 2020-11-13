@@ -11,12 +11,12 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 <!-- badges: end -->
 
 `enseResp` is a R package to tidily access healthcare data from the
-Spanish Health Survey released by the Spanish Health Ministry. The main
-goal of `enseResp` is to provide data ready for analysis for researchers
-or other stakeholders interested in exploring health microdata in Spain.
-The current version of `enseResp` consists of the survey corresponding
-to 2017/19 and compiles the surveys associated with the adult, children
-and household samples.
+Spanish Health Survey (SHS) released by the Spanish Health Ministry. The
+main goal of `enseResp` is to provide data ready for analysis for
+researchers or other stakeholders interested in exploring health
+microdata in Spain. The current version of `enseResp` provides
+information about the SNS editions of 2017/19 and 2011/12 and compiles
+the surveys associated with the adult, children and household samples.
 
 ## Installation
 
@@ -29,6 +29,17 @@ devtools::install_github("edugonzaloalmorox/enseResp")
 ```
 
 ## Load main datasets
+
+This package contains surveys formatted to be convenient for being
+accessed and analysed. The current version of the package is composed of
+the following datsets:
+
+  - `adults_19`: Dataset for adults survey for 2017/19
+  - `children_19`: Dataset for children survey for 2017/19
+  - `household_19`: Dataset for household survey for 2017/19
+  - `adults_12`: Dataset for adults survey for 2011/12
+  - `children_12`: Dataset for children survey for 2011/12
+  - `household_12`: Dataset for household survey for 2011/12
 
 This is a basic example of how to obtain a dataset. For example, the
 survey of adults corresponding to 2017-19 survey.
@@ -44,7 +55,6 @@ library(dplyr)
 #> The following objects are masked from 'package:base':
 #> 
 #>     intersect, setdiff, setequal, union
-
 
 enseResp::adults_19
 #> # A tibble: 23,089 x 455
@@ -141,3 +151,66 @@ enseResp::adults_19_labels %>%
 | 5            | No aplicable                                                                         | T111          |
 | 8            | No sabe                                                                              | T111          |
 | 9            | No contesta                                                                          | T111          |
+
+## Example analysis
+
+``` r
+library(enseResp)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+
+kids = enseResp::children_19
+info = enseResp::children_19_info
+labels = enseResp::children_19_labels
+
+# Preparo datos --------------------------------
+
+obesity = kids %>%
+  count(CCAA, IMCm) %>%
+  mutate_at(vars(IMCm), as.factor) %>%
+  mutate(IMCm = case_when(IMCm == "1"~  "Peso insuficiente",
+          IMCm == '2' ~ "Normopeso", 
+          IMCm == '3' ~ "Sobrepeso", 
+          IMCm == '4' ~ "Obesidad", 
+          IMCm == '9' ~ "No consta", 
+          is.na(IMCm) ~ "No disponible"))
+
+obesity$IMCm = factor(obesity$IMCm , levels = c("No disponible", 
+                                                "No consta", 
+                                                "Peso insuficiente",
+                                                "Normopeso",
+                                                "Sobrepeso",
+                                                "Obesidad"))
+
+ccaa_lab = labels %>%
+  filter(variable_ine == "CCAA") %>%
+  select(valores_ine, valores)
+
+obesity = obesity %>%
+  left_join(., ccaa_lab, by = c("CCAA" = "valores_ine"))%>%
+  select(ccaa = valores, IMCm, n)
+
+ obesity %>%
+  group_by(ccaa) %>%
+  mutate(prop = n/sum(n)) %>%
+  ungroup() %>%
+  ggplot(aes(x = 2, y = prop, fill = IMCm)) +
+  geom_bar(stat = "identity", width = 1, alpha = 0.85) +
+  facet_wrap(facets=. ~ ccaa) +
+  xlim(0.5, 2.5) +
+  coord_polar(theta = "y") +
+  theme_void() +
+  scale_fill_brewer(palette = "Dark1") +
+   labs(title = "Obesidad infantil", 
+       subtitle = "Propocion IMC") +
+  theme(legend.position = "bottom",
+    legend.title = element_blank(), 
+    panel.background  = element_blank(),
+    strip.text.x = element_text(
+      size = 4.75, color = "black", face = "bold"
+    ))
+#> Warning in pal_name(palette, type): Unknown palette Dark1
+```
+
+<img src="man/figures/README-example-1.png" width="100%" />
