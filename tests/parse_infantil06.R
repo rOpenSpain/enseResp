@@ -106,7 +106,7 @@ colnames(test) = "var"
 
 
 test2 = test %>%
-  mutate(var = gsub("???", "", var),
+  mutate(var = gsub("• ", "", var),
          var = str_trim(var, "left")) %>%
   mutate(variable = ifelse(str_detect(var, "NOMBRE DE LA VARIABLE"), var,
                            ifelse(str_detect(var, "CONTENIDO = "), var,
@@ -187,5 +187,5 @@ labels = test2 %>%
   filter(cont_clean != "") %>%
   rename(variable_ine = var_clean, valores_ine = cont_clean)
 
-write_csv(labels, "documentation/ense06/Infantil-ENSE-2006/infantil_2006_info.csv")
+write_csv(labels, "documentation/ense06/Infantil-ENSE-2006/infantil_2006_labels.csv")
 

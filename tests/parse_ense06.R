@@ -118,7 +118,7 @@ test4 = test3 %>%
   select(nombre, contenido, longitud) %>%
   unnest(c(nombre, contenido, longitud))
 
-test4
+
 
 
 # Get the variable
