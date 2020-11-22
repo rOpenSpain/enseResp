@@ -1,0 +1,1307 @@
+variable_ine,valores_ine
+NIVEL,2 = menor
+CCAA,01 = andalucía
+CCAA,02 = aragón
+CCAA,03 = principado de asturias
+CCAA,04 = illes balears
+CCAA,05 = canarias
+CCAA,06 = cantabria
+CCAA,07 = castilla y león
+CCAA,08 = castilla-la mancha
+CCAA,09 = cataluña
+CCAA,10 = comunitat valenciana
+CCAA,11 = extremadura
+CCAA,12 = galicia
+CCAA,13 = comunidad de madrid
+CCAA,14 = región de murcia
+CCAA,15 = comunidad foral de navarra
+CCAA,16 = país vasco
+CCAA,17 = la rioja
+CCAA,18 = ceuta y melilla
+PROV,01 álava
+PROV,02 albacete
+PROV,03 alicante/alacant
+PROV,04 almería
+PROV,05 ávila
+PROV,06 badajoz
+PROV,07 balears (illes)
+PROV,08 barcelona
+PROV,09 burgos
+PROV,10 cáceres
+PROV,11 cádiz
+PROV,12 castellón/castelló
+PROV,13 ciudad real
+PROV,14 córdoba
+PROV,15 coruña (a)
+PROV,16 cuenca
+PROV,17 girona
+PROV,18 granada
+PROV,19 guadalajara
+PROV,20 guipúzcoa
+PROV,21 huelva
+PROV,22 huesca
+PROV,23 jaén
+PROV,24 león
+PROV,25 lleida
+PROV,26 rioja (la)
+PROV,27 lugo
+PROV,28 madrid
+PROV,29 málaga
+PROV,30 murcia
+PROV,31 navarra
+PROV,32 ourense
+PROV,33 asturias
+PROV,34 palencia
+PROV,35 palmas (las)
+PROV,36 pontevedra
+PROV,37 salamanca
+PROV,38 santa cruz de tenerife
+PROV,39 cantabria
+PROV,40 segovia
+PROV,41 sevilla
+PROV,42 soria
+PROV,43 tarragona
+PROV,44 teruel
+PROV,45 toledo
+PROV,46 valencia/valència
+PROV,47 valladolid
+PROV,48 vizcaya
+PROV,49 zamora
+PROV,50 zaragoza
+PROV,51 ceuta
+PROV,52 melilla
+ESTRATO,0 = municipios de más de 500.000 habitantes
+ESTRATO,1 = municipios capital de provincia (excepto los anteriores)
+ESTRATO,2 = municipios con más de 100.000 habitantes (excepto los anteriores)
+ESTRATO,3 = municipios de 50.001 a 100.000 habitantes (excepto los anteriores)
+ESTRATO,4 = municipios de 20.001 a 50.000 habitantes
+ESTRATO,5 = municipios de 10.001 a 20.000 habitantes
+ESTRATO,6 = municipios hasta 10.000 habitantes
+SECCION,0001 a 2236
+SECC_DC,0a9
+NIDENTIF,Número de hogar (5 dígitos) correlativo y número de persona dentro del
+NIDENTIF,Hogar (2 dígitos) correlativo
+AÑO,2006
+AÑO,2007
+TRIM,1 = primer trimestre
+TRIM,2 = segundo trimestre
+TRIM,3 = tercer trimestre
+TRIM,4 = cuarto trimestre
+NORDEN,51 a 65
+EDAD,000 a 015
+EDADMES,00 a 11
+SEXO,1 = varón
+SEXO,6 = mujer
+P3_3,01 a 31
+P3_4,01 a 12
+P3_5,1990 a 2007
+P4_1,1 = padre/madre
+P4_1,2 = tutor/a
+P4_1,3 = hermano/a
+P4_1,4 = abuelo/a
+P4_1,5 = otros familiares
+P4_1,6 = servicios sociales
+P4_1,7 = otros
+P4_0_1,1 = sí
+P4_0_1,6 = no
+P4_0_2,01 a 15
+P4_3,018 a 117
+P4_4,1 = varón
+P4_4,6 = mujer
+A1,1 = muy bueno
+A1,2 = bueno
+A1,3 = regular
+A1,4 = malo
+A1,5 = muy malo
+A2_1A,1 = sí
+A2_1A,6 = no
+A2_1A,9 = no consta
+A2_1B,1 = sí
+A2_1B,6 = no
+A2_1B,9 = no consta
+A2_1C,1 = sí
+A2_1C,6 = no
+A2_1C,9 = no consta
+A2_1D,1 = sí
+A2_1D,6 = no
+A2_1D,9 = no consta
+A2_2A,1 = sí
+A2_2A,6 = no
+A2_2A,9 = no consta
+A2_2B,1 = sí
+A2_2B,6 = no
+A2_2B,9 = no consta
+A2_2C,1 = sí
+A2_2C,6 = no
+A2_2C,9 = no consta
+A2_2D,1 = sí
+A2_2D,6 = no
+A2_2D,9 = no consta
+A2_3A,1 = sí
+A2_3A,6 = no
+A2_3A,9 = no consta
+A2_3B,1 = sí
+A2_3B,6 = no
+A2_3B,9 = no consta
+A2_3C,1 = sí
+A2_3C,6 = no
+A2_3C,9 = no consta
+A2_3D,1 = sí
+A2_3D,6 = no
+A2_3D,9 = no consta
+A2_4A,1 = sí
+A2_4A,6 = no
+A2_4A,9 = no consta
+A2_4B,1 = sí
+A2_4B,6 = no
+A2_4B,9 = no consta
+A2_4C,1 = sí
+A2_4C,6 = no
+A2_4C,9 = no consta
+A2_4D,1 = sí
+A2_4D,6 = no
+A2_4D,9 = no consta
+A2_5A,1 = sí
+A2_5A,6 = no
+A2_5A,9 = no consta
+A2_5B,1 = sí
+A2_5B,6 = no
+A2_5B,9 = no consta
+A2_5C,1 = sí
+A2_5C,6 = no
+A2_5C,9 = no consta
+A2_5D,1 = sí
+A2_5D,6 = no
+A2_5D,9 = no consta
+A2_6A,1 = sí
+A2_6A,6 = no
+A2_6A,9 = no consta
+A2_6B,1 = sí
+A2_6B,6 = no
+A2_6B,9 = no consta
+A2_6C,1 = sí
+A2_6C,6 = no
+A2_6C,9 = no consta
+A2_6D,1 = sí
+A2_6D,6 = no
+A2_6D,9 = no consta
+A2_7A,1 = sí
+A2_7A,6 = no
+A2_7A,9 = no consta
+A2_7B,1 = sí
+A2_7B,6 = no
+A2_7B,9 = no consta
+A2_7C,1 = sí
+A2_7C,6 = no
+A2_7C,9 = no consta
+A2_7D,1 = sí
+A2_7D,6 = no
+A2_7D,9 = no consta
+A2_8A,1 = sí
+A2_8A,6 = no
+A2_8A,9 = no consta
+A2_8LIT,Texto
+A2_8LIT,99999999= no consta
+A2_8B,1 = sí
+A2_8B,6 = no
+A2_8B,9 = no consta
+A2_8C,1 = sí
+A2_8C,6 = no
+A2_8C,9 = no consta
+A2_8D,1 = sí
+A2_8D,6 = no
+A2_8D,9 = no consta
+A2_9A,1 = sí
+A2_9A,6 = no
+A2_9A,9 = no consta
+A2_9LIT,Texto
+A2_9LIT,99999999= no consta
+A2_9B,1 = sí
+A2_9B,6 = no
+A2_9B,9 = no consta
+A2_9C,1 = sí
+A2_9C,6 = no
+A2_9C,9 = no consta
+A2_9D,1 = sí
+A2_9D,6 = no
+A2_9D,9 = no consta
+A3,1 = sí
+A3,6 = no
+A3,9 = no consta
+B4,1 = sí
+B4,6 = no
+B5_1A,1 = sí
+B5_1A,6 = no
+B5_1A,9 = no consta
+B5_1B,01 a 30
+B5_1B,99 = no consta
+B5_2A,1 = sí
+B5_2A,6 = no
+B5_2A,9 = no consta
+B5_2B,01 a 30
+B5_2B,99 = no consta
+B5_3A,1 = sí
+B5_3A,6 = no
+B5_3A,9 = no consta
+B5_3B,01 a 30
+B5_3B,99 = no consta
+B5_4A,1 = sí
+B5_4A,6 = no
+B5_4A,9 = no consta
+B5_4B,01 a 30
+B5_4B,99 = no consta
+B5_5A,1 = sí
+B5_5A,6 = no
+B5_5A,9 = no consta
+B5_5B,01 a 30
+B5_5B,99 = no consta
+B5_6A,1 = sí
+B5_6A,6 = no
+B5_6A,9 = no consta
+B5_6B,01 a 30
+B5_6B,99 = no consta
+B5_7A,1 = sí
+B5_7A,6 = no
+B5_7A,9 = no consta
+B5_7B,01 a 30
+B5_7B,99 = no consta
+B5_8A,1 = sí
+B5_8A,6 = no
+B5_8A,9 = no consta
+B5_8B,01 a 30
+B5_8B,99 = no consta
+B6,"1 = en casa, escaleras, portal, etc."
+B6,2 = en la calle o carretera y fue un accidente de tráfico
+B6,"3 = en la calle, pero no fue un accidente de tráfico"
+B6,"4 = en la escuela, colegio, guardería, instituto,..."
+B6,5 = en una instalación deportiva
+B6,6 = en una zona recreativa o de ocio
+B6,7= en otro lugar
+B6,9 = no consta
+B7,1 = consultó a un médico o enfermero
+B7,2 = acudió a un centro de urgencias
+B7,3 = ingresó en un hospital
+B7,4 = no fue necesario hacer ninguna consulta ni intervención
+B7,9 = no consta
+B8_1,1 = sí
+B8_1,0 = no
+B8_1,9 = no consta
+B8_2,1 = sí
+B8_2,0 = no
+B8_2,9 = no consta
+B8_3,1 = sí
+B8_3,0 = no
+B8_3,9 = no consta
+B8_4,1 = sí
+B8_4,0 = no
+B8_4,9 = no consta
+B8_5,1 = sí
+B8_5,0 = no
+B8_5,9 = no consta
+B9,1 = si
+B9,6 = no
+B9,9 = no consta
+B10,1 = en un lugar de ocio
+B10,"2 = en la escuela, colegio, guardería, instituto,..."
+B10,3 = en la calle
+B10,4 = en su hogar
+B10,5 = en el edificio donde vive
+B10,6 = en una zona deportiva
+B10,7 = otros lugares
+B10,9 = no consta
+C11_1,1= sí
+C11_1,6= no
+C11_2,01 a 14
+C11_2,99 = no consta
+C12_1,1= sí
+C12_1,6= no
+C12_1,9 = no consta
+C12_2,01 a 14
+C12_2,99 = no consta
+C13_1A,1 = sí
+C13_1A,0 = no
+C13_1A,9 = no consta
+C13_1B,1 = sí
+C13_1B,0 = no
+C13_1B,9 = no consta
+C13_2A,1 = sí
+C13_2A,0 = no
+C13_2A,9 = no consta
+C13_2B,1 = sí
+C13_2B,0 = no
+C13_2B,9 = no consta
+C13_3A,1 = sí
+C13_3A,0 = no
+C13_3A,9 = no consta
+C13_3B,1 = sí
+C13_3B,0 = no
+C13_3B,9 = no consta
+C13_4A,1 = sí
+C13_4A,0 = no
+C13_4A,9 = no consta
+C13_4B,1 = sí
+C13_4B,0 = no
+C13_4B,9 = no consta
+C13_5A,1 = sí
+C13_5A,0 = no
+C13_5A,9 = no consta
+C13_5B,1 = sí
+C13_5B,0 = no
+C13_5B,9 = no consta
+C13_6A,1 = sí
+C13_6A,0 = no
+C13_6A,9 = no consta
+C13_6B,1 = sí
+C13_6B,0 = no
+C13_6B,9 = no consta
+C13_7A,1 = sí
+C13_7A,0 = no
+C13_7A,9 = no consta
+C13_7B,1 = sí
+C13_7B,0 = no
+C13_7B,9 = no consta
+C13_8A,1 = sí
+C13_8A,0 = no
+C13_8A,9 = no consta
+C13_8B,1 = sí
+C13_8B,0 = no
+C13_8B,9 = no consta
+C13_9A,1 = sí
+C13_9A,0 = no
+C13_9A,9 = no consta
+C13_9B,1 = sí
+C13_9B,0 = no
+C13_9B,9 = no consta
+C13_10A,1 = sí
+C13_10A,0 = no
+C13_10A,9 = no consta
+C13_10B,1 = sí
+C13_10B,0 = no
+C13_10B,9 = no consta
+C13_11A,1 = sí
+C13_11A,0 = no
+C13_11A,9 = no consta
+C13_11B,1 = sí
+C13_11B,0 = no
+C13_11B,9 = no consta
+C13_12A,1 = sí
+C13_12A,0 = no
+C13_12A,9 = no consta
+C13_12B,1 = sí
+C13_12B,0 = no
+C13_12B,9 = no consta
+C13_13A,1 = sí
+C13_13A,0 = no
+C13_13A,9 = no consta
+C13_13B,1 = sí
+C13_13B,0 = no
+C13_13B,9 = no consta
+C13_14A,1 = sí
+C13_14A,0 = no
+C13_14A,9 = no consta
+C13_14B,1 = sí
+C13_14B,0 = no
+C13_14B,9 = no consta
+D14_1A,1 = sí
+D14_1A,6 = no
+D14_1A,9 = no consta
+D14_1B,1 = sí
+D14_1B,6 = no
+D14_1B,9 = no consta
+D14_2A,1 = sí
+D14_2A,6 = no
+D14_2A,9 = no consta
+D14_2B,1 = sí
+D14_2B,6 = no
+D14_2B,9 = no consta
+D14_3A,1 = sí
+D14_3A,6 = no
+D14_3A,9 = no consta
+D14_3B,1 = sí
+D14_3B,6 = no
+D14_3B,9 = no consta
+D14_4A,1 = sí
+D14_4A,6 = no
+D14_4A,9 = no consta
+D14_4B,1 = sí
+D14_4B,6 = no
+D14_4B,9 = no consta
+D14_5A,1 = sí
+D14_5A,6 = no
+D14_5A,9 = no consta
+D14_5B,1 = sí
+D14_5B,6 = no
+D14_5B,9 = no consta
+D14_6A,1 = sí
+D14_6A,6 = no
+D14_6A,9 = no consta
+D14_6B,1 = sí
+D14_6B,6 = no
+D14_6B,9 = no consta
+D14_7A,1 = sí
+D14_7A,6 = no
+D14_7A,9 = no consta
+D14_7B,1 = sí
+D14_7B,6 = no
+D14_7B,9 = no consta
+D14_8A,1 = sí
+D14_8A,6 = no
+D14_8A,9 = no consta
+D14_8B,1 = sí
+D14_8B,6 = no
+D14_8B,9 = no consta
+D14_9A,1 = sí
+D14_9A,6 = no
+D14_9A,9 = no consta
+D14_9B,1 = sí
+D14_9B,6 = no
+D14_9B,9 = no consta
+D14_10A,1 = sí
+D14_10A,6 = no
+D14_10A,9 = no consta
+D14_10B,1 = sí
+D14_10B,6 = no
+D14_10B,9 = no consta
+D14_11A,1 = sí
+D14_11A,6 = no
+D14_11A,9 = no consta
+D14_11B,1 = sí
+D14_11B,6 = no
+D14_11B,9 = no consta
+D14_12A,1 = sí
+D14_12A,6 = no
+D14_12A,9 = no consta
+D14_12B,1 = sí
+D14_12B,6 = no
+D14_12B,9 = no consta
+D14_13A,1 = sí
+D14_13A,6 = no
+D14_13A,9 = no consta
+D14_13B,1 = sí
+D14_13B,6 = no
+D14_13B,9 = no consta
+D14_14A,1 = sí
+D14_14A,6 = no
+D14_14A,9 = no consta
+D14_15A,1 = sí
+D14_15A,6 = no
+D14_15A,9 = no consta
+E15_0,1 = sí
+E15_0,6 = no
+E15_1,1 = no es cierto
+E15_1,2 = un tanto por cierto
+E15_1,3 = absolutamente cierto
+E15_1,9 = no consta
+E15_2,1 = no es cierto
+E15_2,2 = un tanto por cierto
+E15_2,3 = absolutamente cierto
+E15_2,9 = no consta
+E15_3,1 = no es cierto
+E15_3,2 = un tanto por cierto
+E15_3,3 = absolutamente cierto
+E15_3,9 = no consta
+E15_4,1 = no es cierto
+E15_4,2 = un tanto por cierto
+E15_4,3 = absolutamente cierto
+E15_4,9 = no consta
+E15_5,1 = no es cierto
+E15_5,2 = un tanto por cierto
+E15_5,3 = absolutamente cierto
+E15_5,9 = no consta
+E15_6,1 = no es cierto
+E15_6,2 = un tanto por cierto
+E15_6,3 = absolutamente cierto
+E15_6,9 = no consta
+E15_7,1 = no es cierto
+E15_7,2 = un tanto por cierto
+E15_7,3 = absolutamente cierto
+E15_7,9 = no consta
+E15_8,1 = no es cierto
+E15_8,2 = un tanto por cierto
+E15_8,3 = absolutamente cierto
+E15_8,9 = no consta
+E15_9,1 = no es cierto
+E15_9,2 = un tanto por cierto
+E15_9,3 = absolutamente cierto
+E15_9,9 = no consta
+E15_10,1 = no es cierto
+E15_10,2 = un tanto por cierto
+E15_10,3 = absolutamente cierto
+E15_10,9 = no consta
+E15_11,1 = no es cierto
+E15_11,2 = un tanto por cierto
+E15_11,3 = absolutamente cierto
+E15_11,9 = no consta
+E15_12,1 = no es cierto
+E15_12,2 = un tanto por cierto
+E15_12,3 = absolutamente cierto
+E15_12,9 = no consta
+E15_13,1 = no es cierto
+E15_13,2 = un tanto por cierto
+E15_13,3 = absolutamente cierto
+E15_13,9 = no consta
+E15_14,1 = no es cierto
+E15_14,2 = un tanto por cierto
+E15_14,3 = absolutamente cierto
+E15_14,9 = no consta
+E15_15,1 = no es cierto
+E15_15,2 = un tanto por cierto
+E15_15,3 = absolutamente cierto
+E15_15,9 = no consta
+E15_16,1 = no es cierto
+E15_16,2 = un tanto por cierto
+E15_16,3 = absolutamente cierto
+E15_16,9 = no consta
+E15_17,1 = no es cierto
+E15_17,2 = un tanto por cierto
+E15_17,3 = absolutamente cierto
+E15_17,9 = no consta
+E15_18,1 = no es cierto
+E15_18,2 = un tanto por cierto
+E15_18,3 = absolutamente cierto
+E15_18,9 = no consta
+E15_19,1 = no es cierto
+E15_19,2 = un tanto por cierto
+E15_19,3 = absolutamente cierto
+E15_19,9 = no consta
+E15_20,1 = no es cierto
+E15_20,2 = un tanto por cierto
+E15_20,3 = absolutamente cierto
+E15_20,9 = no consta
+E15_21,1 = no es cierto
+E15_21,2 = un tanto por cierto
+E15_21,3 = absolutamente cierto
+E15_21,9 = no consta
+E15_22,1 = no es cierto
+E15_22,2 = un tanto por cierto
+E15_22,3 = absolutamente cierto
+E15_22,9 = no consta
+E15_23,1 = no es cierto
+E15_23,2 = un tanto por cierto
+E15_23,3 = absolutamente cierto
+E15_23,9 = no consta
+E15_24,1 = no es cierto
+E15_24,2 = un tanto por cierto
+E15_24,3 = absolutamente cierto
+E15_24,9 = no consta
+E15_25,1 = no es cierto
+E15_25,2 = un tanto por cierto
+E15_25,3 = absolutamente cierto
+E15_25,9 = no consta
+F1_16_1,1 = hace cuatro semanas o menos
+F1_16_1,2 = hace más de cuatro semanas y menos de un año
+F1_16_1,3 = hace un año o más
+F1_16_1,4 = nunca ha ido al médico
+F1_16_2,01 a 11
+F1_16_2,99 = no consta
+F1_16_3,01 a 15
+F1_16_3,99 = no consta
+F1_17,00 a 28
+F1_17,98 = no sabe
+F1_17,99 = no consta
+F1_18,00 a 28
+F1_18,98 = no sabe
+F1_18,99 = no consta
+F1_19,01 = médico de familia
+F1_19,02 = pediatría
+F1_19,03 = alergología
+F1_19,04 = aparato digestivo
+F1_19,05 = cardiología
+F1_19,06 = cirugía general y digestiva
+F1_19,07 = cirugía cardiovascular
+F1_19,08 = cirugía vascular
+F1_19,09 = dermatología
+F1_19,10 = endocrinología y nutrición
+F1_19,11 = ginecología-obstetricia
+F1_19,12 = medicina interna
+F1_19,13 = nefrología
+F1_19,14 = neumología
+F1_19,15 = neurocirugía
+F1_19,16 = neurología
+F1_19,17 = oftalmología
+F1_19,18 = oncología
+F1_19,19 = otorrinolaringología
+F1_19,20 = psiquiatría
+F1_19,21 = rehabilitación
+F1_19,22 = reumatología
+F1_19,23 = traumatología
+F1_19,24 = urología
+F1_19,25 = otra especialidad
+F1_19,99 = no consta
+F1_20,01 = centro de salud/consultorio
+F1_20,02 = ambulatorio/centro de especialidades
+F1_20,03 = consulta externa de un hospital
+F1_20,04 = servicio de urgencias no hospitalario
+F1_20,05 = servicio de urgencias de un hospital
+F1_20,06 = consulta de médico/a particular
+F1_20,07 = consulta de médico/a de una sociedad
+F1_20,"08 = escuela, colegio, instituto"
+F1_20,09 = domicilio del menor
+F1_20,10 = consulta telefónica
+F1_20,11 = otro lugar
+F1_20,99 = no consta
+F1_21,1 = diagnóstico de una enfermedad o problema de salud
+F1_21,2 = accidente o agresión
+F1_21,3 = revisión por enfermedad
+F1_21,4 = control de salud (programa de atención al niño sano)
+F1_21,5 = vacunación
+F1_21,6 = sólo dispensación de recetas
+F1_21,7 = otros motivos
+F1_21,9 = no consta
+F1_22_1,00 a 72
+F1_22_1,98 = no sabe
+F1_22_1,99 = no consta
+F1_22_2,00 a 30
+F1_22_2,98 = no sabe
+F1_22_2,99 = no consta
+F1_22_3,00 a 23
+F1_22_3,98 = no sabe
+F1_22_3,99 = no consta
+F1_23_1,00 a 24
+F1_23_1,98 = no sabe
+F1_23_1,99 = no consta
+F1_23_2,00 a 30
+F1_23_2,98 = no sabe
+F1_23_2,99 = no consta
+F1_23_3,00 a 23
+F1_23_3,98 = no sabe
+F1_23_3,99 = no consta
+F1_24,1 = sanidad pública (seguridad social)
+F1_24,2 = sociedad médica
+F1_24,3 = consulta privada
+F1_24,"4 = otros (iguala médica, médico/a escolar,...)"
+F1_24,9 = no consta
+F1_25,1 = sí
+F1_25,6 = no
+F1_25,9 = no consta
+F1_26_1A,1 = sí
+F1_26_1A,6 = no
+F1_26_1A,9 = no consta
+F1_26_1B,00 a 30
+F1_26_1B,98 = no sabe
+F1_26_1B,99 = no consta
+F1_26_1C,00 a 30
+F1_26_1C,98 = no sabe
+F1_26_1C,99 = no consta
+F1_26_2A,1 = sí
+F1_26_2A,6 = no
+F1_26_2A,9 = no consta
+F1_26_2B,00 a 30
+F1_26_2B,98 = no sabe
+F1_26_2B,99 = no consta
+F1_26_2C,00 a 30
+F1_26_2C,98 = no sabe
+F1_26_2C,99 = no consta
+F1_26_3A,1 = sí
+F1_26_3A,6 = no
+F1_26_3A,9 = no consta
+F1_26_3B,00 a 30
+F1_26_3B,98 = no sabe
+F1_26_3B,99 = no consta
+F1_26_3C,00 a 30
+F1_26_3C,98 = no sabe
+F1_26_3C,99 = no consta
+F1_26_4A,1 = sí
+F1_26_4A,6 = no
+F1_26_4A,9 = no consta
+F1_26_4B,00 a 30
+F1_26_4B,98 = no sabe
+F1_26_4B,99 = no consta
+F1_26_4C,00 a 30
+F1_26_4C,98 = no sabe
+F1_26_4C,99 = no consta
+F1_26_5A,1 = sí
+F1_26_5A,6 = no
+F1_26_5A,9 = no consta
+F1_26_5B,00 a 30
+F1_26_5B,98 = no sabe
+F1_26_5B,99 = no consta
+F1_26_5C,00 a 30
+F1_26_5C,98 = no sabe
+F1_26_5C,99 = no consta
+F1_26_6A,1 = sí
+F1_26_6A,6 = no
+F1_26_6A,9 = no consta
+F1_26_6B,00 a 30
+F1_26_6B,98 = no sabe
+F1_26_6B,99 = no consta
+F1_26_6C,00 a 30
+F1_26_6C,98 = no sabe
+F1_26_6C,99 = no consta
+F1_27_1A,1 = sí
+F1_27_1A,6 = no
+F1_27_1A,9 = no consta
+F1_27_1B,01 a 28
+F1_27_1B,98 = no sabe
+F1_27_1B,99 = no consta
+F1_27_2A,1 = sí
+F1_27_2A,6 = no
+F1_27_2A,9 = no consta
+F1_27_2B,01 a 28
+F1_27_2B,98 = no sabe
+F1_27_2B,99 = no consta
+F2_28,1 = sí
+F2_28,6 = no
+F2_28,9 = no consta
+F2_29,01 = no pudo conseguir cita
+F2_29,02 = no pudo dejar el trabajo y llevar al niño
+F2_29,03 = era demasiado caro/no tenía dinero
+F2_29,04 = no tenía medio de transporte
+F2_29,05 = porque el niño estaba demasiado nervioso/a y asustado/a
+F2_29,06 = el seguro no lo cubría
+F2_29,07 = no tenía seguro
+F2_29,08 = había que esperar demasiado
+F2_29,09 = nadie pudo dejar las obligaciones familiares y llevar al niño
+F2_29,10 = otra causa
+F2_29,99 = no consta
+F3_30_1,1 = sí
+F3_30_1,0 = no
+F3_30_1,9 = no consta
+F3_30_2,1 = sí
+F3_30_2,0 = no
+F3_30_2,9 = no consta
+F3_30_3,1 = sí
+F3_30_3,0 = no
+F3_30_3,9 = no consta
+F3_30_4,1 = sí
+F3_30_4,0 = no
+F3_30_4,9 = no consta
+F3_30_5,1 = sí
+F3_30_5,0 = no
+F3_30_5,9 = no consta
+F3_30_6,1 = sí
+F3_30_6,0 = no
+F3_30_6,9 = no consta
+F3_30_7,1 = sí
+F3_30_7,0 = no
+F3_30_7,9 = no consta
+F3_30_8,1 = sí
+F3_30_8,0 = no
+F3_30_8,9 = no consta
+F4_31_1,1 = hace 3 meses o menos
+F4_31_1,2 = hace más de 3 meses y menos de 12 meses
+F4_31_1,3 = hace un año o más
+F4_31_1,4 = nunca ha ido
+F4_31_2,01 a 24
+F4_31_2,99 = no consta
+F4_31_3,04 a 11
+F4_31_3,99 = no consta
+F4_31_4,01 a 15
+F4_31_4,99 = no consta
+F4_32_1,1 = sí
+F4_32_1,6 = no
+F4_32_1,9 = no consta
+F4_32_2,1 = sí
+F4_32_2,6 = no
+F4_32_2,9 = no consta
+F4_32_3,1 = sí
+F4_32_3,6 = no
+F4_32_3,9 = no consta
+F4_32_4,1 = sí
+F4_32_4,6 = no
+F4_32_4,9 = no consta
+F4_32_5,1 = sí
+F4_32_5,6 = no
+F4_32_5,9 = no consta
+F4_32_6,1 = sí
+F4_32_6,6 = no
+F4_32_6,9 = no consta
+F4_32_7,1 = sí
+F4_32_7,6 = no
+F4_32_7,9 = no consta
+F4_32_8,1 = sí
+F4_32_8,6 = no
+F4_32_8,9 = no consta
+F4_32_9,1 = sí
+F4_32_9,6 = no
+F4_32_9,9 = no consta
+F4_33,1 = sanidad pública (seguridad social)
+F4_33,2 = ayuntamiento
+F4_33,3 = sociedad médica
+F4_33,4 = consulta privada
+F4_33,"5 = otros (iguala médica, etc.)"
+F4_33,9 = no consta
+F4_34,1 = sí
+F4_34,6 = no
+F4_35,1 = sí
+F4_35,6 = no
+F4_35,9 = no consta
+F4_36_1,1 = sí
+F4_36_1,6 = no
+F4_36_1,9 = no consta
+F4_36_2,1 = sí
+F4_36_2,6 = no
+F4_36_2,9 = no consta
+F4_36_3,1 = sí
+F4_36_3,6 = no
+F4_36_3,9 = no consta
+F4_36_4,1 = sí
+F4_36_4,6 = no
+F4_36_4,9 = no consta
+F4_36_5,1 = sí
+F4_36_5,6 = no
+F4_36_5,9 = no consta
+F5_37,1 = sí
+F5_37,6 = no
+F5_38,01 a 89
+F5_38,99 = no consta
+F5_39,001 a 365
+F5_39,999 = no consta
+F5_40,1 = intervención quirúrgica
+F5_40,2 = estudio médico para diagnóstico
+F5_40,3 = tratamiento médico sin intervención quirúrgica
+F5_40,4 = otros motivos
+F5_40,9 = no consta
+F5_41,1 = sí
+F5_41,6 = no
+F5_41,9 = no consta
+F5_42,00 a 48
+F5_42,98 = no sabe
+F5_42,99 = no consta
+F5_43,1 = a través del servicio de urgencias
+F5_43,2 = ingreso ordinario (no por urgencias)
+F5_43,9 = no consta
+F5_44,1 = sanidad pública (seguridad social
+F5_44,"2 = mutualidad obligatoria (muface, isfas, etc.)"
+F5_44,3 = sociedad médica privada
+F5_44,4 = a cargo del hogar del/de la niño/a
+F5_44,"5 = a cargo de otras personas, organismos o instituciones"
+F5_44,8 = no sabe
+F5_44,9 = no consta
+F5_45,1 = sí
+F5_45,6 = no
+F5_45,8 = no sabe
+F5_45,9 = no consta
+F5_46,1 = sí
+F5_46,6 = no
+F5_46,9 = no consta
+F5_47,1 = un tratamiento
+F5_47,2 = una intervención quirúrgica
+F5_47,3 = otros motivos
+F5_47,9 = no consta
+F5_48,001 a 365
+F5_48,998 = no sabe
+F5_48,999 = no consta
+F6_49,1 = sí
+F6_49,6 = no
+F6_50,001 a 200
+F6_50,998 = no sabe
+F6_50,999 = no consta
+F6_51_1,1 = sí
+F6_51_1,6 = no
+F6_51_1,9 = no consta
+F6_51_2,1 = sí
+F6_51_2,6 = no
+F6_51_2,9 = no consta
+F6_51_3,1 = sí
+F6_51_3,6 = no
+F6_51_3,9 = no consta
+F6_52_1,00 a 30
+F6_52_1,98 = no sabe
+F6_52_1,99 = no consta
+F6_52_2,00 a 23
+F6_52_2,98 = no sabe
+F6_52_2,99 = no consta
+F6_52_3,00 a 59
+F6_52_3,98 = no sabe
+F6_52_3,99 = no consta
+F6_53_1,00 a 48
+F6_53_1,98 = no sabe
+F6_53_1,99 = no consta
+F6_53_2,00 a 59
+F6_53_2,98 = no sabe
+F6_53_2,99 = no consta
+F6_54,1 = hospital de la sanidad pública (seguridad social)
+F6_54,2 = servicio de urgencias no hospitalario de la sanidad pública (seguridad
+F6_54,Social)
+F6_54,"3 = centro no hospitalario de la sanidad pública (centro de salud, etc.)"
+F6_54,4 = servicio privado de urgencias
+F6_54,"5 = sanatorio, hospital o clínica privada"
+F6_54,6 = casa de socorro o servicio de urgencias del ayuntamiento
+F6_54,7 = otro tipo de servicio
+F6_54,9 = no consta
+F6_55,1 = porque el médico/a se lo mandó
+F6_55,2 = porque sus familiares u otras personas lo consideraron necesario
+F6_55,9 = no consta
+G1_56,01 a 24
+G1_56,98 = no sabe
+G1_56,99 = no consta
+G1_57,1 = no hace ejercicio
+G1_57,2 = hace alguna actividad física o deportiva ocasional
+G1_57,3 = hace actividad física varias veces al mes
+G1_57,4 = hace entrenamiento deportivo o físico varias veces a la semana
+G1_57,9 = no consta
+G1_58_0,1 = sí
+G1_58_0,6 = no
+G1_58,1 = sí
+G1_58,6 = no
+G1_58,9 = no consta
+G1_59_1A,1 = menos de 1 hora
+G1_59_1A,2 = una hora o más
+G1_59_1A,9 = no consta
+G1_59_1B,01 a 24
+G1_59_1B,98 = no sabe
+G1_59_1B,99 = no consta
+G1_59_2A,1 = menos de 1 hora
+G1_59_2A,2 = una hora o más
+G1_59_2A,9 = no consta
+G1_59_2B,01 a 24
+G1_59_2B,98 = no sabe
+G1_59_2B,99 = no consta
+G1_60,1 = sí
+G1_60,6 = no
+G1_60,9 = no consta
+G1_61_1A,1 = menos de 1 hora
+G1_61_1A,2 = una hora o más
+G1_61_1A,9 = no consta
+G1_61_1B,01 a 24
+G1_61_1B,98 = no sabe
+G1_61_1B,99 = no consta
+G1_61_2A,1 = menos de 1 hora
+G1_61_2A,2 = una hora o más
+G1_61_2A,9 = no consta
+G1_61_2B,01 a 24
+G1_61_2B,98 = no sabe
+G1_61_2B,99 = no consta
+G1_62_0,1 = sí
+G1_62_0,6 = no
+G2_63,1 = sí
+G2_63,6 = no
+G2_63,9 = no consta
+G2_64_1,00 a 24
+G2_64_1,98 = no sabe
+G2_64_1,99 = no consta
+G2_64_2,00 a 30
+G2_64_2,98 = no sabe
+G2_64_2,99 = no consta
+G2_65,1 = sí
+G2_65,6 = no
+G2_65,9 = no consta
+G2_66_1,0a6
+G2_66_1,8 = no sabe
+G2_66_1,9 = no consta
+G2_66_2,00 a 30
+G2_66_2,98 = no sabe
+G2_66_2,99 = no consta
+G2_67,1 = sí
+G2_67,6 = no
+G2_67,9 = no consta
+G2_68_1,00 a 12
+G2_68_1,98 = no sabe
+G2_68_1,99 = no consta
+G2_68_2,00 a 30
+G2_68_2,98 = no sabe
+G2_68_2,99 = no consta
+G1_69,1 = sí
+G1_69,6 = no
+G2_70_1,1 = sí
+G2_70_1,6 = no
+G2_70_1,9 = no consta
+G2_70_2,1 = sí
+G2_70_2,6 = no
+G2_70_2,9 = no consta
+G2_70_3,1 = sí
+G2_70_3,6 = no
+G2_70_3,9 = no consta
+G2_70_4,1 = sí
+G2_70_4,6 = no
+G2_70_4,9 = no consta
+G2_70_5,1 = sí
+G2_70_5,6 = no
+G2_70_5,9 = no consta
+G2_70_6,1 = sí
+G2_70_6,6 = no
+G2_70_6,9 = no consta
+G2_71_1,1 = a diario
+G2_71_1,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_1,3 = una o dos veces a la semana
+G2_71_1,4 = menos de una vez a la semana
+G2_71_1,5 = nunca o casi nunca
+G2_71_1,9 = no consta
+G2_71_2,1 = a diario
+G2_71_2,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_2,3 = una o dos veces a la semana
+G2_71_2,4 = menos de una vez a la semana
+G2_71_2,5 = nunca o casi nunca
+G2_71_2,9 = no consta
+G2_71_3,1 = a diario
+G2_71_3,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_3,3 = una o dos veces a la semana
+G2_71_3,4 = menos de una vez a la semana
+G2_71_3,5 = nunca o casi nunca
+G2_71_3,9 = no consta
+G2_71_4,1 = a diario
+G2_71_4,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_4,3 = una o dos veces a la semana
+G2_71_4,4 = menos de una vez a la semana
+G2_71_4,5 = nunca o casi nunca
+G2_71_4,9 = no consta
+G2_71_5,1 = a diario
+G2_71_5,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_5,3 = una o dos veces a la semana
+G2_71_5,4 = menos de una vez a la semana
+G2_71_5,5 = nunca o casi nunca
+G2_71_5,9 = no consta
+G2_71_6,1 = a diario
+G2_71_6,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_6,3 = una o dos veces a la semana
+G2_71_6,4 = menos de una vez a la semana
+G2_71_6,5 = nunca o casi nunca
+G2_71_6,9 = no consta
+G2_71_7,1 = a diario
+G2_71_7,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_7,3 = una o dos veces a la semana
+G2_71_7,4 = menos de una vez a la semana
+G2_71_7,5 = nunca o casi nunca
+G2_71_7,9 = no consta
+G2_71_8,1 = a diario
+G2_71_8,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_8,3 = una o dos veces a la semana
+G2_71_8,4 = menos de una vez a la semana
+G2_71_8,5 = nunca o casi nunca
+G2_71_8,9 = no consta
+G2_71_9,1 = a diario
+G2_71_9,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_9,3 = una o dos veces a la semana
+G2_71_9,4 = menos de una vez a la semana
+G2_71_9,5 = nunca o casi nunca
+G2_71_9,9 = no consta
+G2_71_10,1 = a diario
+G2_71_10,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_10,3 = una o dos veces a la semana
+G2_71_10,4 = menos de una vez a la semana
+G2_71_10,5 = nunca o casi nunca
+G2_71_10,9 = no consta
+G2_71_11,1 = a diario
+G2_71_11,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_11,3 = una o dos veces a la semana
+G2_71_11,4 = menos de una vez a la semana
+G2_71_11,5 = nunca o casi nunca
+G2_71_11,9 = no consta
+G2_71_12,1 = a diario
+G2_71_12,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_12,3 = una o dos veces a la semana
+G2_71_12,4 = menos de una vez a la semana
+G2_71_12,5 = nunca o casi nunca
+G2_71_12,9 = no consta
+G2_71_13,1 = a diario
+G2_71_13,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_13,3 = una o dos veces a la semana
+G2_71_13,4 = menos de una vez a la semana
+G2_71_13,5 = nunca o casi nunca
+G2_71_13,9 = no consta
+G2_71_14,1 = a diario
+G2_71_14,"2 = tres o más veces a la semana, pero no a diario"
+G2_71_14,3 = una o dos veces a la semana
+G2_71_14,4 = menos de una vez a la semana
+G2_71_14,5 = nunca o casi nunca
+G2_71_14,9 = no consta
+G2_72,1 = sí
+G2_72,6 = no
+G2_72,9 = no consta
+G2_73,1 = para perder peso
+G2_73,2 = para mantener su peso actual
+G2_73,3 = para vivir más saludablemente
+G2_73,4 = por una enfermedad o problema de salud
+G2_73,5 = por otra razón
+G2_73,9 = no consta
+H74_0,1 = sí
+H74_0,6 = no
+H75,01 = más de tres veces al día
+H75,02 = tres veces al día
+H75,03 = por la mañana y por la noche
+H75,04 = por la mañana y después de comer
+H75,05 = después de comer y por la noche
+H75,06 = una vez al día por la mañana
+H75,07 = una vez al día después de comer
+H75,08 = una vez al día por la noche
+H75,"09 = ocasionalmente, no todos los días"
+H75,10 = nunca
+H75,11 = otra
+H75,99 = no consta
+H76,1 = nunca
+H76,2 = casi nunca
+H76,3 = algunas veces
+H76,4 = casi siempre
+H76,5 = siempre
+H76,9 = no consta
+H77_1,1 = siempre
+H77_1,2 = casi siempre
+H77_1,3 = casi nunca
+H77_1,4 = nunca
+H77_1,9 = no consta
+H77_2,1 = siempre
+H77_2,2 = casi siempre
+H77_2,3 = casi nunca
+H77_2,4 = nunca
+H77_2,9 = no consta
+H78,1 = sí
+H78,6 = no
+H78,9 = no consta
+H79,"1 = un profesional sanitario, por la edad del/de la niño/a"
+H79,"2 = un profesional sanitario, por las enfermedades del/de la niño/a"
+H79,"3 = un profesional sanitario, por otras razones"
+H79,4 = le ponen la vacuna en el centro de estudio
+H79,5 = solicitaron la vacuna porque prefieren que el/la niño/a esté vacunado/a
+H79,6 = otros
+H79,9 = no consta
+I80,1 = sí
+I80,6 = no
+I80,9 = no consta
+I81_1A,1 = sí
+I81_1A,6 = no
+I81_1A,9 = no consta
+I81_1B,1 = nunca
+I81_1B,2 = algunas veces
+I81_1B,3 = muchas veces
+I81_1B,4 = constantemente
+I81_1B,9 = no consta
+I81_1C,1 = nunca
+I81_1C,2 = algunas veces
+I81_1C,3 = muchas veces
+I81_1C,4 = constantemente
+I81_1C,9 = no consta
+I81_1D,1 = nunca
+I81_1D,2 = algunas veces
+I81_1D,3 = muchas veces
+I81_1D,4 = constantemente
+I81_1D,9 = no consta
+I81_1E,1 = nunca
+I81_1E,2 = algunas veces
+I81_1E,3 = muchas veces
+I81_1E,4 = constantemente
+I81_1E,9 = no consta
+I81_2A,1 = sí
+I81_2A,6 = no
+I81_2A,9 = no consta
+I81_2B,1 = nunca
+I81_2B,2 = algunas veces
+I81_2B,3 = muchas veces
+I81_2B,4 = constantemente
+I81_2B,9 = no consta
+I81_2C,1 = nunca
+I81_2C,2 = algunas veces
+I81_2C,3 = muchas veces
+I81_2C,4 = constantemente
+I81_2C,9 = no consta
+I81_2D,1 = nunca
+I81_2D,2 = algunas veces
+I81_2D,3 = muchas veces
+I81_2D,4 = constantemente
+I81_2D,9 = no consta
+I81_2E,1 = nunca
+I81_2E,2 = algunas veces
+I81_2E,3 = muchas veces
+I81_2E,4 = constantemente
+I81_2E,9 = no consta
+I81_3A,1 = sí
+I81_3A,6 = no
+I81_3A,9 = no consta
+I81_3B,1 = nunca
+I81_3B,2 = algunas veces
+I81_3B,3 = muchas veces
+I81_3B,4 = constantemente
+I81_3B,9 = no consta
+I81_3C,1 = nunca
+I81_3C,2 = algunas veces
+I81_3C,3 = muchas veces
+I81_3C,4 = constantemente
+I81_3C,9 = no consta
+I81_3D,1 = nunca
+I81_3D,2 = algunas veces
+I81_3D,3 = muchas veces
+I81_3D,4 = constantemente
+I81_3D,9 = no consta
+I81_3E,1 = nunca
+I81_3E,2 = algunas veces
+I81_3E,3 = muchas veces
+I81_3E,4 = constantemente
+I81_3E,9 = no consta
+K93,"1 = sí, gravemente limitado"
+K93,"2 = sí, limitado pero no gravemente"
+K93,"3 = no, nada limitado"
+K94,1 = físico
+K94,2 = mental
+K94,3 = ambos
+K94,9 = no consta
+K95,003 a 100
+K95,998 = no sabe
+K95,999 = no consta
+K96,040 a 220
+K96,998 = no sabe
+K96,999 = no consta
+K97,1 = bastante mayor de lo normal
+K97,2 = algo mayor de lo normal
+K97,3 = normal
+K97,4 = menor de lo normal
+K97,9 = no consta
+TMUNI,1 = menor o igual a 2.000 habitantes
+TMUNI,2 = 2.001 a 10.000 habitantes
+TMUNI,3 = 10.001 a 50.000 habitantes
+TMUNI,4 = 50.001 a 100.000 habitantes
+TMUNI,5 = 100.001 a 400.000 habitantes
+TMUNI,6 = 400.001 a 1.000.000 habitantes
+TMUNI,7 = más de 1.000.000 habitantes
+SPCLASE,1 = clase i: directivos de la administración pública y de empresas de 10 o más
+SPCLASE,Asalariados. Profesiones asociadas a titulaciones de 2º y 3er ciclo
+SPCLASE,2 = clase ii: directivos de empresas de menos de 10 asalariados. Profesiones
+SPCLASE,Asociadas a una titulación de 1er ciclo universitario. Técnicos
+SPCLASE,Superiores. Artistas y deportistas
+SPCLASE,3 = clase iii: empleados de tipo administrativo y profesionales de apoyo a la
+SPCLASE,Gestión administrativa y financiera. Trabajadores de los servicios
+SPCLASE,Personales y de seguridad. Trabajadores por cuenta propia.
+SPCLASE,Supervisores de trabajadores manuales
+SPCLASE,4 = clase iva: trabajadores manuales cualificados
+SPCLASE,5 = clase ivb: trabajadores manuales semicualificados
+SPCLASE,6 = clase v: trabajadores no cualificados
+SPCLASE,9 = no consta
+MSCALVIDA,"El valor medio estandar europeo esta en el valor 50, con una desviacion tipica(ds)"
+MSCALVIDA,"De 10; asi, por ejemplo, si un individuo puntua 45, se encuentra a 0.5 ds por debajo de"
+MSCALVIDA,"La media europea y, por tanto, peor calidad de vida."
+MSSALMENT1,00 a 10
+MSSALMENT1,99 = no consta
+MSSALMENT1,Los valores de la variable salud mental ‘síntomas emocionales’ en poblacion
+MSSALMENT1,"Infantil oscilan entre 0 y 10 puntos, de mejor a peor salud mental"
+MSSALMENT1,La categoría 'síntomas emocionales' comprende: se queja con frecuencia de dolor
+MSSALMENT1,"De cabeza, de estómago o de naúseas; tiene muchas preocupaciones, a menudo"
+MSSALMENT1,"Parece inquieto/a o preocupado/a; se siente a menudo infeliz, desanimado/a,"
+MSSALMENT1,"Lloroso/a; es nervioso/a o dependiente ante nuevas situaciones, fácilmente pierde"
+MSSALMENT1,"La confianza en sí mismo/a; tiene muchos miedos, se asusta fácilmente."
+MSSALMENT2,00 a 10
+MSSALMENT2,99 = no consta
+MSSALMENT2,Los valores de la variable salud mental ‘problemas de conducta’ en poblacion
+MSSALMENT2,"Infantil oscilan entre 0 y 10 puntos, de mejor a peor salud mental"
+MSSALMENT2,La categoría 'problemas de conducta' comprende: frecuentemente tiene rabietas o
+MSSALMENT2,"Mal genio; por lo general es obediente, suele hacer lo que le piden los adultos;"
+MSSALMENT2,Pelea con frecuencia con otros niños/as o se mete con ellos/as; a menudo miente o
+MSSALMENT2,"Engaña; roba cosas en casa, en la escuela o en otros sitios."
+MSSALMENT3,00 a 10
+MSSALMENT3,99 = no consta
+MSSALMENT3,Los valores de la variable salud mental ‘hiperactividad’ en poblacion infantil
+MSSALMENT3,"Oscilan entre 0 y 10 puntos, de mejor a peor salud mental"
+MSSALMENT3,"La categoría 'hiperactividad' comprende: es inquieto/a, hiperactivo/a, no puede"
+MSSALMENT3,Permanecer quieto/apor mucho tiempo; está contínuamente moviéndose y es
+MSSALMENT3,"Revoltoso/a; se distrae con facilidad, su concentración tiende a dispersarse;"
+MSSALMENT3,"Piensa las cosas antes de hacerlas; termina lo que empieza, tiene buena"
+MSSALMENT3,Concentración.
+MSSALMENT4,00 a 10
+MSSALMENT4,99 = no consta
+MSSALMENT4,Los valores de la variable salud mental ‘problemas con compañeros’ en poblacion
+MSSALMENT4,"Infantil oscilan entre 0 y 10 puntos, de mejor a peor salud mental"
+MSSALMENT4,La categoría 'problemas con compañeros' comprende: es más bien solitario/a y
+MSSALMENT4,Tiende a jugar solo/a; tiene por lo menos un/a buen amigo/a; por lo general cae bien
+MSSALMENT4,A otros niños/as; los otros niños se meten con él/ella o se burlan de él/ella; se
+MSSALMENT4,Lleva mejor con adultos que con otros niños/as.
+MSSALMENT5,00 a 10
+MSSALMENT5,99 = no consta
+MSSALMENT5,Los valores de la variable salud mental ‘prosocial’ en poblacion infantil oscilan
+MSSALMENT5,"Entre 0 y 10 puntos, de peor a mejor salud mental"
+MSSALMENT5,La categoría 'prosocial' comprende: tiene en cuenta los sentimientos de otras
+MSSALMENT5,"Personas, comparte frecuentemente con otros niños/as chucherías, juguetes,"
+MSSALMENT5,"Lápices...; Ofrece ayuda cuando alguien resulta herido, disgustado o enfermo;"
+MSSALMENT5,Trata bien a los/las niños/as más pequeños/as; a menudo se ofrece para ayudar (a
+MSSALMENT5,"Padres, maestros, otros niños)."
+MSIMC,1 = normopeso o peso insuficiente
+MSIMC,2 = sobrepeso
+MSIMC,3 = obesidad
+MSIMC,9 = no consta
