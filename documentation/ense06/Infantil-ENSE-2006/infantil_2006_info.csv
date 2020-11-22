@@ -1,1307 +1,351 @@
-variable_ine,valores_ine
-NIVEL,2 = menor
-CCAA,01 = andalucía
-CCAA,02 = aragón
-CCAA,03 = principado de asturias
-CCAA,04 = illes balears
-CCAA,05 = canarias
-CCAA,06 = cantabria
-CCAA,07 = castilla y león
-CCAA,08 = castilla-la mancha
-CCAA,09 = cataluña
-CCAA,10 = comunitat valenciana
-CCAA,11 = extremadura
-CCAA,12 = galicia
-CCAA,13 = comunidad de madrid
-CCAA,14 = región de murcia
-CCAA,15 = comunidad foral de navarra
-CCAA,16 = país vasco
-CCAA,17 = la rioja
-CCAA,18 = ceuta y melilla
-PROV,01 álava
-PROV,02 albacete
-PROV,03 alicante/alacant
-PROV,04 almería
-PROV,05 ávila
-PROV,06 badajoz
-PROV,07 balears (illes)
-PROV,08 barcelona
-PROV,09 burgos
-PROV,10 cáceres
-PROV,11 cádiz
-PROV,12 castellón/castelló
-PROV,13 ciudad real
-PROV,14 córdoba
-PROV,15 coruña (a)
-PROV,16 cuenca
-PROV,17 girona
-PROV,18 granada
-PROV,19 guadalajara
-PROV,20 guipúzcoa
-PROV,21 huelva
-PROV,22 huesca
-PROV,23 jaén
-PROV,24 león
-PROV,25 lleida
-PROV,26 rioja (la)
-PROV,27 lugo
-PROV,28 madrid
-PROV,29 málaga
-PROV,30 murcia
-PROV,31 navarra
-PROV,32 ourense
-PROV,33 asturias
-PROV,34 palencia
-PROV,35 palmas (las)
-PROV,36 pontevedra
-PROV,37 salamanca
-PROV,38 santa cruz de tenerife
-PROV,39 cantabria
-PROV,40 segovia
-PROV,41 sevilla
-PROV,42 soria
-PROV,43 tarragona
-PROV,44 teruel
-PROV,45 toledo
-PROV,46 valencia/valència
-PROV,47 valladolid
-PROV,48 vizcaya
-PROV,49 zamora
-PROV,50 zaragoza
-PROV,51 ceuta
-PROV,52 melilla
-ESTRATO,0 = municipios de más de 500.000 habitantes
-ESTRATO,1 = municipios capital de provincia (excepto los anteriores)
-ESTRATO,2 = municipios con más de 100.000 habitantes (excepto los anteriores)
-ESTRATO,3 = municipios de 50.001 a 100.000 habitantes (excepto los anteriores)
-ESTRATO,4 = municipios de 20.001 a 50.000 habitantes
-ESTRATO,5 = municipios de 10.001 a 20.000 habitantes
-ESTRATO,6 = municipios hasta 10.000 habitantes
-SECCION,0001 a 2236
-SECC_DC,0a9
-NIDENTIF,Número de hogar (5 dígitos) correlativo y número de persona dentro del
-NIDENTIF,Hogar (2 dígitos) correlativo
-AÑO,2006
-AÑO,2007
-TRIM,1 = primer trimestre
-TRIM,2 = segundo trimestre
-TRIM,3 = tercer trimestre
-TRIM,4 = cuarto trimestre
-NORDEN,51 a 65
-EDAD,000 a 015
-EDADMES,00 a 11
-SEXO,1 = varón
-SEXO,6 = mujer
-P3_3,01 a 31
-P3_4,01 a 12
-P3_5,1990 a 2007
-P4_1,1 = padre/madre
-P4_1,2 = tutor/a
-P4_1,3 = hermano/a
-P4_1,4 = abuelo/a
-P4_1,5 = otros familiares
-P4_1,6 = servicios sociales
-P4_1,7 = otros
-P4_0_1,1 = sí
-P4_0_1,6 = no
-P4_0_2,01 a 15
-P4_3,018 a 117
-P4_4,1 = varón
-P4_4,6 = mujer
-A1,1 = muy bueno
-A1,2 = bueno
-A1,3 = regular
-A1,4 = malo
-A1,5 = muy malo
-A2_1A,1 = sí
-A2_1A,6 = no
-A2_1A,9 = no consta
-A2_1B,1 = sí
-A2_1B,6 = no
-A2_1B,9 = no consta
-A2_1C,1 = sí
-A2_1C,6 = no
-A2_1C,9 = no consta
-A2_1D,1 = sí
-A2_1D,6 = no
-A2_1D,9 = no consta
-A2_2A,1 = sí
-A2_2A,6 = no
-A2_2A,9 = no consta
-A2_2B,1 = sí
-A2_2B,6 = no
-A2_2B,9 = no consta
-A2_2C,1 = sí
-A2_2C,6 = no
-A2_2C,9 = no consta
-A2_2D,1 = sí
-A2_2D,6 = no
-A2_2D,9 = no consta
-A2_3A,1 = sí
-A2_3A,6 = no
-A2_3A,9 = no consta
-A2_3B,1 = sí
-A2_3B,6 = no
-A2_3B,9 = no consta
-A2_3C,1 = sí
-A2_3C,6 = no
-A2_3C,9 = no consta
-A2_3D,1 = sí
-A2_3D,6 = no
-A2_3D,9 = no consta
-A2_4A,1 = sí
-A2_4A,6 = no
-A2_4A,9 = no consta
-A2_4B,1 = sí
-A2_4B,6 = no
-A2_4B,9 = no consta
-A2_4C,1 = sí
-A2_4C,6 = no
-A2_4C,9 = no consta
-A2_4D,1 = sí
-A2_4D,6 = no
-A2_4D,9 = no consta
-A2_5A,1 = sí
-A2_5A,6 = no
-A2_5A,9 = no consta
-A2_5B,1 = sí
-A2_5B,6 = no
-A2_5B,9 = no consta
-A2_5C,1 = sí
-A2_5C,6 = no
-A2_5C,9 = no consta
-A2_5D,1 = sí
-A2_5D,6 = no
-A2_5D,9 = no consta
-A2_6A,1 = sí
-A2_6A,6 = no
-A2_6A,9 = no consta
-A2_6B,1 = sí
-A2_6B,6 = no
-A2_6B,9 = no consta
-A2_6C,1 = sí
-A2_6C,6 = no
-A2_6C,9 = no consta
-A2_6D,1 = sí
-A2_6D,6 = no
-A2_6D,9 = no consta
-A2_7A,1 = sí
-A2_7A,6 = no
-A2_7A,9 = no consta
-A2_7B,1 = sí
-A2_7B,6 = no
-A2_7B,9 = no consta
-A2_7C,1 = sí
-A2_7C,6 = no
-A2_7C,9 = no consta
-A2_7D,1 = sí
-A2_7D,6 = no
-A2_7D,9 = no consta
-A2_8A,1 = sí
-A2_8A,6 = no
-A2_8A,9 = no consta
-A2_8LIT,Texto
-A2_8LIT,99999999= no consta
-A2_8B,1 = sí
-A2_8B,6 = no
-A2_8B,9 = no consta
-A2_8C,1 = sí
-A2_8C,6 = no
-A2_8C,9 = no consta
-A2_8D,1 = sí
-A2_8D,6 = no
-A2_8D,9 = no consta
-A2_9A,1 = sí
-A2_9A,6 = no
-A2_9A,9 = no consta
-A2_9LIT,Texto
-A2_9LIT,99999999= no consta
-A2_9B,1 = sí
-A2_9B,6 = no
-A2_9B,9 = no consta
-A2_9C,1 = sí
-A2_9C,6 = no
-A2_9C,9 = no consta
-A2_9D,1 = sí
-A2_9D,6 = no
-A2_9D,9 = no consta
-A3,1 = sí
-A3,6 = no
-A3,9 = no consta
-B4,1 = sí
-B4,6 = no
-B5_1A,1 = sí
-B5_1A,6 = no
-B5_1A,9 = no consta
-B5_1B,01 a 30
-B5_1B,99 = no consta
-B5_2A,1 = sí
-B5_2A,6 = no
-B5_2A,9 = no consta
-B5_2B,01 a 30
-B5_2B,99 = no consta
-B5_3A,1 = sí
-B5_3A,6 = no
-B5_3A,9 = no consta
-B5_3B,01 a 30
-B5_3B,99 = no consta
-B5_4A,1 = sí
-B5_4A,6 = no
-B5_4A,9 = no consta
-B5_4B,01 a 30
-B5_4B,99 = no consta
-B5_5A,1 = sí
-B5_5A,6 = no
-B5_5A,9 = no consta
-B5_5B,01 a 30
-B5_5B,99 = no consta
-B5_6A,1 = sí
-B5_6A,6 = no
-B5_6A,9 = no consta
-B5_6B,01 a 30
-B5_6B,99 = no consta
-B5_7A,1 = sí
-B5_7A,6 = no
-B5_7A,9 = no consta
-B5_7B,01 a 30
-B5_7B,99 = no consta
-B5_8A,1 = sí
-B5_8A,6 = no
-B5_8A,9 = no consta
-B5_8B,01 a 30
-B5_8B,99 = no consta
-B6,"1 = en casa, escaleras, portal, etc."
-B6,2 = en la calle o carretera y fue un accidente de tráfico
-B6,"3 = en la calle, pero no fue un accidente de tráfico"
-B6,"4 = en la escuela, colegio, guardería, instituto,..."
-B6,5 = en una instalación deportiva
-B6,6 = en una zona recreativa o de ocio
-B6,7= en otro lugar
-B6,9 = no consta
-B7,1 = consultó a un médico o enfermero
-B7,2 = acudió a un centro de urgencias
-B7,3 = ingresó en un hospital
-B7,4 = no fue necesario hacer ninguna consulta ni intervención
-B7,9 = no consta
-B8_1,1 = sí
-B8_1,0 = no
-B8_1,9 = no consta
-B8_2,1 = sí
-B8_2,0 = no
-B8_2,9 = no consta
-B8_3,1 = sí
-B8_3,0 = no
-B8_3,9 = no consta
-B8_4,1 = sí
-B8_4,0 = no
-B8_4,9 = no consta
-B8_5,1 = sí
-B8_5,0 = no
-B8_5,9 = no consta
-B9,1 = si
-B9,6 = no
-B9,9 = no consta
-B10,1 = en un lugar de ocio
-B10,"2 = en la escuela, colegio, guardería, instituto,..."
-B10,3 = en la calle
-B10,4 = en su hogar
-B10,5 = en el edificio donde vive
-B10,6 = en una zona deportiva
-B10,7 = otros lugares
-B10,9 = no consta
-C11_1,1= sí
-C11_1,6= no
-C11_2,01 a 14
-C11_2,99 = no consta
-C12_1,1= sí
-C12_1,6= no
-C12_1,9 = no consta
-C12_2,01 a 14
-C12_2,99 = no consta
-C13_1A,1 = sí
-C13_1A,0 = no
-C13_1A,9 = no consta
-C13_1B,1 = sí
-C13_1B,0 = no
-C13_1B,9 = no consta
-C13_2A,1 = sí
-C13_2A,0 = no
-C13_2A,9 = no consta
-C13_2B,1 = sí
-C13_2B,0 = no
-C13_2B,9 = no consta
-C13_3A,1 = sí
-C13_3A,0 = no
-C13_3A,9 = no consta
-C13_3B,1 = sí
-C13_3B,0 = no
-C13_3B,9 = no consta
-C13_4A,1 = sí
-C13_4A,0 = no
-C13_4A,9 = no consta
-C13_4B,1 = sí
-C13_4B,0 = no
-C13_4B,9 = no consta
-C13_5A,1 = sí
-C13_5A,0 = no
-C13_5A,9 = no consta
-C13_5B,1 = sí
-C13_5B,0 = no
-C13_5B,9 = no consta
-C13_6A,1 = sí
-C13_6A,0 = no
-C13_6A,9 = no consta
-C13_6B,1 = sí
-C13_6B,0 = no
-C13_6B,9 = no consta
-C13_7A,1 = sí
-C13_7A,0 = no
-C13_7A,9 = no consta
-C13_7B,1 = sí
-C13_7B,0 = no
-C13_7B,9 = no consta
-C13_8A,1 = sí
-C13_8A,0 = no
-C13_8A,9 = no consta
-C13_8B,1 = sí
-C13_8B,0 = no
-C13_8B,9 = no consta
-C13_9A,1 = sí
-C13_9A,0 = no
-C13_9A,9 = no consta
-C13_9B,1 = sí
-C13_9B,0 = no
-C13_9B,9 = no consta
-C13_10A,1 = sí
-C13_10A,0 = no
-C13_10A,9 = no consta
-C13_10B,1 = sí
-C13_10B,0 = no
-C13_10B,9 = no consta
-C13_11A,1 = sí
-C13_11A,0 = no
-C13_11A,9 = no consta
-C13_11B,1 = sí
-C13_11B,0 = no
-C13_11B,9 = no consta
-C13_12A,1 = sí
-C13_12A,0 = no
-C13_12A,9 = no consta
-C13_12B,1 = sí
-C13_12B,0 = no
-C13_12B,9 = no consta
-C13_13A,1 = sí
-C13_13A,0 = no
-C13_13A,9 = no consta
-C13_13B,1 = sí
-C13_13B,0 = no
-C13_13B,9 = no consta
-C13_14A,1 = sí
-C13_14A,0 = no
-C13_14A,9 = no consta
-C13_14B,1 = sí
-C13_14B,0 = no
-C13_14B,9 = no consta
-D14_1A,1 = sí
-D14_1A,6 = no
-D14_1A,9 = no consta
-D14_1B,1 = sí
-D14_1B,6 = no
-D14_1B,9 = no consta
-D14_2A,1 = sí
-D14_2A,6 = no
-D14_2A,9 = no consta
-D14_2B,1 = sí
-D14_2B,6 = no
-D14_2B,9 = no consta
-D14_3A,1 = sí
-D14_3A,6 = no
-D14_3A,9 = no consta
-D14_3B,1 = sí
-D14_3B,6 = no
-D14_3B,9 = no consta
-D14_4A,1 = sí
-D14_4A,6 = no
-D14_4A,9 = no consta
-D14_4B,1 = sí
-D14_4B,6 = no
-D14_4B,9 = no consta
-D14_5A,1 = sí
-D14_5A,6 = no
-D14_5A,9 = no consta
-D14_5B,1 = sí
-D14_5B,6 = no
-D14_5B,9 = no consta
-D14_6A,1 = sí
-D14_6A,6 = no
-D14_6A,9 = no consta
-D14_6B,1 = sí
-D14_6B,6 = no
-D14_6B,9 = no consta
-D14_7A,1 = sí
-D14_7A,6 = no
-D14_7A,9 = no consta
-D14_7B,1 = sí
-D14_7B,6 = no
-D14_7B,9 = no consta
-D14_8A,1 = sí
-D14_8A,6 = no
-D14_8A,9 = no consta
-D14_8B,1 = sí
-D14_8B,6 = no
-D14_8B,9 = no consta
-D14_9A,1 = sí
-D14_9A,6 = no
-D14_9A,9 = no consta
-D14_9B,1 = sí
-D14_9B,6 = no
-D14_9B,9 = no consta
-D14_10A,1 = sí
-D14_10A,6 = no
-D14_10A,9 = no consta
-D14_10B,1 = sí
-D14_10B,6 = no
-D14_10B,9 = no consta
-D14_11A,1 = sí
-D14_11A,6 = no
-D14_11A,9 = no consta
-D14_11B,1 = sí
-D14_11B,6 = no
-D14_11B,9 = no consta
-D14_12A,1 = sí
-D14_12A,6 = no
-D14_12A,9 = no consta
-D14_12B,1 = sí
-D14_12B,6 = no
-D14_12B,9 = no consta
-D14_13A,1 = sí
-D14_13A,6 = no
-D14_13A,9 = no consta
-D14_13B,1 = sí
-D14_13B,6 = no
-D14_13B,9 = no consta
-D14_14A,1 = sí
-D14_14A,6 = no
-D14_14A,9 = no consta
-D14_15A,1 = sí
-D14_15A,6 = no
-D14_15A,9 = no consta
-E15_0,1 = sí
-E15_0,6 = no
-E15_1,1 = no es cierto
-E15_1,2 = un tanto por cierto
-E15_1,3 = absolutamente cierto
-E15_1,9 = no consta
-E15_2,1 = no es cierto
-E15_2,2 = un tanto por cierto
-E15_2,3 = absolutamente cierto
-E15_2,9 = no consta
-E15_3,1 = no es cierto
-E15_3,2 = un tanto por cierto
-E15_3,3 = absolutamente cierto
-E15_3,9 = no consta
-E15_4,1 = no es cierto
-E15_4,2 = un tanto por cierto
-E15_4,3 = absolutamente cierto
-E15_4,9 = no consta
-E15_5,1 = no es cierto
-E15_5,2 = un tanto por cierto
-E15_5,3 = absolutamente cierto
-E15_5,9 = no consta
-E15_6,1 = no es cierto
-E15_6,2 = un tanto por cierto
-E15_6,3 = absolutamente cierto
-E15_6,9 = no consta
-E15_7,1 = no es cierto
-E15_7,2 = un tanto por cierto
-E15_7,3 = absolutamente cierto
-E15_7,9 = no consta
-E15_8,1 = no es cierto
-E15_8,2 = un tanto por cierto
-E15_8,3 = absolutamente cierto
-E15_8,9 = no consta
-E15_9,1 = no es cierto
-E15_9,2 = un tanto por cierto
-E15_9,3 = absolutamente cierto
-E15_9,9 = no consta
-E15_10,1 = no es cierto
-E15_10,2 = un tanto por cierto
-E15_10,3 = absolutamente cierto
-E15_10,9 = no consta
-E15_11,1 = no es cierto
-E15_11,2 = un tanto por cierto
-E15_11,3 = absolutamente cierto
-E15_11,9 = no consta
-E15_12,1 = no es cierto
-E15_12,2 = un tanto por cierto
-E15_12,3 = absolutamente cierto
-E15_12,9 = no consta
-E15_13,1 = no es cierto
-E15_13,2 = un tanto por cierto
-E15_13,3 = absolutamente cierto
-E15_13,9 = no consta
-E15_14,1 = no es cierto
-E15_14,2 = un tanto por cierto
-E15_14,3 = absolutamente cierto
-E15_14,9 = no consta
-E15_15,1 = no es cierto
-E15_15,2 = un tanto por cierto
-E15_15,3 = absolutamente cierto
-E15_15,9 = no consta
-E15_16,1 = no es cierto
-E15_16,2 = un tanto por cierto
-E15_16,3 = absolutamente cierto
-E15_16,9 = no consta
-E15_17,1 = no es cierto
-E15_17,2 = un tanto por cierto
-E15_17,3 = absolutamente cierto
-E15_17,9 = no consta
-E15_18,1 = no es cierto
-E15_18,2 = un tanto por cierto
-E15_18,3 = absolutamente cierto
-E15_18,9 = no consta
-E15_19,1 = no es cierto
-E15_19,2 = un tanto por cierto
-E15_19,3 = absolutamente cierto
-E15_19,9 = no consta
-E15_20,1 = no es cierto
-E15_20,2 = un tanto por cierto
-E15_20,3 = absolutamente cierto
-E15_20,9 = no consta
-E15_21,1 = no es cierto
-E15_21,2 = un tanto por cierto
-E15_21,3 = absolutamente cierto
-E15_21,9 = no consta
-E15_22,1 = no es cierto
-E15_22,2 = un tanto por cierto
-E15_22,3 = absolutamente cierto
-E15_22,9 = no consta
-E15_23,1 = no es cierto
-E15_23,2 = un tanto por cierto
-E15_23,3 = absolutamente cierto
-E15_23,9 = no consta
-E15_24,1 = no es cierto
-E15_24,2 = un tanto por cierto
-E15_24,3 = absolutamente cierto
-E15_24,9 = no consta
-E15_25,1 = no es cierto
-E15_25,2 = un tanto por cierto
-E15_25,3 = absolutamente cierto
-E15_25,9 = no consta
-F1_16_1,1 = hace cuatro semanas o menos
-F1_16_1,2 = hace más de cuatro semanas y menos de un año
-F1_16_1,3 = hace un año o más
-F1_16_1,4 = nunca ha ido al médico
-F1_16_2,01 a 11
-F1_16_2,99 = no consta
-F1_16_3,01 a 15
-F1_16_3,99 = no consta
-F1_17,00 a 28
-F1_17,98 = no sabe
-F1_17,99 = no consta
-F1_18,00 a 28
-F1_18,98 = no sabe
-F1_18,99 = no consta
-F1_19,01 = médico de familia
-F1_19,02 = pediatría
-F1_19,03 = alergología
-F1_19,04 = aparato digestivo
-F1_19,05 = cardiología
-F1_19,06 = cirugía general y digestiva
-F1_19,07 = cirugía cardiovascular
-F1_19,08 = cirugía vascular
-F1_19,09 = dermatología
-F1_19,10 = endocrinología y nutrición
-F1_19,11 = ginecología-obstetricia
-F1_19,12 = medicina interna
-F1_19,13 = nefrología
-F1_19,14 = neumología
-F1_19,15 = neurocirugía
-F1_19,16 = neurología
-F1_19,17 = oftalmología
-F1_19,18 = oncología
-F1_19,19 = otorrinolaringología
-F1_19,20 = psiquiatría
-F1_19,21 = rehabilitación
-F1_19,22 = reumatología
-F1_19,23 = traumatología
-F1_19,24 = urología
-F1_19,25 = otra especialidad
-F1_19,99 = no consta
-F1_20,01 = centro de salud/consultorio
-F1_20,02 = ambulatorio/centro de especialidades
-F1_20,03 = consulta externa de un hospital
-F1_20,04 = servicio de urgencias no hospitalario
-F1_20,05 = servicio de urgencias de un hospital
-F1_20,06 = consulta de médico/a particular
-F1_20,07 = consulta de médico/a de una sociedad
-F1_20,"08 = escuela, colegio, instituto"
-F1_20,09 = domicilio del menor
-F1_20,10 = consulta telefónica
-F1_20,11 = otro lugar
-F1_20,99 = no consta
-F1_21,1 = diagnóstico de una enfermedad o problema de salud
-F1_21,2 = accidente o agresión
-F1_21,3 = revisión por enfermedad
-F1_21,4 = control de salud (programa de atención al niño sano)
-F1_21,5 = vacunación
-F1_21,6 = sólo dispensación de recetas
-F1_21,7 = otros motivos
-F1_21,9 = no consta
-F1_22_1,00 a 72
-F1_22_1,98 = no sabe
-F1_22_1,99 = no consta
-F1_22_2,00 a 30
-F1_22_2,98 = no sabe
-F1_22_2,99 = no consta
-F1_22_3,00 a 23
-F1_22_3,98 = no sabe
-F1_22_3,99 = no consta
-F1_23_1,00 a 24
-F1_23_1,98 = no sabe
-F1_23_1,99 = no consta
-F1_23_2,00 a 30
-F1_23_2,98 = no sabe
-F1_23_2,99 = no consta
-F1_23_3,00 a 23
-F1_23_3,98 = no sabe
-F1_23_3,99 = no consta
-F1_24,1 = sanidad pública (seguridad social)
-F1_24,2 = sociedad médica
-F1_24,3 = consulta privada
-F1_24,"4 = otros (iguala médica, médico/a escolar,...)"
-F1_24,9 = no consta
-F1_25,1 = sí
-F1_25,6 = no
-F1_25,9 = no consta
-F1_26_1A,1 = sí
-F1_26_1A,6 = no
-F1_26_1A,9 = no consta
-F1_26_1B,00 a 30
-F1_26_1B,98 = no sabe
-F1_26_1B,99 = no consta
-F1_26_1C,00 a 30
-F1_26_1C,98 = no sabe
-F1_26_1C,99 = no consta
-F1_26_2A,1 = sí
-F1_26_2A,6 = no
-F1_26_2A,9 = no consta
-F1_26_2B,00 a 30
-F1_26_2B,98 = no sabe
-F1_26_2B,99 = no consta
-F1_26_2C,00 a 30
-F1_26_2C,98 = no sabe
-F1_26_2C,99 = no consta
-F1_26_3A,1 = sí
-F1_26_3A,6 = no
-F1_26_3A,9 = no consta
-F1_26_3B,00 a 30
-F1_26_3B,98 = no sabe
-F1_26_3B,99 = no consta
-F1_26_3C,00 a 30
-F1_26_3C,98 = no sabe
-F1_26_3C,99 = no consta
-F1_26_4A,1 = sí
-F1_26_4A,6 = no
-F1_26_4A,9 = no consta
-F1_26_4B,00 a 30
-F1_26_4B,98 = no sabe
-F1_26_4B,99 = no consta
-F1_26_4C,00 a 30
-F1_26_4C,98 = no sabe
-F1_26_4C,99 = no consta
-F1_26_5A,1 = sí
-F1_26_5A,6 = no
-F1_26_5A,9 = no consta
-F1_26_5B,00 a 30
-F1_26_5B,98 = no sabe
-F1_26_5B,99 = no consta
-F1_26_5C,00 a 30
-F1_26_5C,98 = no sabe
-F1_26_5C,99 = no consta
-F1_26_6A,1 = sí
-F1_26_6A,6 = no
-F1_26_6A,9 = no consta
-F1_26_6B,00 a 30
-F1_26_6B,98 = no sabe
-F1_26_6B,99 = no consta
-F1_26_6C,00 a 30
-F1_26_6C,98 = no sabe
-F1_26_6C,99 = no consta
-F1_27_1A,1 = sí
-F1_27_1A,6 = no
-F1_27_1A,9 = no consta
-F1_27_1B,01 a 28
-F1_27_1B,98 = no sabe
-F1_27_1B,99 = no consta
-F1_27_2A,1 = sí
-F1_27_2A,6 = no
-F1_27_2A,9 = no consta
-F1_27_2B,01 a 28
-F1_27_2B,98 = no sabe
-F1_27_2B,99 = no consta
-F2_28,1 = sí
-F2_28,6 = no
-F2_28,9 = no consta
-F2_29,01 = no pudo conseguir cita
-F2_29,02 = no pudo dejar el trabajo y llevar al niño
-F2_29,03 = era demasiado caro/no tenía dinero
-F2_29,04 = no tenía medio de transporte
-F2_29,05 = porque el niño estaba demasiado nervioso/a y asustado/a
-F2_29,06 = el seguro no lo cubría
-F2_29,07 = no tenía seguro
-F2_29,08 = había que esperar demasiado
-F2_29,09 = nadie pudo dejar las obligaciones familiares y llevar al niño
-F2_29,10 = otra causa
-F2_29,99 = no consta
-F3_30_1,1 = sí
-F3_30_1,0 = no
-F3_30_1,9 = no consta
-F3_30_2,1 = sí
-F3_30_2,0 = no
-F3_30_2,9 = no consta
-F3_30_3,1 = sí
-F3_30_3,0 = no
-F3_30_3,9 = no consta
-F3_30_4,1 = sí
-F3_30_4,0 = no
-F3_30_4,9 = no consta
-F3_30_5,1 = sí
-F3_30_5,0 = no
-F3_30_5,9 = no consta
-F3_30_6,1 = sí
-F3_30_6,0 = no
-F3_30_6,9 = no consta
-F3_30_7,1 = sí
-F3_30_7,0 = no
-F3_30_7,9 = no consta
-F3_30_8,1 = sí
-F3_30_8,0 = no
-F3_30_8,9 = no consta
-F4_31_1,1 = hace 3 meses o menos
-F4_31_1,2 = hace más de 3 meses y menos de 12 meses
-F4_31_1,3 = hace un año o más
-F4_31_1,4 = nunca ha ido
-F4_31_2,01 a 24
-F4_31_2,99 = no consta
-F4_31_3,04 a 11
-F4_31_3,99 = no consta
-F4_31_4,01 a 15
-F4_31_4,99 = no consta
-F4_32_1,1 = sí
-F4_32_1,6 = no
-F4_32_1,9 = no consta
-F4_32_2,1 = sí
-F4_32_2,6 = no
-F4_32_2,9 = no consta
-F4_32_3,1 = sí
-F4_32_3,6 = no
-F4_32_3,9 = no consta
-F4_32_4,1 = sí
-F4_32_4,6 = no
-F4_32_4,9 = no consta
-F4_32_5,1 = sí
-F4_32_5,6 = no
-F4_32_5,9 = no consta
-F4_32_6,1 = sí
-F4_32_6,6 = no
-F4_32_6,9 = no consta
-F4_32_7,1 = sí
-F4_32_7,6 = no
-F4_32_7,9 = no consta
-F4_32_8,1 = sí
-F4_32_8,6 = no
-F4_32_8,9 = no consta
-F4_32_9,1 = sí
-F4_32_9,6 = no
-F4_32_9,9 = no consta
-F4_33,1 = sanidad pública (seguridad social)
-F4_33,2 = ayuntamiento
-F4_33,3 = sociedad médica
-F4_33,4 = consulta privada
-F4_33,"5 = otros (iguala médica, etc.)"
-F4_33,9 = no consta
-F4_34,1 = sí
-F4_34,6 = no
-F4_35,1 = sí
-F4_35,6 = no
-F4_35,9 = no consta
-F4_36_1,1 = sí
-F4_36_1,6 = no
-F4_36_1,9 = no consta
-F4_36_2,1 = sí
-F4_36_2,6 = no
-F4_36_2,9 = no consta
-F4_36_3,1 = sí
-F4_36_3,6 = no
-F4_36_3,9 = no consta
-F4_36_4,1 = sí
-F4_36_4,6 = no
-F4_36_4,9 = no consta
-F4_36_5,1 = sí
-F4_36_5,6 = no
-F4_36_5,9 = no consta
-F5_37,1 = sí
-F5_37,6 = no
-F5_38,01 a 89
-F5_38,99 = no consta
-F5_39,001 a 365
-F5_39,999 = no consta
-F5_40,1 = intervención quirúrgica
-F5_40,2 = estudio médico para diagnóstico
-F5_40,3 = tratamiento médico sin intervención quirúrgica
-F5_40,4 = otros motivos
-F5_40,9 = no consta
-F5_41,1 = sí
-F5_41,6 = no
-F5_41,9 = no consta
-F5_42,00 a 48
-F5_42,98 = no sabe
-F5_42,99 = no consta
-F5_43,1 = a través del servicio de urgencias
-F5_43,2 = ingreso ordinario (no por urgencias)
-F5_43,9 = no consta
-F5_44,1 = sanidad pública (seguridad social
-F5_44,"2 = mutualidad obligatoria (muface, isfas, etc.)"
-F5_44,3 = sociedad médica privada
-F5_44,4 = a cargo del hogar del/de la niño/a
-F5_44,"5 = a cargo de otras personas, organismos o instituciones"
-F5_44,8 = no sabe
-F5_44,9 = no consta
-F5_45,1 = sí
-F5_45,6 = no
-F5_45,8 = no sabe
-F5_45,9 = no consta
-F5_46,1 = sí
-F5_46,6 = no
-F5_46,9 = no consta
-F5_47,1 = un tratamiento
-F5_47,2 = una intervención quirúrgica
-F5_47,3 = otros motivos
-F5_47,9 = no consta
-F5_48,001 a 365
-F5_48,998 = no sabe
-F5_48,999 = no consta
-F6_49,1 = sí
-F6_49,6 = no
-F6_50,001 a 200
-F6_50,998 = no sabe
-F6_50,999 = no consta
-F6_51_1,1 = sí
-F6_51_1,6 = no
-F6_51_1,9 = no consta
-F6_51_2,1 = sí
-F6_51_2,6 = no
-F6_51_2,9 = no consta
-F6_51_3,1 = sí
-F6_51_3,6 = no
-F6_51_3,9 = no consta
-F6_52_1,00 a 30
-F6_52_1,98 = no sabe
-F6_52_1,99 = no consta
-F6_52_2,00 a 23
-F6_52_2,98 = no sabe
-F6_52_2,99 = no consta
-F6_52_3,00 a 59
-F6_52_3,98 = no sabe
-F6_52_3,99 = no consta
-F6_53_1,00 a 48
-F6_53_1,98 = no sabe
-F6_53_1,99 = no consta
-F6_53_2,00 a 59
-F6_53_2,98 = no sabe
-F6_53_2,99 = no consta
-F6_54,1 = hospital de la sanidad pública (seguridad social)
-F6_54,2 = servicio de urgencias no hospitalario de la sanidad pública (seguridad
-F6_54,Social)
-F6_54,"3 = centro no hospitalario de la sanidad pública (centro de salud, etc.)"
-F6_54,4 = servicio privado de urgencias
-F6_54,"5 = sanatorio, hospital o clínica privada"
-F6_54,6 = casa de socorro o servicio de urgencias del ayuntamiento
-F6_54,7 = otro tipo de servicio
-F6_54,9 = no consta
-F6_55,1 = porque el médico/a se lo mandó
-F6_55,2 = porque sus familiares u otras personas lo consideraron necesario
-F6_55,9 = no consta
-G1_56,01 a 24
-G1_56,98 = no sabe
-G1_56,99 = no consta
-G1_57,1 = no hace ejercicio
-G1_57,2 = hace alguna actividad física o deportiva ocasional
-G1_57,3 = hace actividad física varias veces al mes
-G1_57,4 = hace entrenamiento deportivo o físico varias veces a la semana
-G1_57,9 = no consta
-G1_58_0,1 = sí
-G1_58_0,6 = no
-G1_58,1 = sí
-G1_58,6 = no
-G1_58,9 = no consta
-G1_59_1A,1 = menos de 1 hora
-G1_59_1A,2 = una hora o más
-G1_59_1A,9 = no consta
-G1_59_1B,01 a 24
-G1_59_1B,98 = no sabe
-G1_59_1B,99 = no consta
-G1_59_2A,1 = menos de 1 hora
-G1_59_2A,2 = una hora o más
-G1_59_2A,9 = no consta
-G1_59_2B,01 a 24
-G1_59_2B,98 = no sabe
-G1_59_2B,99 = no consta
-G1_60,1 = sí
-G1_60,6 = no
-G1_60,9 = no consta
-G1_61_1A,1 = menos de 1 hora
-G1_61_1A,2 = una hora o más
-G1_61_1A,9 = no consta
-G1_61_1B,01 a 24
-G1_61_1B,98 = no sabe
-G1_61_1B,99 = no consta
-G1_61_2A,1 = menos de 1 hora
-G1_61_2A,2 = una hora o más
-G1_61_2A,9 = no consta
-G1_61_2B,01 a 24
-G1_61_2B,98 = no sabe
-G1_61_2B,99 = no consta
-G1_62_0,1 = sí
-G1_62_0,6 = no
-G2_63,1 = sí
-G2_63,6 = no
-G2_63,9 = no consta
-G2_64_1,00 a 24
-G2_64_1,98 = no sabe
-G2_64_1,99 = no consta
-G2_64_2,00 a 30
-G2_64_2,98 = no sabe
-G2_64_2,99 = no consta
-G2_65,1 = sí
-G2_65,6 = no
-G2_65,9 = no consta
-G2_66_1,0a6
-G2_66_1,8 = no sabe
-G2_66_1,9 = no consta
-G2_66_2,00 a 30
-G2_66_2,98 = no sabe
-G2_66_2,99 = no consta
-G2_67,1 = sí
-G2_67,6 = no
-G2_67,9 = no consta
-G2_68_1,00 a 12
-G2_68_1,98 = no sabe
-G2_68_1,99 = no consta
-G2_68_2,00 a 30
-G2_68_2,98 = no sabe
-G2_68_2,99 = no consta
-G1_69,1 = sí
-G1_69,6 = no
-G2_70_1,1 = sí
-G2_70_1,6 = no
-G2_70_1,9 = no consta
-G2_70_2,1 = sí
-G2_70_2,6 = no
-G2_70_2,9 = no consta
-G2_70_3,1 = sí
-G2_70_3,6 = no
-G2_70_3,9 = no consta
-G2_70_4,1 = sí
-G2_70_4,6 = no
-G2_70_4,9 = no consta
-G2_70_5,1 = sí
-G2_70_5,6 = no
-G2_70_5,9 = no consta
-G2_70_6,1 = sí
-G2_70_6,6 = no
-G2_70_6,9 = no consta
-G2_71_1,1 = a diario
-G2_71_1,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_1,3 = una o dos veces a la semana
-G2_71_1,4 = menos de una vez a la semana
-G2_71_1,5 = nunca o casi nunca
-G2_71_1,9 = no consta
-G2_71_2,1 = a diario
-G2_71_2,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_2,3 = una o dos veces a la semana
-G2_71_2,4 = menos de una vez a la semana
-G2_71_2,5 = nunca o casi nunca
-G2_71_2,9 = no consta
-G2_71_3,1 = a diario
-G2_71_3,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_3,3 = una o dos veces a la semana
-G2_71_3,4 = menos de una vez a la semana
-G2_71_3,5 = nunca o casi nunca
-G2_71_3,9 = no consta
-G2_71_4,1 = a diario
-G2_71_4,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_4,3 = una o dos veces a la semana
-G2_71_4,4 = menos de una vez a la semana
-G2_71_4,5 = nunca o casi nunca
-G2_71_4,9 = no consta
-G2_71_5,1 = a diario
-G2_71_5,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_5,3 = una o dos veces a la semana
-G2_71_5,4 = menos de una vez a la semana
-G2_71_5,5 = nunca o casi nunca
-G2_71_5,9 = no consta
-G2_71_6,1 = a diario
-G2_71_6,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_6,3 = una o dos veces a la semana
-G2_71_6,4 = menos de una vez a la semana
-G2_71_6,5 = nunca o casi nunca
-G2_71_6,9 = no consta
-G2_71_7,1 = a diario
-G2_71_7,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_7,3 = una o dos veces a la semana
-G2_71_7,4 = menos de una vez a la semana
-G2_71_7,5 = nunca o casi nunca
-G2_71_7,9 = no consta
-G2_71_8,1 = a diario
-G2_71_8,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_8,3 = una o dos veces a la semana
-G2_71_8,4 = menos de una vez a la semana
-G2_71_8,5 = nunca o casi nunca
-G2_71_8,9 = no consta
-G2_71_9,1 = a diario
-G2_71_9,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_9,3 = una o dos veces a la semana
-G2_71_9,4 = menos de una vez a la semana
-G2_71_9,5 = nunca o casi nunca
-G2_71_9,9 = no consta
-G2_71_10,1 = a diario
-G2_71_10,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_10,3 = una o dos veces a la semana
-G2_71_10,4 = menos de una vez a la semana
-G2_71_10,5 = nunca o casi nunca
-G2_71_10,9 = no consta
-G2_71_11,1 = a diario
-G2_71_11,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_11,3 = una o dos veces a la semana
-G2_71_11,4 = menos de una vez a la semana
-G2_71_11,5 = nunca o casi nunca
-G2_71_11,9 = no consta
-G2_71_12,1 = a diario
-G2_71_12,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_12,3 = una o dos veces a la semana
-G2_71_12,4 = menos de una vez a la semana
-G2_71_12,5 = nunca o casi nunca
-G2_71_12,9 = no consta
-G2_71_13,1 = a diario
-G2_71_13,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_13,3 = una o dos veces a la semana
-G2_71_13,4 = menos de una vez a la semana
-G2_71_13,5 = nunca o casi nunca
-G2_71_13,9 = no consta
-G2_71_14,1 = a diario
-G2_71_14,"2 = tres o más veces a la semana, pero no a diario"
-G2_71_14,3 = una o dos veces a la semana
-G2_71_14,4 = menos de una vez a la semana
-G2_71_14,5 = nunca o casi nunca
-G2_71_14,9 = no consta
-G2_72,1 = sí
-G2_72,6 = no
-G2_72,9 = no consta
-G2_73,1 = para perder peso
-G2_73,2 = para mantener su peso actual
-G2_73,3 = para vivir más saludablemente
-G2_73,4 = por una enfermedad o problema de salud
-G2_73,5 = por otra razón
-G2_73,9 = no consta
-H74_0,1 = sí
-H74_0,6 = no
-H75,01 = más de tres veces al día
-H75,02 = tres veces al día
-H75,03 = por la mañana y por la noche
-H75,04 = por la mañana y después de comer
-H75,05 = después de comer y por la noche
-H75,06 = una vez al día por la mañana
-H75,07 = una vez al día después de comer
-H75,08 = una vez al día por la noche
-H75,"09 = ocasionalmente, no todos los días"
-H75,10 = nunca
-H75,11 = otra
-H75,99 = no consta
-H76,1 = nunca
-H76,2 = casi nunca
-H76,3 = algunas veces
-H76,4 = casi siempre
-H76,5 = siempre
-H76,9 = no consta
-H77_1,1 = siempre
-H77_1,2 = casi siempre
-H77_1,3 = casi nunca
-H77_1,4 = nunca
-H77_1,9 = no consta
-H77_2,1 = siempre
-H77_2,2 = casi siempre
-H77_2,3 = casi nunca
-H77_2,4 = nunca
-H77_2,9 = no consta
-H78,1 = sí
-H78,6 = no
-H78,9 = no consta
-H79,"1 = un profesional sanitario, por la edad del/de la niño/a"
-H79,"2 = un profesional sanitario, por las enfermedades del/de la niño/a"
-H79,"3 = un profesional sanitario, por otras razones"
-H79,4 = le ponen la vacuna en el centro de estudio
-H79,5 = solicitaron la vacuna porque prefieren que el/la niño/a esté vacunado/a
-H79,6 = otros
-H79,9 = no consta
-I80,1 = sí
-I80,6 = no
-I80,9 = no consta
-I81_1A,1 = sí
-I81_1A,6 = no
-I81_1A,9 = no consta
-I81_1B,1 = nunca
-I81_1B,2 = algunas veces
-I81_1B,3 = muchas veces
-I81_1B,4 = constantemente
-I81_1B,9 = no consta
-I81_1C,1 = nunca
-I81_1C,2 = algunas veces
-I81_1C,3 = muchas veces
-I81_1C,4 = constantemente
-I81_1C,9 = no consta
-I81_1D,1 = nunca
-I81_1D,2 = algunas veces
-I81_1D,3 = muchas veces
-I81_1D,4 = constantemente
-I81_1D,9 = no consta
-I81_1E,1 = nunca
-I81_1E,2 = algunas veces
-I81_1E,3 = muchas veces
-I81_1E,4 = constantemente
-I81_1E,9 = no consta
-I81_2A,1 = sí
-I81_2A,6 = no
-I81_2A,9 = no consta
-I81_2B,1 = nunca
-I81_2B,2 = algunas veces
-I81_2B,3 = muchas veces
-I81_2B,4 = constantemente
-I81_2B,9 = no consta
-I81_2C,1 = nunca
-I81_2C,2 = algunas veces
-I81_2C,3 = muchas veces
-I81_2C,4 = constantemente
-I81_2C,9 = no consta
-I81_2D,1 = nunca
-I81_2D,2 = algunas veces
-I81_2D,3 = muchas veces
-I81_2D,4 = constantemente
-I81_2D,9 = no consta
-I81_2E,1 = nunca
-I81_2E,2 = algunas veces
-I81_2E,3 = muchas veces
-I81_2E,4 = constantemente
-I81_2E,9 = no consta
-I81_3A,1 = sí
-I81_3A,6 = no
-I81_3A,9 = no consta
-I81_3B,1 = nunca
-I81_3B,2 = algunas veces
-I81_3B,3 = muchas veces
-I81_3B,4 = constantemente
-I81_3B,9 = no consta
-I81_3C,1 = nunca
-I81_3C,2 = algunas veces
-I81_3C,3 = muchas veces
-I81_3C,4 = constantemente
-I81_3C,9 = no consta
-I81_3D,1 = nunca
-I81_3D,2 = algunas veces
-I81_3D,3 = muchas veces
-I81_3D,4 = constantemente
-I81_3D,9 = no consta
-I81_3E,1 = nunca
-I81_3E,2 = algunas veces
-I81_3E,3 = muchas veces
-I81_3E,4 = constantemente
-I81_3E,9 = no consta
-K93,"1 = sí, gravemente limitado"
-K93,"2 = sí, limitado pero no gravemente"
-K93,"3 = no, nada limitado"
-K94,1 = físico
-K94,2 = mental
-K94,3 = ambos
-K94,9 = no consta
-K95,003 a 100
-K95,998 = no sabe
-K95,999 = no consta
-K96,040 a 220
-K96,998 = no sabe
-K96,999 = no consta
-K97,1 = bastante mayor de lo normal
-K97,2 = algo mayor de lo normal
-K97,3 = normal
-K97,4 = menor de lo normal
-K97,9 = no consta
-TMUNI,1 = menor o igual a 2.000 habitantes
-TMUNI,2 = 2.001 a 10.000 habitantes
-TMUNI,3 = 10.001 a 50.000 habitantes
-TMUNI,4 = 50.001 a 100.000 habitantes
-TMUNI,5 = 100.001 a 400.000 habitantes
-TMUNI,6 = 400.001 a 1.000.000 habitantes
-TMUNI,7 = más de 1.000.000 habitantes
-SPCLASE,1 = clase i: directivos de la administración pública y de empresas de 10 o más
-SPCLASE,Asalariados. Profesiones asociadas a titulaciones de 2º y 3er ciclo
-SPCLASE,2 = clase ii: directivos de empresas de menos de 10 asalariados. Profesiones
-SPCLASE,Asociadas a una titulación de 1er ciclo universitario. Técnicos
-SPCLASE,Superiores. Artistas y deportistas
-SPCLASE,3 = clase iii: empleados de tipo administrativo y profesionales de apoyo a la
-SPCLASE,Gestión administrativa y financiera. Trabajadores de los servicios
-SPCLASE,Personales y de seguridad. Trabajadores por cuenta propia.
-SPCLASE,Supervisores de trabajadores manuales
-SPCLASE,4 = clase iva: trabajadores manuales cualificados
-SPCLASE,5 = clase ivb: trabajadores manuales semicualificados
-SPCLASE,6 = clase v: trabajadores no cualificados
-SPCLASE,9 = no consta
-MSCALVIDA,"El valor medio estandar europeo esta en el valor 50, con una desviacion tipica(ds)"
-MSCALVIDA,"De 10; asi, por ejemplo, si un individuo puntua 45, se encuentra a 0.5 ds por debajo de"
-MSCALVIDA,"La media europea y, por tanto, peor calidad de vida."
-MSSALMENT1,00 a 10
-MSSALMENT1,99 = no consta
-MSSALMENT1,Los valores de la variable salud mental ‘síntomas emocionales’ en poblacion
-MSSALMENT1,"Infantil oscilan entre 0 y 10 puntos, de mejor a peor salud mental"
-MSSALMENT1,La categoría 'síntomas emocionales' comprende: se queja con frecuencia de dolor
-MSSALMENT1,"De cabeza, de estómago o de naúseas; tiene muchas preocupaciones, a menudo"
-MSSALMENT1,"Parece inquieto/a o preocupado/a; se siente a menudo infeliz, desanimado/a,"
-MSSALMENT1,"Lloroso/a; es nervioso/a o dependiente ante nuevas situaciones, fácilmente pierde"
-MSSALMENT1,"La confianza en sí mismo/a; tiene muchos miedos, se asusta fácilmente."
-MSSALMENT2,00 a 10
-MSSALMENT2,99 = no consta
-MSSALMENT2,Los valores de la variable salud mental ‘problemas de conducta’ en poblacion
-MSSALMENT2,"Infantil oscilan entre 0 y 10 puntos, de mejor a peor salud mental"
-MSSALMENT2,La categoría 'problemas de conducta' comprende: frecuentemente tiene rabietas o
-MSSALMENT2,"Mal genio; por lo general es obediente, suele hacer lo que le piden los adultos;"
-MSSALMENT2,Pelea con frecuencia con otros niños/as o se mete con ellos/as; a menudo miente o
-MSSALMENT2,"Engaña; roba cosas en casa, en la escuela o en otros sitios."
-MSSALMENT3,00 a 10
-MSSALMENT3,99 = no consta
-MSSALMENT3,Los valores de la variable salud mental ‘hiperactividad’ en poblacion infantil
-MSSALMENT3,"Oscilan entre 0 y 10 puntos, de mejor a peor salud mental"
-MSSALMENT3,"La categoría 'hiperactividad' comprende: es inquieto/a, hiperactivo/a, no puede"
-MSSALMENT3,Permanecer quieto/apor mucho tiempo; está contínuamente moviéndose y es
-MSSALMENT3,"Revoltoso/a; se distrae con facilidad, su concentración tiende a dispersarse;"
-MSSALMENT3,"Piensa las cosas antes de hacerlas; termina lo que empieza, tiene buena"
-MSSALMENT3,Concentración.
-MSSALMENT4,00 a 10
-MSSALMENT4,99 = no consta
-MSSALMENT4,Los valores de la variable salud mental ‘problemas con compañeros’ en poblacion
-MSSALMENT4,"Infantil oscilan entre 0 y 10 puntos, de mejor a peor salud mental"
-MSSALMENT4,La categoría 'problemas con compañeros' comprende: es más bien solitario/a y
-MSSALMENT4,Tiende a jugar solo/a; tiene por lo menos un/a buen amigo/a; por lo general cae bien
-MSSALMENT4,A otros niños/as; los otros niños se meten con él/ella o se burlan de él/ella; se
-MSSALMENT4,Lleva mejor con adultos que con otros niños/as.
-MSSALMENT5,00 a 10
-MSSALMENT5,99 = no consta
-MSSALMENT5,Los valores de la variable salud mental ‘prosocial’ en poblacion infantil oscilan
-MSSALMENT5,"Entre 0 y 10 puntos, de peor a mejor salud mental"
-MSSALMENT5,La categoría 'prosocial' comprende: tiene en cuenta los sentimientos de otras
-MSSALMENT5,"Personas, comparte frecuentemente con otros niños/as chucherías, juguetes,"
-MSSALMENT5,"Lápices...; Ofrece ayuda cuando alguien resulta herido, disgustado o enfermo;"
-MSSALMENT5,Trata bien a los/las niños/as más pequeños/as; a menudo se ofrece para ayudar (a
-MSSALMENT5,"Padres, maestros, otros niños)."
-MSIMC,1 = normopeso o peso insuficiente
-MSIMC,2 = sobrepeso
-MSIMC,3 = obesidad
-MSIMC,9 = no consta
+campo,longitud,posicion_inicio,posicion_final,descripcion_del_campo,valores_validos
+NIVEL,1,1,1,Tipo de cuestionario,2
+CCAA,2,2,3,Comunidad autónoma de residencia,01 a 18
+PROV,2,4,5,Provincia de residencia,01 a 52
+ESTRATO,1,6,6,Estrato al que pertenece la vivienda,0 a 6
+SECCION,4,7,10,Número de orden de la seccion,0001 a 2236
+SECC_DC,1,11,11,Dígito de control de la sección,0 a 9
+NIDENTIF,7,12,18,Identificación del individuo,NA
+AÑO,4,19,22,Año de la encuesta,"2006, 2007"
+TRIM,1,23,23,Trimestre de la encuesta,1 a 4
+NORDEN,2,24,25,Número de orden del menor,51 a 65
+EDAD,3,26,28,Edad del sujeto de entrevista,000 a 015
+EDADMES,2,29,30,Edad en meses del sujeto de entrevista (sólo para los menores de un año),"b,00 a 11"
+SEXO,1,31,31,Sexo del sujeto de entrevista,"1,6"
+P3_3,2,32,33,Fecha de nacimiento: día,01 a 31
+P3_4,2,34,35,Fecha de nacimiento: mes,01 a 12
+P3_5,4,36,39,Fecha de nacimiento: año,1990 a 2007
+P4_1,2,40,41,Relación del informante con el menor seleccionado,1 a 7
+P4_0_1,1,42,42,El informante es miembro del hogar,"1,6"
+P4_0_2,2,43,44,Número de orden del informante miembro del hogar,"b, 01 a 15"
+P4_3,3,45,47,Edad del informante,"b, 018 a 117"
+P4_4,1,48,48,Sexo del informante,"b, 1,6"
+A1,1,49,49,Estado de salud del menor en los últimos 12 meses,1 a 5
+A2_1A,1,50,50,Ha padecido alguna vez: alergia crónica,"1,6, 9"
+A2_1B,1,51,51,Ha padecido en los últimos 12 meses: alergia crónica,"b, 1,6, 9"
+A2_1C,1,52,52,Le ha dicho un médico que la padece: alergia crónica,"b, 1,6, 9"
+A2_1D,1,53,53,Está tomando o ha tomado medicación en los últimos 12 meses: alergia crónica,"b, 1,6, 9"
+A2_2A,1,54,54,Ha padecido alguna vez: asma,"1,6, 9"
+A2_2B,1,55,55,Ha padecido en los últimos 12 meses: asma,"b, 1,6, 9"
+A2_2C,1,56,56,Le ha dicho un médico que la padece: asma,"b, 1,6, 9"
+A2_2D,1,57,57,Está tomando o ha tomado medicación en los últimos 12 meses: asma,"b, 1,6, 9"
+A2_3A,1,58,58,Ha padecido alguna vez: diabetes,"1,6, 9"
+A2_3B,1,59,59,Ha padecido en los últimos 12 meses: diabetes,"b, 1,6, 9"
+A2_3C,1,60,60,Le ha dicho un médico que la padece: diabetes,"b, 1,6, 9"
+A2_3D,1,61,61,Está tomando o ha tomado medicación en los últimos 12 meses: diabetes,"b, 1,6, 9"
+A2_4A,1,62,62,Ha padecido alguna vez: tumores malignos (incluye leucemia y linfoma),"1,6, 9"
+A2_4B,1,63,63,Ha padecido en los últimos 12 meses: tumores malignos (incluye leucemia y linfoma),"b, 1,6, 9"
+A2_4C,1,64,64,Le ha dicho un médico que la padece: tumores malignos (incluye leucemia y linfoma),"b, 1,6, 9"
+A2_4D,1,65,65,Está tomando o ha tomado medicación en los últimos 12 meses: tumores malignos (incluye leucemia y linfoma),"b, 1,6, 9"
+A2_5A,1,66,66,Ha padecido alguna vez: epilepsia,"1,6, 9"
+A2_5B,1,67,67,Ha padecido en los últimos 12 meses: epilepsia,"b, 1,6, 9"
+A2_5C,1,68,68,Le ha dicho un médico que la padece: epilepsia,"b, 1,6, 9"
+A2_5D,1,69,69,Está tomando o ha tomado medicación en los últimos 12 meses: epilepsia,"b, 1,6, 9"
+A2_6A,1,70,70,Ha padecido alguna vez: trastornos de la conducta (incluye hiperactividad),"1,6, 9"
+A2_6B,1,71,71,Ha padecido en los últimos 12 meses: trastornos de la conducta (incluye hiperactividad),"b, 1,6, 9"
+A2_6C,1,72,72,Le ha dicho un médico que la padece: trastornos de la conducta (incluye hiperactividad),"b, 1,6, 9"
+A2_6D,1,73,73,Está tomando o ha tomado medicación en los últimos 12 meses: trastornos de la conducta (incluye hiperactividad),"b, 1,6, 9"
+A2_7A,1,74,74,"Ha padecido alguna vez: trastornos mentales (depresión, ansiedad, etc.)","1,6, 9"
+A2_7B,1,75,75,"Ha padecido en los últimos 12 meses: trastornos mentales (depresión, ansiedad, etc.)","b, 1,6, 9"
+A2_7C,1,76,76,"Le ha dicho un médico que la padece: trastornos mentales (depresión, ansiedad, etc.)","b, 1,6, 9"
+A2_7D,1,77,77,"Está tomando o ha tomado medicación en los últimos 12 meses: trastornos mentales (depresión, ansiedad, etc.)","b, 1,6, 9"
+A2_8A,1,78,78,Ha padecido alguna vez: otra enfermedad crónica (1),"1,6, 9"
+A2_8LIT,30,79,108,Literal: otra enfermedad crónica (1),"b, Texto, 999999"
+A2_8B,1,109,109,Ha padecido en los últimos 12 meses: otra enfermedad crónica (1),"b, 1,6, 9"
+A2_8C,1,110,110,Le ha dicho un médico que la padece: otra enfermedad crónica (1),"b, 1,6, 9"
+A2_8D,1,111,111,Está tomando o ha tomado medicación en los últimos 12 meses: otra enfermedad crónica (1),"b, 1,6, 9"
+A2_9A,1,112,112,Ha padecido alguna vez: otra enfermedad crónica (2),"1,6, 9"
+A2_9LIT,30,113,142,Literal: otra enfermedad crónica (2),"b, Texto, 999999"
+A2_9B,1,143,143,Ha padecido en los últimos 12 meses: otra enfermedad crónica (2),"b, 1,6, 9"
+A2_9C,1,144,144,Le ha dicho un médico que la padece: otra enfermedad crónica (2),"b, 1,6, 9"
+A2_9D,1,145,145,Está tomando o ha tomado medicación en los últimos 12 meses: otra enfermedad crónica (2),"b, 1,6, 9"
+A3,1,146,146,Limitación de sus actividades habituales por enfermedades crónicas o problemas de salud,"b, 1,6, 9"
+B4,1,147,147,Ha tenido algún accidente de cualquier tipo incluido intoxicación o quemadura,"1,6"
+B5_1A,1,148,148,Tipo de accidente: caida a desnivel,"b, 1,6, 9"
+B5_1B,2,149,150,Caida a desnivel: número de veces,"b, 01 a 30, 99"
+B5_2A,1,151,151,Tipo de accidente: caida a nivel del suelo,"b, 1,6, 9"
+B5_2B,2,152,153,Caida a nivel del suelo: número de veces,"b, 01 a 30, 99"
+B5_3A,1,154,154,Tipo de accidente: quemadura,"b, 1,6, 9"
+B5_3B,2,155,156,Quemadura: número de veces,"b, 01 a 30, 99"
+B5_4A,1,157,157,Tipo de accidente: golpe,"b, 1,6, 9"
+B5_4B,2,158,159,Golpe: número de veces,"b, 01 a 30, 99"
+B5_5A,1,160,160,Tipo de accidente: intoxicación (excluidas las intoxicaciones alimentarias),"b, 1,6, 9"
+B5_5B,2,161,162,Intoxicación (excluidas las intoxicaciones alimentarias): número de veces,"b, 01 a 30, 99"
+B5_6A,1,163,163,Tipo de accidente: accidente de tráfico como conductor o pasajero sufriendo daños físicos,"b, 1,6, 9"
+B5_6B,2,164,165,Accidente de tráfico como conductor o pasajero sufriendo daños físicos: número de veces,"b, 01 a 30, 99"
+B5_7A,1,166,166,Tipo de accidente: accidente de tráfico como peatón,"b, 1,6, 9"
+B5_7B,2,167,168,Accidente de tráfico como peatón: número de veces,"b, 01 a 30, 99"
+B5_8A,1,169,169,Tipo de accidente: otros,"b, 1,6, 9"
+B5_8B,2,170,171,Otros: número de veces,"b, 01 a 30, 99"
+B6,1,172,172,Lugar del último accidente,"b, 1 a 7, 9"
+B7,1,173,173,Atención sanitaria como consecuencia del accidente,"b, 1 a 4, 9"
+B8_1,1,174,174,"Daño o efecto que le produjo el accidente: contusiones, hematomas, esguinces-luxaciones o heridas superficiales","b, 1,0, 9"
+B8_2,1,175,175,Daño o efecto que le produjo el accidente: fracturas o heridas profundas,"b, 1,0, 9"
+B8_3,1,176,176,Daño o efecto que le produjo el accidente: envenenamiento o intoxicación,"b, 1,0, 9"
+B8_4,1,177,177,Daño o efecto que le produjo el accidente: quemaduras,"b, 1,0, 9"
+B8_5,1,178,178,Daño o efecto que le produjo el accidente: otros efectos,"b, 1,0, 9"
+B9,1,179,179,Ha sufrido agresión o maltrato en último año,"1,6, 9"
+B10,1,180,180,Lugar de la última agresión o maltrato,"b, 1 a 7, 9"
+C11_1,1,181,181,Ha tenido que reducir o limitar su actividad habitual durante las dos últimas semanas,"1,6"
+C11_2,2,182,183,Número de días que ha limitado su actividad habitual,"b, 01 a 14, 99"
+C12_1,1,184,184,Ha tenido que permanecer en cama durante las dos últimas semanas por motivos de salud,"1,6, 9"
+C12_2,2,185,186,Número de días que ha permanecido en cama durante las dos últimas semanas,"b, 01 a 14, 99"
+C13_1A,1,187,187,"Causa de la limitación de la actividad habitual: dolor de huesos, de espalda o de las articulaciones","b, 1,0, 9"
+C13_1B,1,188,188,"Causa de la permanencia en cama: dolor de huesos, de espalda o de las articulaciones","b, 1,0, 9"
+C13_2A,1,189,189,"Causa de la limitación de la actividad habitual: problemas de nervios, depresión o dificultad para dormir","b, 1,0, 9"
+C13_2B,1,190,190,"Causa de la permanencia en cama: problemas de nervios, depresión o dificultad para dormir","b, 1,0, 9"
+C13_3A,1,191,191,"Causa de la limitación de la actividad habitual: problemas de garganta, tos, catarro o gripe","b, 1,0, 9"
+C13_3B,1,192,192,"Causa de la permanencia en cama: problemas de garganta, tos, catarro o gripe","b, 1,0, 9"
+C13_4A,1,193,193,Causa de la limitación de la actividad habitual: dolor de cabeza,"b, 1,0, 9"
+C13_4B,1,194,194,Causa de la permanencia en cama: dolor de cabeza,"b, 1,0, 9"
+C13_5A,1,195,195,"Causa de la limitación de la actividad habitual: contusión, lesión o heridas","b, 1,0, 9"
+C13_5B,1,196,196,"Causa de la permanencia en cama: contusión, lesión o heridas","b, 1,0, 9"
+C13_6A,1,197,197,"Causa de la limitación de la actividad habitual: dolor de oídos, otitis","b, 1,0, 9"
+C13_6B,1,198,198,"Causa de la permanencia en cama: dolor de oídos, otitis","b, 1,0, 9"
+C13_7A,1,199,199,Causa de la limitación de la actividad habitual: diarrea o problemas intestinales,"b, 1,0, 9"
+C13_7B,1,200,200,Causa de la permanencia en cama: diarrea o problemas intestinales,"b, 1,0, 9"
+C13_8A,1,201,201,"Causa de la limitación de la actividad habitual: ronchas, picor, alergias","b, 1,0, 9"
+C13_8B,1,202,202,"Causa de la permanencia en cama: ronchas, picor, alergias","b, 1,0, 9"
+C13_9A,1,203,203,Causa de la limitación de la actividad habitual: molestias de riñón o urinarias,"b, 1,0, 9"
+C13_9B,1,204,204,Causa de la permancia en cama: molestias de riñón o urinarias,"b, 1,0, 9"
+C13_10A,1,205,205,Causa de la limitación de la actividad habitual: fiebre,"b, 1,0, 9"
+C13_10B,1,206,206,Causa de la permanencia en cama: fiebre,"b, 1,0, 9"
+C13_11A,1,207,207,Causa de la limitación de la actividad habitual: problemas con los dientes o encías,"b, 1,0, 9"
+C13_11B,1,208,208,Causa de la permanencia en cama: problemas con los dientes o encías,"b, 1,0, 9"
+C13_12A,1,209,209,Causa de la limitación de la actividad habitual: vómitos,"b, 1,0, 9"
+C13_12B,1,210,210,Causa de la permanencia en cama: vómitos,"b, 1,0, 9"
+C13_13A,1,211,211,Causa de la limitación de la actividad habitual: dolor abdominal,"b, 1,0, 9"
+C13_13B,1,212,212,Causa de la permanencia en cama: dolor abdominal,"b, 1,0, 9"
+C13_14A,1,213,213,Causa de la limitación de la actividad habitual: otros dolores o síntomas,"b, 1,0, 9"
+C13_14B,1,214,214,Causa de la permanencia en cama: otros dolores o síntomas,"b, 1,0, 9"
+D14_1A,1,215,215,"Medicinas para el catarro, gripe, garganta, bronquios consumidas","1,6, 9"
+D14_1B,1,216,216,"Medicinas para el catarro, gripe, garganta, bronquios recetadas","1,6, 9"
+D14_2A,1,217,217,Medicinas para el dolor consumidas,"1,6, 9"
+D14_2B,1,218,218,Medicinas para el dolor recetadas,"1,6, 9"
+D14_3A,1,219,219,Medicinas para bajar la fiebre consumidas,"1,6, 9"
+D14_3B,1,220,220,Medicinas para bajar la fiebre recetadas,"1,6, 9"
+D14_4A,1,221,221,"Reconstituyentes como vitaminas, minerales, tónicos consumidos","1,6, 9"
+D14_4B,1,222,222,"Reconstituyentes como vitaminas, minerales, tónicos recetados","1,6, 9"
+D14_5A,1,223,223,Laxantes consumidos,"1,6, 9"
+D14_5B,1,224,224,Laxantes recetados,"1,6, 9"
+D14_6A,1,225,225,Antibióticos consumidos,"1,6, 9"
+D14_6B,1,226,226,Antibióticos recetados,"1,6, 9"
+D14_7A,1,227,227,"Tranquilizantes, relajantes, pastillas para dormir consumidos","1,6, 9"
+D14_7B,1,228,228,"Tranquilizantes, relajantes, pastillas para dormir recetados","1,6, 9"
+D14_8A,1,229,229,Medicamentos para el asma consumidos,"1,6, 9"
+D14_8B,1,230,230,Medicamentos para el asma recetados,"1,6, 9"
+D14_9A,1,231,231,Medicamentos para la alergia consumidos,"1,6, 9"
+D14_9B,1,232,232,Medicamentos para la alergia recetados,"1,6, 9"
+D14_10A,1,233,233,Medicamentos para la diarrea consumidos,"1,6, 9"
+D14_10B,1,234,234,Medicamentos para la diarrea recetados,"1,6, 9"
+D14_11A,1,235,235,Medicamentos para los vómitos consumidos,"1,6, 9"
+D14_11B,1,236,236,Medicamentos para los vómitos recetados,"1,6, 9"
+D14_12A,1,237,237,Medicamentos para la diabetes consumidos,"1,6, 9"
+D14_12B,1,238,238,Medicamentos para la diabetes recetados,"1,6, 9"
+D14_13A,1,239,239,Otros medicamentos consumidos,"1,6, 9"
+D14_13B,1,240,240,Otros medicamentos recetados,"1,6, 9"
+D14_14A,1,241,241,Productos homeopáticos consumidos,"1,6, 9"
+D14_15A,1,242,242,Productos naturistas consumidos,"1,6, 9"
+E15_0,1,243,243,El niño/a tiene menos de 4 años,"1,6"
+E15_1,1,244,244,Tiene en cuenta los sentimientos de otras personas,"b, 1,2,3, 9"
+E15_2,1,245,245,"Es inquieto/a, hiperactivo/a, no puede permanecer quieto/a por mucho tiempo","b, 1,2,3, 9"
+E15_3,1,246,246,"Se queja con frecuencia de dolor de cabeza, de estómago o de náuseas","b, 1,2,3, 9"
+E15_4,1,247,247,"Comparte frecuentemente con otros niños/as chucherias, juguetes, lápices, etc.","b, 1,2,3, 9"
+E15_5,1,248,248,Frecuentemente tiene rabietas o mal genio,"b, 1,2,3, 9"
+E15_6,1,249,249,Es mas bien solitario/a y tiende a jugar solo/a,"b, 1,2,3, 9"
+E15_7,1,250,250,"Por lo general es obediente, suele hacer lo que le piden los adultos","b, 1,2,3, 9"
+E15_8,1,251,251,"Tiene muchas preocupaciones, a menudo parece inquieto/a o preocupado/a.","b, 1,2,3, 9"
+E15_9,1,252,252,"Ofrece ayuda cuando alguien resulta herido, disgustado o enfermo","b, 1,2,3, 9"
+E15_10,1,253,253,Está continuamente moviéndose y es revoltoso,"b, 1,2,3, 9"
+E15_11,1,254,254,Tiene por lo menos un/a buen/a amigo/a,"b, 1,2,3, 9"
+E15_12,1,255,255,Pelea con frecuencia con otros niños/as o se mete con ellos/ellas,"b, 1,2,3, 9"
+E15_13,1,256,256,"Se siente a menudo infeliz, desanimado o lloroso","b, 1,2,3, 9"
+E15_14,1,257,257,Por lo general cae bien a los otros niños/as,"b, 1,2,3, 9"
+E15_15,1,258,258,"Se distrae con facilidad, su concentración tiende a dispersarse","b, 1,2,3, 9"
+E15_16,1,259,259,"Es nervioso/a o dependiente ante nuevas situaciones, fácilmente pierde la confianza en sí mismo/a","b, 1,2,3, 9"
+E15_17,1,260,260,Trata bien a los niños/as más pequeños/as,"b, 1,2,3, 9"
+E15_18,1,261,261,A menudo miente o engaña,"b, 1,2,3, 9"
+E15_19,1,262,262,Los otros niños se meten con él/ella o se burlan de él/ella,"b, 1,2,3, 9"
+E15_20,1,263,263,"A menudo se ofrece para ayudar (a padres, maestros, otros niños)","b, 1,2,3, 9"
+E15_21,1,264,264,Piensa las cosas antes de hacerlas,"b, 1,2,3, 9"
+E15_22,1,265,265,"Roba cosas en casa, en la escuela o en otros sitios","b, 1,2,3, 9"
+E15_23,1,266,266,Se lleva mejor con adultos que con otros niños/as,"b, 1,2,3, 9"
+E15_24,1,267,267,"Tiene muchos miedos, se asusta fácilmente","b, 1,2,3, 9"
+E15_25,1,268,268,"Termina lo que empieza, tiene buena concentración","b, 1,2,3, 9"
+F1_16_1,1,269,269,Tiempo desde la última consulta médica,1 a 4
+F1_16_2,2,270,271,Número de meses desde la última consulta,"b, 01 a 11, 99"
+F1_16_3,2,272,273,Número de años desde la última consulta,"b, 01 a 15, 99"
+F1_17,2,274,275,Número de consultas al pediatra o médico de familia en las últimas cuatro semanas,"b, 00 a 28, 98, 99"
+F1_18,2,276,277,Número de consultas al especialista en las últimas cuatro semanas,"b, 00 a 28, 98, 99"
+F1_19,2,278,279,Especialidad del último médico consultado en estas cuatro semanas,"b, 01 a 25, 99"
+F1_20,2,280,281,Lugar de la última consulta en estas cuatro semanas,"b, 01 a 11, 99"
+F1_21,1,282,282,Motivo principal de la última consulta,"b, 1 a 7, 9"
+F1_22_1,2,283,284,Tiempo en meses desde estar enfermo hasta pedir cita en esta última consulta,"b, 00 a 72, 98, 99"
+F1_22_2,2,285,286,Tiempo en días desde estar enfermo hasta pedir cita en esta última consulta,"b, 00 a 30, 98, 99"
+F1_22_3,2,287,288,Tiempo en horas desde estar enfermo hasta pedir cita en esta última consulta,"b, 00 a 23, 98, 99"
+F1_23_1,2,289,290,Tiempo en meses desde que pidió cita hasta que fue atendido,"b, 00 a 24, 98, 99"
+F1_23_2,2,291,292,Tiempo en días desde que pidió cita hasta que fue atendido,"b, 00 a 30, 98, 99"
+F1_23_3,2,293,294,Tiempo en horas desde que pidió cita hasta que fue atendido,"b, 00 a 23, 98, 99"
+F1_24,1,295,295,Dependencia funcional del médico,"b, 1 a 4, 9"
+F1_25,1,296,296,Realización de prueba no urgente en las últimas cuatro semanas,"1,6, 9"
+F1_26_1A,1,297,297,Tipo de prueba realizada en las últimas cuatro semanas: radiografía,"b, 1,6, 9"
+F1_26_1B,2,298,299,Radiografía: tiempo en meses desde que pidió cita,"b, 00 a 30, 98, 99"
+F1_26_1C,2,300,301,Radiografía: tiempo en días desde que pidió cita,"b, 00 a 30, 98, 99"
+F1_26_2A,1,302,302,Tipo de prueba realizada en las últimas cuatro semanas: tac,"b, 1,6, 9"
+F1_26_2B,2,303,304,Tac: tiempo en meses desde que pidió cita,"b, 00 a 30, 98, 99"
+F1_26_2C,2,305,306,Tac: tiempo en días desde que pidió cita,"b, 00 a 30, 98, 99"
+F1_26_3A,1,307,307,Tipo de prueba realizada en las últimas cuatro semanas: ecografía,"b, 1,6, 9"
+F1_26_3B,2,308,309,Ecografía: tiempo en meses desde que pidió cita,"b, 00 a 30, 98, 99"
+F1_26_3C,2,310,311,Ecografía: tiempo en días desde que pidió cita,"b, 00 a 30, 98, 99"
+F1_26_4A,1,312,312,Tipo de prueba realizada en las últimas cuatro semanas: resonancia magnética,"b, 1,6, 9"
+F1_26_4B,2,313,314,Resonancia magnética: tiempo en meses desde que pidió cita,"b, 00 a 30, 98, 99"
+F1_26_4C,2,315,316,Resonancia magnética: tiempo en días desde que pidió cita,"b,00a30,98,99"
+F1_26_5A,1,317,317,Tipo de prueba realizada en las últimas cuatro semanas: análisis,"b, 1,6, 9"
+F1_26_5B,2,318,319,Análisis: tiempo en meses desde que pidió cita,"b, 00 a 30, 98, 99"
+F1_26_5C,2,320,321,Análisis: tiempo en días desde que pidió cita,"b, 00 a 30, 98, 99"
+F1_26_6A,1,322,322,Tipo de prueba realizada en las últimas cuatro semanas: otro tipo de prueba,"b, 1,6, 9"
+F1_26_6B,2,323,324,Otro tipo de prueba: tiempo en meses desde que pidió cita,"b, 00 a 30, 98, 99"
+F1_26_6C,2,325,326,Otro tipo de prueba: tiempo en días desde que pidió cita,"b, 00 a 30, 98, 99"
+F1_27_1A,1,327,327,Consulta de enfermería en las últimas cuatro semanas,"1,6, 9"
+F1_27_1B,2,328,329,Enfermería: número de veces,"b, 01 a 28, 98, 99"
+F1_27_2A,1,330,330,Consulta de fisioterapeuta en las últimas cuatro semanas,"1,6, 9"
+F1_27_2B,2,331,332,Fisioterapeuta: número de veces,"b, 01 a 28, 98, 99"
+F2_28,1,333,333,Necesidad de asistencia médica no recibida,"1,6, 9"
+F2_29,2,334,335,Causa principal de la falta de asistencia,"b, 01 a 10, 99"
+F3_30_1,1,336,336,Modalidad de seguro sanitario: seguridad social,"1,0, 9"
+F3_30_2,1,337,337,Modalidad de seguro sanitario: empresas colaboradoras de la seguridad social,"1,0, 9"
+F3_30_3,1,338,338,"Modalidad de seguro sanitario: mutualidades del estado (muface, isfas, etc.) Acogidas a la seguridad social","1,0, 9"
+F3_30_4,1,339,339,"Modalidad de seguro sanitario: mutualidades del estado (muface, isfas, etc.) Acogidas a un seguro privado","1,0, 9"
+F3_30_5,1,340,340,"Modalidad de seguro sanitario: seguro médico privado (sanitas, asisa, colegios profesionales, etc.) Concertado individualmente","1,0, 9"
+F3_30_6,1,341,341,Modalidad de seguro sanitario: seguro médico privado concertado por la empresa,"1,0, 9"
+F3_30_7,1,342,342,"Modalidad de seguro sanitario: no tiene seguro médico, utiliza siempre médicos privados","1,0, 9"
+F3_30_8,1,343,343,Modalidad de seguro sanitario: otra situación,"1,0, 9"
+F4_31_1,1,344,344,"Tiempo desde la última consulta al dentista, estomatólogo o higienista dental",1 a 4
+F4_31_2,2,345,346,"Número de consultas al dentista, estomatólogo o higienista dental en los últimos tres meses","b, 01 a 24, 99"
+F4_31_3,2,347,348,"Número de meses desde la última consulta al dentista, estomatólogo o higienista dental","b, 04 a 11, 99"
+F4_31_4,2,349,350,"Número de años desde la última consulta al dentista, estomatólogo o higienista dental","b, 01 a 15, 99"
+F4_32_1,1,351,351,Tipo de asistencia: revisión o chequeo,"b, 1,6, 9"
+F4_32_2,1,352,352,Tipo de asistencia: limpieza de boca,"b, 1,6, 9"
+F4_32_3,1,353,353,"Tipo de asistencia: empastes (obturaciones), endodoncias","b, 1,6, 9"
+F4_32_4,1,354,354,Tipo de asistencia: extracción de algún diente/muela,"b, 1,6, 9"
+F4_32_5,1,355,355,"Tipo de asistencia: fundas, puentes u otro tipo de prótesis","b, 1,6, 9"
+F4_32_6,1,356,356,Tipo de asistencia: tratamiento de las enfermedades de las encías,"b, 1,6, 9"
+F4_32_7,1,357,357,Tipo de asistencia: ortodoncia,"b, 1,6, 9"
+F4_32_8,1,358,358,Tipo de asistencia: aplicación de flúor,"b, 1,6, 9"
+F4_32_9,1,359,359,Tipo de asistencia: otro tipo,"b, 1,6, 9"
+F4_33,1,360,360,Dependencia funcional del dentista consultado en la última visita,"b, 1 a 5, 9"
+F4_34,1,361,361,El niño tiene menos de 1 año,"1,6"
+F4_35,1,362,362,Le ha salido algún diente,"b, 1,6, 9"
+F4_36_1,1,363,363,Estado de dientes y muelas: tiene caries,"b, 1,6, 9"
+F4_36_2,1,364,364,Estado de dientes y muelas: le han extraído dientes/muelas,"b, 1,6, 9"
+F4_36_3,1,365,365,Estado de dientes y muelas: tiene dientes/muelas empastados (obturados),"b, 1,6, 9"
+F4_36_4,1,366,366,Estado de dientes y muelas: le sangran las encías al cepillarse o espontáneamente,"b, 1,6, 9"
+F4_36_5,1,367,367,Estado de dientes y muelas: los dientes que tienen están sanos,"b, 1,6, 9"
+F5_37,1,368,368,Ingreso en hospital los últimos 12 meses,"1,6"
+F5_38,2,369,370,Número de veces ingresado en el hospital los últimos 12 meses,"b, 01 a 89, 99"
+F5_39,3,371,373,Número de días ingresado en el hospital la última vez en los últimos 12 meses,"b, 001 a 365, 999"
+F5_40,1,374,374,Motivo del último ingreso en el hospital en los últimos 12 meses,"b, 1 a 4, 9"
+F5_41,1,375,375,Estuvo en lista de espera para ingresar en el hospital,"b, 1,6, 9"
+F5_42,2,376,377,Número de meses en lista de espera,"b, 00 a 48, 98, 99"
+F5_43,1,378,378,Forma de ingreso en el hospital la última vez en los últimos 12 meses,"b, 1,2, 9"
+F5_44,1,379,379,A cargo de quién corrieron los gastos de hospitalización,"b, 1 a 5, 8, 9"
+F5_45,1,380,380,Recibió informe de alta al salir del hospital,"b, 1,6, 8, 9"
+F5_46,1,381,381,Ingreso en hospital de día los últimos 12 meses,"1,6, 9"
+F5_47,1,382,382,Motivo del último ingreso en el hospital de día en los últimos 12 meses,"b, 1 a 3, 9"
+F5_48,3,383,385,Número de veces que acudió al hospital de día para el último tratamiento en los últimos 12 meses,"b, 001 a 365, 998, 999"
+F6_49,1,386,386,Utilización del servicio de urgencias los últimos 12 meses,"1,6"
+F6_50,3,387,389,Número de veces que utilizó el servicio de urgencias los últimos 12 meses,"b, 001 a 200, 998, 999"
+F6_51_1,1,390,390,"Lugar de atención 1: en el lugar donde se encontraba (domicilio, lugar de estudio, etc.)","b, 1,6, 9"
+F6_51_2,1,391,391,Lugar de atención 2: en una unidad móvil,"b, 1,6, 9"
+F6_51_3,1,392,392,Lugar de atención 3: en un centro o servicio de urgencias,"b, 1,6, 9"
+F6_52_1,2,393,394,Tiempo en días desde que se sintió enfermo hasta que pidió asistencia urgente (último servicio de urgencias utilizado),"b, 00 a 30, 98, 99"
+F6_52_2,2,395,396,Tiempo en horas desde que se sintió enfermo hasta que pidió asistencia urgente (último servicio de urgencias utilizado),"b, 00 a 23, 98, 99"
+F6_52_3,2,397,398,Tiempo en minutos desde que se sintió enfermo hasta que pidió asistencia urgente (último servicio de urgencias utilizado),"b, 00 a 59, 98, 99"
+F6_53_1,2,399,400,Tiempo en horas desde que pidió asistencia urgente hasta que fue atendido (último servicio de urgencias utilizado),"b, 00 a 48, 98, 99"
+F6_53_2,2,401,402,Tiempo en minutos desde que pidió asistencia urgente hasta que fue atendido (último servicio de urgencias utilizado),"b, 00 a 59, 98, 99"
+F6_54,1,403,403,Tipo de servicio de urgencias utilizado la última vez,"b, 1 a 7, 9"
+F6_55,1,404,404,Motivo de utilización del servicio de urgencias la última vez,"b, 1,2, 9"
+G1_56,2,405,406,Número de horas que duerme habitualmente al día,"01 a 24, 98, 99"
+G1_57,1,407,407,Frecuencia de la actividad física en el tiempo libre,"1 a 4, 9"
+G1_58_0,1,408,408,El niño/a tiene menos de 1 año,"1,6"
+G1_58,1,409,409,Ve la televisión todos los días,"b, 1,6, 9"
+G1_59_1A,1,410,410,Tiempo que ve la televisión cada día de lunes a viernes,"b, 1,2, 9"
+G1_59_1B,2,411,412,Número de horas diarias que ve la televisión de lunes a viernes,"b, 01 a 24, 98, 99"
+G1_59_2A,1,413,413,Tiempo que ve la televisión en fin de semana,"b, 1,2, 9"
+G1_59_2B,2,414,415,Número de horas diarias que ve la televisión en fin de semana,"b, 01 a 24, 98, 99"
+G1_60,1,416,416,"Juega con videojuegos, ordenador o internet todos o casi todos los días","b,1,6, 9"
+G1_61_1A,1,417,417,"Tiempo que juega con videojuegos, ordenador o internet cada día de lunes a viernes","b,1,2, 8, 9"
+G1_61_1B,2,418,419,"Número de horas diarias que juega con videojuegos, ordenador o internet de lunes a viernes","b, 01 a 24, 98, 99"
+G1_61_2A,1,420,420,"Tiempo que juega con videojuegos, ordenador o internet en fin de semana","b,1,2, 8, 9"
+G1_61_2B,2,421,422,"Número de horas diarias que juega con videojuegos, ordenador o internet en fin de semana","b, 01 a 24, 98, 99"
+G1_62_0,1,423,423,El niño/a tiene menos de 5 años,"b, 1,6"
+G2_63,1,424,424,Lactancia materna los primeros meses de su vida,"b, 1,6, 9"
+G2_64_1,2,425,426,Tiempo en meses que ha recibido lactancia materna,"b, 00 a 24, 98, 99"
+G2_64_2,2,427,428,Tiempo en días que ha recibido lactancia materna,"b, 00 a 30, 98, 99"
+G2_65,1,429,429,Lactancia materna exclusivamente los primeros meses de su vida,"b, 1,6, 9"
+G2_66_1,1,430,430,Tiempo en meses que ha recibido lactancia materna exclusivamente,"b, 0 a 6, 8, 9"
+G2_66_2,2,431,432,Tiempo en días que ha recibido lactancia materna exclusivamente,"b, 00 a 30, 98, 99"
+G2_67,1,433,433,Lactancia artificial durante algún tiempo,"b, 1,6, 9"
+G2_68_1,2,434,435,Edad de comienzo con la lactancia artificial: meses,"b, 00 a 12, 98, 99"
+G2_68_2,2,436,437,Edad de comienzo con la lactancia artificial: días,"b, 00 a 30, 98, 99"
+G1_69,1,438,438,El niño/a tiene un año o más,"b, 1,6"
+G2_70_1,1,439,439,"Desayuno habitual: café, leche, té, chocolate, cacao, yogur, etc.","b, 1,6, 9"
+G2_70_2,1,440,440,"Desayuno habitual: pan, tostadas, galletas, cereales, bollería, etc.","b, 1,6, 9"
+G2_70_3,1,441,441,Desayuno habitual: fruta y/o zumo,"b, 1,6, 9"
+G2_70_4,1,442,442,"Desayuno habitual: alimentos como huevos, queso, jamón, etc.","b, 1,6, 9"
+G2_70_5,1,443,443,Desayuno habitual: otro tipo de alimentos,"b, 1,6, 9"
+G2_70_6,1,444,444,"Desayuno habitual: nada, no suele desayunar","b, 1,6, 9"
+G2_71_1,1,445,445,Frecuencia de consumo de fruta fresca,"b, 1 a 5, 9"
+G2_71_2,1,446,446,Frecuencia de consumo de carne,"b, 1 a 5, 9"
+G2_71_3,1,447,447,Frecuencia de consumo de huevos,"b, 1 a 5, 9"
+G2_71_4,1,448,448,Frecuencia de consumo de pescado,"b, 1 a 5, 9"
+G2_71_5,1,449,449,"Frecuencia de consumo de pasta, arroz, patatas","b, 1 a 5, 9"
+G2_71_6,1,450,450,"Frecuencia de consumo de pan, cereales","b, 1 a 5, 9"
+G2_71_7,1,451,451,Frecuencia de consumo de verduras y hortalizas,"b,1 a 5,9"
+G2_71_8,1,452,452,Frecuencia de consumo de legumbres,"b, 1 a 5, 9"
+G2_71_9,1,453,453,Frecuencia de consumo de embutidos y fiambres,"b, 1 a 5, 9"
+G2_71_10,1,454,454,Frecuencia de consumo de productos lácteos,"b, 1 a 5, 9"
+G2_71_11,1,455,455,Frecuencia de consumo de dulces,"b, 1 a 5, 9"
+G2_71_12,1,456,456,Frecuencia de consumo de refrescos con azúcar,"b, 1 a 5, 9"
+G2_71_13,1,457,457,"Frecuencia de consumo de comida rápida (bocatas, pizzas o hamburguesas)","b, 1 a 5, 9"
+G2_71_14,1,458,458,"Frecuencia de consumo de snacks o comidas saladas (patatas fritas, ganchitos o pepinillos)","b, 1 a 5, 9"
+G2_72,1,459,459,Sigue alguna dieta o régimen especial,"b, 1,6, 9"
+G2_73,1,460,460,Razón por la que sigue la dieta o régimen,"b, 1 a 5, 9"
+H74_0,1,461,461,El niño/a tiene menos de 3 años,"1,6"
+H75,2,462,463,Frecuencia de cepillado dental,"b, 01 a 11, 99"
+H76,1,464,464,Alguna persona fuma en casa delante del niño/a,"1 a 5, 9"
+H77_1,1,465,465,Uso en al automovil de algún sistema de seguridad adecuado para el niño/a por ciudad,"1 a 4, 9"
+H77_2,1,466,466,Uso en al automovil de algún sistema de seguridad adecuado para el niño/a por carretera,"1 a 4, 9"
+H78,1,467,467,Vacunación de la gripe en la última campaña,"1,6, 9"
+H79,1,468,468,Quién indicó la vacunación,"b, 1 a 6, 9"
+I80,1,469,469,Ha experimentado discriminación en los últimos 12 meses,"1,6, 9"
+I81_1A,1,470,470,Ha experimentado discriminación en el colegio en los últimos 12 meses,"b, 1,6, 9"
+I81_1B,1,471,471,Frecuencia en que ha experimentado discriminación en el colegio por su sexo,"b, 1 a 4, 9"
+I81_1C,1,472,472,Frecuencia en que ha experimentado discriminación en el colegio por su etnia o país,"b, 1 a 4, 9"
+I81_1D,1,473,473,Frecuencia en que ha experimentado discriminación en el colegio por su clase social,"b, 1 a 4, 9"
+I81_1E,1,474,474,Frecuencia en que ha experimentado discriminación en el colegio por su religión,"b, 1 a 4, 9"
+I81_2A,1,475,475,Ha experimentado discriminación al recibir asistencia sanitaria en los últimos 12 meses,"b, 1,6, 9"
+I81_2B,1,476,476,Frecuencia en que ha experimentado discriminación al recibir asistencia sanitaria por su sexo,"b, 1 a 4, 9"
+I81_2C,1,477,477,Frecuencia en que ha experimentado discriminación al recibir asistencia sanitaria por su etnia o país,"b, 1 a 4, 9"
+I81_2D,1,478,478,Frecuencia en que ha experimentado discriminación al recibir asistencia sanitaria por su clase social,"b, 1 a 4, 9"
+I81_2E,1,479,479,Frecuencia en que ha experimentado discriminación al recibir asistencia sanitaria por su religión,"b, 1 a 4, 9"
+I81_3A,1,480,480,Ha experimentado discriminación en un sitio público (incluye la calle) en los últimos 12 meses,"b, 1,6, 9"
+I81_3B,1,481,481,Frecuencia en que ha experimentado discriminación en un sitio público (incluye la calle) por su sexo,"b, 1 a 4, 9"
+I81_3C,1,482,482,Frecuencia en que ha experimentado discriminación en un sitio público (incluye la calle) por su etnia o país,"b, 1 a 4, 9"
+I81_3D,1,483,483,Frecuencia en que ha experimentado discriminación en un sitio público (incluye la calle) por su clase social,"b, 1 a 4, 9"
+I81_3E,1,484,484,Frecuencia en que ha experimentado discriminación en un sitio público (incluye la calle) por su religión,"b, 1 a 4, 9"
+K93,1,485,485,Limitación en las actividades de la vida diaria por problema de salud durante al menos los últimos seis meses,"1,2,3"
+K94,1,486,486,Tipo de problema que causa la dificultad,"b, 1,2,3, 9"
+K95,3,487,489,Peso en kg,"003 a 100, 998, 999"
+K96,3,490,492,Altura en cm,"040 a 220, 998, 999"
+K97,1,493,493,Percepción del peso en relación a la estatura,"1 a 4, 9"
+FACTOR,11,494,504,Factor de elevación de la persona,NA
+TMUNI,1,505,505,Variable derivada: tamaño del municipio de residencia,1 a 7
+SPCLASE,1,506,506,Variable derivada: clase social basada en la ocupación del sustentador principal del hogar,"1 a 6, 9"
+MSCALVIDA,11,507,517,Variable derivada: calidad de vida relacionada con la salud,NA
+MSSALMENT1,2,518,519,Variable derivada: salud mental ‘síntomas emocionales’,"00 a 10, 99"
+MSSALMENT2,2,520,521,Variable derivada: salud mental ‘problemas de conducta’,"00 a 10, 99"
+MSSALMENT3,2,522,523,Variable derivada: salud mental ‘hiperactividad’,"00 a 10, 99"
+MSSALMENT4,2,524,525,Variable derivada: salud mental ‘problemas con compañeros’,"00 a 10, 99"
+MSSALMENT5,2,526,527,Variable derivada: salud mental ‘prosocial’,"00 a 10, 99"
+MSIMC,1,528,528,Variable derivada: índice de masa corporal,"b,1, 2,3,9"
