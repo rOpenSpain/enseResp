@@ -29,6 +29,13 @@ children_11 <- read_excel("documentation/ense12/disreg_ensalud12/DISENO MENORES 
 
 children_11_labels = read_excel("documentation/ense12/disreg_ensalud12/DISENO MENORES ENSE 2011-2012.xls", sheet = 2, range = "A9:C2167")
 
+# ENSE 2006
+
+
+children_06 = read_csv("documentation/ense06/Infantil-ENSE-2006/infantil_2006_info.csv")
+
+children_06_labels = read_csv("documentation/ense06/Infantil-ENSE-2006/infantil_2006_labels.csv")
+
 
 # Children info ---------------------------
 
@@ -37,7 +44,7 @@ children_19_info = parse_info(children_17, variable_ine)
 
 children_12_info = parse_info(children_11, campo)
 
-
+children_06_info = parse_info(children_06, campo)
 
 
 # Children labels ---------------------------
@@ -57,5 +64,9 @@ children_19 = parse_microdata(children_19_info, path = "Menores_ENSE17/MICRODAT.
 
 children_12 = parse_microdata(children_12_info, path = "datos_ensalud12/MICRODATO MENOR ANONIMIZADO.txt")
 
+children_06 = parse_microdata(children_06_info, path = "documentation/ense06/Infantil-ENSE-2006/INFANTIL06.txt" )
 
-usethis::use_data(children_19, children_19_info, children_19_labels, children_12, children_12_info, children_12_labels, overwrite = T)
+
+
+usethis::use_data(children_19, children_19_info, children_19_labels, children_12, children_12_info, children_12_labels, children_06, children_06_info, children_06_labels, overwrite = T)
+
