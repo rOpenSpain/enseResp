@@ -19,6 +19,7 @@ Survey](https://www.mscbs.gob.es/estadEstudios/estadisticas/bancoDatos.htm)
 Ministry](https://www.mscbs.gob.es/home.htm). The main goal of
 `enseResp` is to provide data ready for analysis for researchers or
 other stakeholders interested in exploring health microdata in Spain.
+
 The current version of `enseResp` provides information about the SNS
 editions of 2017/19, 2011/12 and 2006/07 and compiles the surveys
 associated with the adult, children and household samples.
