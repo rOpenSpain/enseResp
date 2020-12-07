@@ -19,9 +19,10 @@ Survey](https://www.mscbs.gob.es/estadEstudios/estadisticas/bancoDatos.htm)
 Ministry](https://www.mscbs.gob.es/home.htm). The main goal of
 `enseResp` is to provide data ready for analysis for researchers or
 other stakeholders interested in exploring health microdata in Spain.
-The current version of `enseResp` provides information about the SHS
-editions of 2017/19 and 2011/12 and compiles the surveys associated with
-the adult, children and household samples.
+
+The current version of `enseResp` provides information about the SNS
+editions of 2017/19, 2011/12 and 2006/07 and compiles the surveys
+associated with the adult, children and household samples.
 
 ## Installation
 
@@ -224,32 +225,8 @@ obesity = obesity %>%
 
 <img src="man/figures/README-example-1.png" width="100%" />
 
-# Citing
+# Issues and bugs
 
-If you find useful `enseResp` for your work, please consider citing.
-Citation information can be generated in R using the following (after
-installing the package),
-
-``` r
- library(citation)
- citation(package = "enseResp")
-#> 
-#> To cite package 'enseResp' in publications use:
-#> 
-#>   Edu Gonzalo Almorox (NA). enseResp: Information on the Spanish Health
-#>   Survey. R package version 0.1.0.
-#>   https://github.com/edugonzaloalmorox/enseResp
-#> 
-#> A BibTeX entry for LaTeX users is
-#> 
-#>   @Manual{,
-#>     title = {enseResp: Information on the Spanish Health Survey},
-#>     author = {Edu Gonzalo Almorox},
-#>     note = {R package version 0.1.0},
-#>     url = {https://github.com/edugonzaloalmorox/enseResp},
-#>   }
-#> 
-#> ATTENTION: This citation information has been auto-generated from the
-#> package DESCRIPTION file and may need manual editing, see
-#> 'help("citation")'.
-```
+If you find issues or bugs while using `enseResp` report the bug
+[here](https://github.com/edugonzaloalmorox/enseResp/issues) or reach me
+out on [Twitter](https://twitter.com/EdudinGonzalo)
