@@ -37,12 +37,15 @@ This package contains surveys formatted to be convenient for being
 accessed and analysed. The current version of the package is composed of
 the following datsets:
 
-  - `adults_19`: Dataset for adults survey for 2017/19
-  - `children_19`: Dataset for children survey for 2017/19
-  - `household_19`: Dataset for household survey for 2017/19
-  - `adults_12`: Dataset for adults survey for 2011/12
-  - `children_12`: Dataset for children survey for 2011/12
-  - `household_12`: Dataset for household survey for 2011/12
+-   `adults_19`: Dataset for adults survey for 2017/19
+-   `children_19`: Dataset for children survey for 2017/19
+-   `household_19`: Dataset for household survey for 2017/19
+-   `adults_12`: Dataset for adults survey for 2011/12
+-   `children_12`: Dataset for children survey for 2011/12
+-   `household_12`: Dataset for household survey for 2011/12
+-   `adults_06`: Dataset for adults survey for 2006/07
+-   `children_06`: Dataset for children survey for 2006/07
+-   `household_06`: Dataset for household survey for 2006/07
 
 This is a basic example of how to obtain a dataset. For example, the
 survey of adults corresponding to 2017-19 survey.
@@ -115,7 +118,7 @@ enseResp::adults_19_info %>%
 ```
 
 | variable\_ine | descripcion\_del\_campo                                                                        |
-| :------------ | :--------------------------------------------------------------------------------------------- |
+|:--------------|:-----------------------------------------------------------------------------------------------|
 | CCAA          | Comunidad Autónoma de residencia                                                               |
 | IDENTHOGAR    | Número de identificación del hogar: Sección + Vivienda + Hogar                                 |
 | A7\_2a        | Número de orden del adulto seleccionado                                                        |
@@ -146,7 +149,7 @@ enseResp::adults_19_labels %>%
 ```
 
 | valores\_ine | valores                                                                              | variable\_ine |
-| :----------- | :----------------------------------------------------------------------------------- | :------------ |
+|:-------------|:-------------------------------------------------------------------------------------|:--------------|
 | 1            | Sentado/a la mayor parte de la jornada                                               | T111          |
 | 2            | De pie la mayor parte de la jornada sin efectuar grandes desplazamientos o esfuerzos | T111          |
 | 3            | Caminando, llevando algún peso, efectuando desplazamientos frecuentes                | T111          |
@@ -167,7 +170,7 @@ kids = enseResp::children_19
 info = enseResp::children_19_info
 labels = enseResp::children_19_labels
 
-# Preparo datos --------------------------------
+# Tidy data  --------------------------------
 
 obesity = kids %>%
   count(CCAA, IMCm) %>%
@@ -194,6 +197,7 @@ obesity = obesity %>%
   left_join(., ccaa_lab, by = c("CCAA" = "valores_ine"))%>%
   select(ccaa = valores, IMCm, n)
 
+# Plot ------------------------------------
  obesity %>%
   group_by(ccaa) %>%
   mutate(prop = n/sum(n)) %>%
