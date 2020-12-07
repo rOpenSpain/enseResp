@@ -26,6 +26,12 @@ household_12 = read_excel("documentation/ense12/disreg_ensalud12/DISENO HOGAR EN
 house_12_labels = read_excel("documentation/ense12/disreg_ensalud12/DISENO HOGAR ENSE 2011-2012.xls", sheet = 2, range = "A9:C480" )
 
 
+# ENSE 2006
+
+household_06 = read_csv("documentation/ense06/Hogar-ENSE-2006/hogar_2006_info.csv")
+
+house_06_labels = read_csv("documentation/ense06/Hogar-ENSE-2006/hogar_2006_labels.csv")
+
 
 
 
@@ -34,6 +40,8 @@ house_12_labels = read_excel("documentation/ense12/disreg_ensalud12/DISENO HOGAR
 household_19_info = parse_info(household_17, variable_ine)
 
 household_12_info = parse_info(household_12, campo)
+
+household_06_info = parse_info(household_06, campo)
 
 
 
@@ -53,6 +61,14 @@ household_19 = parse_microdata(household_19_info, "documentation/ense17/Hogar_EN
 
 household_12 = parse_microdata(household_12_info, "datos_ensalud12/MICRODATO HOGAR ANONIMIZADO.txt")
 
+
+household_06 = parse_microdata(household_06_info, path = "documentation/ense06/Hogar-ENSE-2006/HOGAR06.txt" )
+
+
+
 usethis::use_data( household_19, household_19_info, household_19_labels,
                    household_12, household_12_info, household_12_labels,
+                   household_06, household_06_info, house_06_labels,
                    overwrite = T)
+
+
