@@ -221,3 +221,25 @@ obesity = obesity %>%
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />
+
+# How to cite
+
+    #> 
+    #> To cite package 'enseResp' in publications use:
+    #> 
+    #>   Edu Gonzalo Almorox (NA). enseResp: Information on the Spanish Health
+    #>   Survey. R package version 0.1.0.
+    #>   https://github.com/edugonzaloalmorox/enseResp
+    #> 
+    #> A BibTeX entry for LaTeX users is
+    #> 
+    #>   @Manual{,
+    #>     title = {enseResp: Information on the Spanish Health Survey},
+    #>     author = {Edu Gonzalo Almorox},
+    #>     note = {R package version 0.1.0},
+    #>     url = {https://github.com/edugonzaloalmorox/enseResp},
+    #>   }
+    #> 
+    #> ATTENTION: This citation information has been auto-generated from the
+    #> package DESCRIPTION file and may need manual editing, see
+    #> 'help("citation")'.

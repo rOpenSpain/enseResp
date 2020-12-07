@@ -148,3 +148,13 @@ obesity = obesity %>%
 
 
 ```
+
+# How to cite
+
+
+```{r citation, echo = FALSE, warning = FALSE}
+
+ library(citation)
+ citation(package = "enseResp")
+ 
+```
