@@ -4,7 +4,7 @@
 #' \describe{
 #'   \item{\code{valores_ine}}{values in survey}
 #'   \item{\code{valores}}{labels of values}
-#'   \item{\code{variable_ine}}{variable}
+#'   \item{\code{variable_ine}}{name of the variable}
 #'}
 #' @details DETAILS
 "children_12_labels"
