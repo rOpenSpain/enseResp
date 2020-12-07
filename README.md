@@ -3,6 +3,8 @@
 
 # enseResp <img src='man/figures/logo.png' align="right" height="138.5" />
 
+**Author**: Edu Gonzalo Almorox
+
 <!-- badges: start -->
 
 [![](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://github.com/edugonzaloalmorox/enseResp)
@@ -221,3 +223,33 @@ obesity = obesity %>%
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />
+
+# Citing
+
+If you find useful `enseResp` for your work, please consider citing.
+Citation information can be generated in R using the following (after
+installing the package),
+
+``` r
+ library(citation)
+ citation(package = "enseResp")
+#> 
+#> To cite package 'enseResp' in publications use:
+#> 
+#>   Edu Gonzalo Almorox (NA). enseResp: Information on the Spanish Health
+#>   Survey. R package version 0.1.0.
+#>   https://github.com/edugonzaloalmorox/enseResp
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Manual{,
+#>     title = {enseResp: Information on the Spanish Health Survey},
+#>     author = {Edu Gonzalo Almorox},
+#>     note = {R package version 0.1.0},
+#>     url = {https://github.com/edugonzaloalmorox/enseResp},
+#>   }
+#> 
+#> ATTENTION: This citation information has been auto-generated from the
+#> package DESCRIPTION file and may need manual editing, see
+#> 'help("citation")'.
+```
