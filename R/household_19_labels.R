@@ -4,7 +4,7 @@
 #' \describe{
 #'   \item{\code{valores_ine}}{values survey}
 #'   \item{\code{valores}}{labels}
-#'   \item{\code{variable_ine}}{variable}
+#'   \item{\code{variable_ine}}{name of the variable}
 #'}
 #' @details DETAILS
 "household_19_labels"

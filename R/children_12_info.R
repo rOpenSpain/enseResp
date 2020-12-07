@@ -2,12 +2,12 @@
 #' @description  Design of the survey. Variable characteristics of children survey. ENSE 2011/12
 #' @format A data frame with 271 rows and 6 variables:
 #' \describe{
-#'   \item{\code{campo}}{character COLUMN_DESCRIPTION}
-#'   \item{\code{longitud}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{posicion_inicio}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{posicion_final}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{descripcion_del_campo}}{character COLUMN_DESCRIPTION}
-#'   \item{\code{tipo_variable}}{character COLUMN_DESCRIPTION}
+#'   \item{\code{campo}}{Name of the variable}
+#'   \item{\code{longitud}}{Length of the variable. Number of possible characters it may take.}
+#'   \item{\code{posicion_inicio}}{Initial position in the text file. Information for parsing microdata}
+#'   \item{\code{posicion_final}}{Final position in the text file. Information for parsing microdata}
+#'   \item{\code{descripcion_del_campo}}{Description of the variable (in Spanish)}
+#'   \item{\code{tipo_variable}}{Possible values the variable may take}
 #'}
 #' @details DETAILS
 "children_12_info"

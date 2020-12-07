@@ -1,6 +1,6 @@
-#' @title children_06_info
-#' @description Design of the survey. Variable characteristics of children survey. ENSE 2006/07
-#' @format A data frame with 350 rows and 7 variables:
+#' @title household_06_info
+#' @description Design of the survey. Variable characteristics of household survey ENSE 2006/07.
+#' @format A data frame with 84 rows and 7 variables:
 #' \describe{
 #'   \item{\code{campo}}{Name of the variable}
 #'   \item{\code{longitud}}{Length of the variable. Number of possible characters it may take.}
@@ -11,4 +11,5 @@
 #'   \item{\code{tipo_variable}}{Type of variable. Only applicable to some surveys}
 #'}
 #' @details DETAILS
-"children_06_info"
+"household_06_info"
+
