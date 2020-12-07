@@ -1,0 +1,612 @@
+variable_ine,valores_ine
+NIVEL,0 = hogar
+CCAA,01 = andalucía
+CCAA,02 = aragón
+CCAA,03 = principado de asturias
+CCAA,04 = illes balears
+CCAA,05 = canarias
+CCAA,06 = cantabria
+CCAA,07 = castilla y león
+CCAA,08 = castilla-la mancha
+CCAA,09 = cataluña
+CCAA,10 = comunitat valenciana
+CCAA,11 = extremadura
+CCAA,12 = galicia
+CCAA,13 = comunidad de madrid
+CCAA,14 = región de murcia
+CCAA,15 = comunidad foral de navarra
+CCAA,16 = país vasco
+CCAA,17 = la rioja
+CCAA,18 = ceuta y melilla
+PROV,01 álava
+PROV,02 albacete
+PROV,03 alicante/alacant
+PROV,04 almería
+PROV,05 ávila
+PROV,06 badajoz
+PROV,07 balears (illes)
+PROV,08 barcelona
+PROV,09 burgos
+PROV,10 cáceres
+PROV,11 cádiz
+PROV,12 castellón/castelló
+PROV,13 ciudad real
+PROV,14 córdoba
+PROV,15 coruña (a)
+PROV,16 cuenca
+PROV,17 girona
+PROV,18 granada
+PROV,19 guadalajara
+PROV,20 guipúzcoa
+PROV,21 huelva
+PROV,22 huesca
+PROV,23 jaén
+PROV,24 león
+PROV,25 lleida
+PROV,26 rioja (la)
+PROV,27 lugo
+PROV,28 madrid
+PROV,29 málaga
+PROV,30 murcia
+PROV,31 navarra
+PROV,32 ourense
+PROV,33 asturias
+PROV,34 palencia
+PROV,35 palmas (las)
+PROV,36 pontevedra
+PROV,37 salamanca
+PROV,38 santa cruz de tenerife
+PROV,39 cantabria
+PROV,40 segovia
+PROV,41 sevilla
+PROV,42 soria
+PROV,43 tarragona
+PROV,44 teruel
+PROV,45 toledo
+PROV,46 valencia/valència
+PROV,47 valladolid
+PROV,48 vizcaya
+PROV,49 zamora
+PROV,50 zaragoza
+PROV,51 ceuta
+PROV,52 melilla
+ESTRATO,0 = municipios de más de 500.000 habitantes
+ESTRATO,1 = municipios capital de provincia (excepto los anteriores)
+ESTRATO,2 = municipios con más de 100.000 habitantes (excepto los anteriores)
+ESTRATO,3 = municipios de 50.001 a 100.000 habitantes (excepto los anteriores)
+ESTRATO,4 = municipios de 20.001 a 50.000 habitantes
+ESTRATO,5 = municipios de 10.001 a 20.000 habitantes
+ESTRATO,6 = municipios hasta 10.000 habitantes
+SECCION,0001 a 2236
+SECC_DC,0a9
+NIDENTIF,Número de hogar (5 dígitos) correlativo y número de persona dentro del
+NIDENTIF,Hogar (2 dígitos) correlativo
+AÑO,2006
+AÑO,2007
+TRIM,1 = primer trimestre
+TRIM,2 = segundo trimestre
+TRIM,3 = tercer trimestre
+TRIM,4 = cuarto trimestre
+NORDEN,01 a 15 para adultos
+NORDEN,51 a 65 para menores
+P3_2,00       el informante es una persona no residente en el hogar
+P3_2,01 a 15   el informante es un adulto (16 y más años)
+A9_1,01 a 15
+A9_2,01 a 15
+A9_A2,01 a 15
+A9_M2,51 a 65
+C21,"01 a 15, 51 a 65"
+C31,"01 a 15, 51 a 65"
+EDAD,De 000 a 117
+SEXO,1 = varon
+SEXO,6 = mujer
+A3,1 = si
+A3,6 = no
+A4,1 = otra vivienda familiar
+A4,2 = un hospital o sanatorio y regresará al hogar antes de 1 año
+A4,3 = un establecimiento colectivo y piensa regresar al hogar antes de 1 año
+A4,4 = un establecimiento colectivo y no piensa regresar al hogar antes de 1
+A4,Año
+A5,1 = si
+A5,6 = no
+A8,1 = si
+A8,6 = no
+A11,01 = es el adulto/a seleccionado/a
+A11,02 = cónyuge o pareja
+A11,03 = hijo/a
+A11,04 = padre/madre
+A11,05 = suegro/a
+A11,06 = yerno/nuera
+A11,07 = hermano/a
+A11,08 = nieto/a
+A11,09 = abuelo/a
+A11,10 = otros familiares
+A11,11 = otros no familiares
+A12,"00 = no procede, es menor de 10 años"
+A12,01 = no sabe leer ni escribir
+A12,02 = sin estudios
+A12,03 = estudios primarios o equivalentes
+A12,04 = enseñanza general secundaria 1ª etapa
+A12,05 = enseñanza profesional de grado medio
+A12,06 = enseñanza general secundaria 2ª etapa
+A12,07 = enseñanzas profesionales superiores
+A12,08 = estudios universitarios o equivalentes primer ciclo
+A12,09 = estudios universitarios o equivalentes segundo ciclo
+A12,99 = no consta
+A13,1 = si
+A13,6 = no
+B2,004         afganistán
+B2,710         africa del sur
+B2,008         albania
+B2,276         alemania
+B2,020         andorra
+B2,024         angola
+B2,660         anguila
+B2,028         antigua y barbuda
+B2,530         antillas neerlandesas
+B2,682         arabia saudita
+B2,012         argelia
+B2,032         argentina
+B2,051         armenia
+B2,533         aruba
+B2,036         australia
+B2,040         austria
+B2,031         azerbaiyán
+B2,044         bahamas
+B2,048         bahrein
+B2,050         bangladesh
+B2,052         barbados
+B2,056         bélgica
+B2,084         belice
+B2,204         benin
+B2,060         bermudas
+B2,064         bhután
+B2,112         bielorrusia
+B2,068         bolivia
+B2,070         bosnia-herzegovina
+B2,072         botswana
+B2,076         brasil
+B2,096         brunei darussalam
+B2,100         bulgaria
+B2,854         burkina fasso
+B2,108         burundi
+B2,132         cabo verde
+B2,116         camboya
+B2,120         camerún
+B2,124         canadá
+B2,148 chad
+B2,152 chile
+B2,156 china
+B2,196 chipre
+B2,170 colombia
+B2,174 comoras
+B2,178 congo
+B2,384 costa de marfil
+B2,188 costa rica
+B2,191 croacia
+B2,192 cuba
+B2,208 dinamarca
+B2,262 djibuti
+B2,212 dominica
+B2,218 ecuador
+B2,818 egipto
+B2,222 el salvador
+B2,784 emiratos arabes unidos
+B2,232 eritrea
+B2,703 eslovaquia
+B2,705 eslovenia
+B2,724 españa
+B2,840 estados unidos de américa
+B2,233 estonia
+B2,231 etiopía
+B2,643 federación rusa
+B2,242 fidji
+B2,608 filipinas
+B2,246 finlandia
+B2,250 francia
+B2,266 gabón
+B2,270 gambia
+B2,268 georgia
+B2,288 ghana
+B2,292 gibraltar
+B2,308 granada
+B2,300 grecia
+B2,304 groenlandia
+B2,312 guadalupe
+B2,316 guam
+B2,320 guatemala
+B2,254 guayana francesa
+B2,324 guinea
+B2,226 guinea ecuatorial
+B2,624 guinea-bissau
+B2,328 guyana
+B2,332 haití
+B2,340 honduras
+B2,"344 hong-kong, región administrativa especial de china"
+B2,348 hungría
+B2,356 india
+B2,360 indonesia
+B2,368 irak
+B2,364 irán (república islámica de)
+B2,372 irlanda
+B2,352 islandia
+B2,248 islas aland
+B2,136 islas caimán
+B2,184 islas cook
+B2,833 islas de man
+B2,830 islas del canal de la mancha
+B2,238 islas falkland (malvinas)
+B2,234 islas feroé
+B2,580 islas marianas del norte
+B2,584 islas marshall
+B2,574 islas norfolk
+B2,090 islas salomón
+B2,796 islas turcas y caicos
+B2,092 islas vírgenes británicas
+B2,850 islas vírgenes de los eeuu
+B2,876 islas wallis y futura
+B2,376 israel
+B2,380 italia
+B2,388 jamaica
+B2,392 japón
+B2,400 jordania
+B2,398 kazajstán
+B2,404 kenia
+B2,417 kirghizistan
+B2,296 kiribati
+B2,414 kuwait
+B2,426 lesotho
+B2,428 letonia
+B2,422 líbano
+B2,430 libéria
+B2,438 liechtenstein
+B2,440 lituania
+B2,442 luxemburgo
+B2,446 macao región administrativa especiald e china
+B2,450 madagascar
+B2,458 malasia
+B2,454 malawi
+B2,462 maldivas
+B2,466 malí
+B2,470 malta
+B2,504 marruecos
+B2,474 martinica
+B2,480 mauricio
+B2,478 mauritania
+B2,175 mayotte
+B2,484 méxico
+B2,583 micronesia (estados federados de )
+B2,492 mónaco
+B2,496 mongolia
+B2,500 montserrat
+B2,508 mozambique
+B2,104 myanmar
+B2,516 namibia
+B2,520 naurú
+B2,524 nepal
+B2,558 nicaragua
+B2,562 níger
+B2,566 nigeria
+B2,570 niue
+B2,578 noruega
+B2,540 nueva caledonia
+B2,554 nueva zelanda
+B2,512 omán
+B2,528 países bajos
+B2,586 pakistán
+B2,585 palau
+B2,591 panamá
+B2,598 papua nueva guinea
+B2,600 paraguay
+B2,604 perú
+B2,612 pitcairn
+B2,258 polinesia francesa
+B2,616 polonia
+B2,620 portugal
+B2,630 puerto rico
+B2,634 qatar
+B2,826 reino unido de gran bretaña e irlanda del norte
+B2,434 república árabe delibia
+B2,140 república centroafricana
+B2,203 república checa
+B2,410 república de corea
+B2,"807 república de macedonia, antigua yugoslavia"
+B2,498 república de moldavia
+B2,180 república democrática del congo
+B2,418 república democrática popular de laos
+B2,214 república dominicana
+B2,408 república pop. Democ. de corea
+B2,834 república unida de tanzania
+B2,638 reunión
+B2,642 rumania
+B2,646 rwanda
+B2,732 sahara occidental
+B2,659 saint kitts y nevis
+B2,882 samoa
+B2,016 samoa americana
+B2,674 san marino
+B2,666 san pedro y miquelón
+B2,670 san vicente y las granadinas
+B2,654 santa elena
+B2,662 santa lucía
+B2,678 santo tomé y príncipe
+B2,686 senegal
+B2,891 serbia y montenegro
+B2,690 seychelles
+B2,694 sierra leona
+B2,702 singapur
+B2,760 siria
+B2,706         somalia
+B2,144         sri lanka
+B2,736         sudán
+B2,752         suecia
+B2,756         suiza
+B2,740         suriname
+B2,744         svalbard e islas de jan mayen
+B2,748         swazilandia
+B2,764         tailandia
+B2,762         tayikistan
+B2,275         territorios ocupados de palestina
+B2,626         timor oriental
+B2,768         togo
+B2,772         tokelau
+B2,776         tonga
+B2,780         trinidad y tobago
+B2,788         túnez
+B2,795         turkmenistán
+B2,792         turquía
+B2,798         tuvalu
+B2,804         ucrania
+B2,800         uganda
+B2,858         uruguay
+B2,860         uzbekistán
+B2,548         vanuatu
+B2,"336         vaticano, santa sede"
+B2,862         venezuela
+B2,704         vietnam
+B2,887         yemen
+B2,894         zambia
+B2,716         zimbabwe
+B2,999         no consta
+B3,1 = española
+B3,2 = extranjera
+B3,3 = española y otra
+B3,9 = no consta
+B4,1 = un país de la unión europea
+B4,2 = otro país de europa
+B4,3 = canadá o ee.uu.
+B4,4 = otro país de américa
+B4,5 = un país de asia
+B4,6 = un país de áfrica
+B4,7 = un país de oceanía
+B4,9 = no consta
+B5,1 = soltero/a
+B5,2 = casado/a
+B5,3 = viudo/a
+B5,4 = separado/a legalmente
+B5,5 = divorciado/a
+B5,9 = no consta
+B6,1 = si
+B6,6 = no
+B6,9 = no consta
+C2_1,1 = si
+C2_1,0 = no
+C2_1,9 = no consta
+C2_2,1 = si
+C2_2,0 = no
+C2_2,9 = no consta
+C2_3,1 = si
+C2_3,0 = no
+C2_3,9 = no consta
+C2_4,1 = si
+C2_4,0 = no
+C2_4,9 = no consta
+C2_5,1 = si
+C2_5,0 = no
+C2_5,9 = no consta
+C2_6,1 = si
+C2_6,0 = no
+C2_6,9 = no consta
+C2_7,1 = si
+C2_7,0 = no
+C2_7,9 = no consta
+C2_8,1 = si
+C2_8,0 = no
+C2_8,9 = no consta
+C3,1 = si
+C3,6 = no
+C3,9 = no consta
+C4,"1 = sí, por cotización propia"
+C4,"2 = sí, por cotización de otra persona"
+C4,"3 = sí, por ambos tipos de cotización"
+C4,4 = no
+C4,9 = no consta
+C5,1 = sí
+C5,6 = no
+C5,9 = no consta
+C6,Cnae-93 (a dos dígitos)
+C6,999 = no consta
+C7,Cno-94 (a tres dígitos)
+C7,999 = no consta
+C8,1 = empleador/a (empresario/a o profesional con asalariados/as)
+C8,2 = empresario/a sin asalariados o trabajador/a independiente
+C8,3 = ayuda familiar
+C8,4 = asalariado/a fijo/a
+C8,5 = asalariado/a eventual o interino/a
+C8,6 = miembro de una cooperativa
+C8,7 = otra situación
+C8,9 = no consta
+C9,1 = no ha trabajado nunca
+C9,2 = menos de 6 meses
+C9,3 = de 6 meses a menos de 1 año
+C9,4 = de 1 año a menos de 2 años
+C9,5 = más de 2 años
+C9,9 = no consta
+C10,1 = sí
+C10,6 = no
+C10,9 = no consta
+C11,1 = sí
+C11,6 = no
+C11,9 = no consta
+C12,1 = funcionario/a
+C12,2 = duración indefinida
+C12,3 = trabaja por cuenta propia
+C12,4 = verbal o sin contrato
+C12,5 = temporal
+C12,6 = otro tipo
+C12,9 = no consta
+C13,1 = menor de 6 meses
+C13,2 = de 6 meses a menos de 1 año
+C13,3 = de 1 año a menos de 2 años
+C13,4 = de 2 años o más
+C13,5 = sin duración definida
+C13,9 = no consta
+C14,1 = no
+C14,"2 = sí, de 1 a 4 personas"
+C14,"3 = sí, de 5 a 10 personas"
+C14,"4 = sí, de 11 a 20 personas"
+C14,"5 = sí, más de 20 personas"
+C14,9 = no consta
+C15,1 = jornada partida
+C15,2 = jornada continua por la mañana
+C15,3 = jornada continua por la tarde
+C15,4 = jornada continua por la noche
+C15,5 = jornada reducida
+C15,6 = turnos
+C15,7 = jornada irregular o variable según los días
+C15,8 = otro tipo
+C15,9 = no consta
+C16,01 = por cumplir la edad de jubilación
+C16,02 = por razones de salud
+C16,03 = por prejubilación o jubilación anticipada forzosa
+C16,04 = por jubilación anticipada voluntaria
+C16,05 = porque no podía compatibilizar el trabajo con las responsabilidades
+C16,Familiares
+C16,06 = por querer dedicarse exclusivamente a su familia
+C16,07 = porque se quedó en desempleo al acabar el contrato
+C16,08 = porque fue despedido/a
+C16,09 = por su propia voluntad
+C16,10 = por otras razones
+C16,99 = no consta
+C17,Cnae-93 (a dos dígitos)
+C17,999 = no consta
+C18,Cno-94 (a tres dígitos)
+C18,999 = no consta
+C19,1 = empleador/a (empresario/a o profesional con asalariados/as)
+C19,2 = empresario/a sin asalariados o trabajador/a independiente
+C19,3 = ayuda familiar
+C19,4 = asalariado/a fijo/a
+C19,5 = asalariado/a eventual o interino/a
+C19,6 = miembro de una cooperativa
+C19,7 = otra situación
+C19,9 = no consta
+D1_0_1,1 = sí
+D1_0_1,6 = no
+D1_0_2,De 1 a 9
+D1,De 00 a 15
+D1,99 = no consta
+D2,De 001 a 997
+D2,998 = no sabe
+D2,999 = no consta
+D3_1,1 = mucho
+D3_1,2 = algo
+D3_1,3 = nada
+D3_1,9 = no consta
+D3_2,1 = mucho
+D3_2,2 = algo
+D3_2,3 = nada
+D3_2,9 = no consta
+D3_3,1 = mucho
+D3_3,2 = algo
+D3_3,3 = nada
+D3_3,9 = no consta
+D3_4,1 = mucho
+D3_4,2 = algo
+D3_4,3 = nada
+D3_4,9 = no consta
+D3_5,1 = mucho
+D3_5,2 = algo
+D3_5,3 = nada
+D3_5,9 = no consta
+D3_6,1 = mucho
+D3_6,2 = algo
+D3_6,3 = nada
+D3_6,9 = no consta
+D3_7,1 = mucho
+D3_7,2 = algo
+D3_7,3 = nada
+D3_7,9 = no consta
+D3_8,1 = mucho
+D3_8,2 = algo
+D3_8,3 = nada
+D3_8,9 = no consta
+E1_1,1 = sí
+E1_1,6 = no
+E1_1,9 = no consta
+E1_2,1 = sí
+E1_2,6 = no
+E1_2,9 = no consta
+E1_3,1 = sí
+E1_3,6 = no
+E1_3,9 = no consta
+E1_4,1 = sí
+E1_4,6 = no
+E1_4,9 = no consta
+E1_5,1 = sí
+E1_5,6 = no
+E1_5,9 = no consta
+E1_6,1 = sí
+E1_6,6 = no
+E1_6,9 = no consta
+E1_7,1 = sí
+E1_7,6 = no
+E1_7,9 = no consta
+E1_8,1 = sí
+E1_8,6 = no
+E1_8,9 = no consta
+E1_9,1 = sí
+E1_9,6 = no
+E1_9,9 = no consta
+E2,01 = trabajo por cuenta propia
+E2,02 = trabajo por cuenta ajena
+E2,03 = pensiones contributivas
+E2,04 = pensiones no contributivas
+E2,05 = subsidios y prestaciones por desempleo
+E2,06 = prestaciones por hijo/a a cargo
+E2,07 = otros subsidios y prestaciones sociales regulares
+E2,08 = rentas de la propiedad y del capital
+E2,09 = otros ingresos regulares
+E2,99 = no consta
+E3,1 = menos de 360 euros
+E3,2 = de 361 a 600 euros
+E3,3 = de 601 a 900 euros
+E3,4 = de 901 a 1200 euros
+E3,5 = de 1201 a1800 euros
+E3,6 = de 1801 a 3600 euros
+E3,7 = de 3601 a 6000 euros
+E3,8 = mas de 6000 euros
+E3,9 = no consta
+TMUNI,1 = menor o igual a 2.000 habitantes
+TMUNI,2 = 2.001 a 10.000 habitantes
+TMUNI,3 = 10.001 a 50.000 habitantes
+TMUNI,4 = 50.001 a 100.000 habitantes
+TMUNI,5 = 100.001 a 400.000 habitantes
+TMUNI,6 = 400.001 a 1.000.000 habitantes
+TMUNI,7 = más de 1.000.000 habitantes
+CADULTO,1 = sí
+CADULTO,0 = no
+CNINO,1 = sí
+CNINO,0 = no
+SPCLASE,1 = clase i: directivos de la administración pública y de empresas de 10 o más
+SPCLASE,Asalariados. Profesiones asociadas a titulaciones de 2º y 3er ciclo
+SPCLASE,2 = clase ii: directivos de empresas de menos de 10 asalariados. Profesiones
+SPCLASE,Asociadas a una titulación de 1er ciclo universitario. Técnicos
+SPCLASE,Superiores. Artistas y deportistas
+SPCLASE,3 = clase iii: empleados de tipo administrativo y profesionales de apoyo a la
+SPCLASE,Gestión administrativa y financiera. Trabajadores de los servicios
+SPCLASE,Personales y de seguridad. Trabajadores por cuenta propia.
+SPCLASE,Supervisores de trabajadores manuales
+SPCLASE,4 = clase iva: trabajadores manuales cualificados
+SPCLASE,5 = clase ivb: trabajadores manuales semicualificados
+SPCLASE,6 = clase v: trabajadores no cualificados
+SPCLASE,9 = no consta
