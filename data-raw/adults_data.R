@@ -57,11 +57,11 @@ parse_microdata =  function(df, path){
 
 # ENSE 2017
 
-adults_17 <- read_excel("Adultos_2017/Diseno registro ADULTO ENSE 2017_PUBLICACION.xlsx", range = "A8:E611")  %>%
+adults_17 <- read_excel("documentation/ense17/Adultos_2017/Diseno registro ADULTO ENSE 2017_PUBLICACION.xlsx", range = "A8:E611")  %>%
   janitor::clean_names()
 
 
-adults_17_labels = read_excel("Adultos_2017/Diseno registro ADULTO ENSE 2017_PUBLICACION.xlsx", sheet = 2, range = "A8:C3772")
+adults_17_labels = read_excel("documentation/ense17/Adultos_2017/Diseno registro ADULTO ENSE 2017_PUBLICACION.xlsx", sheet = 2, range = "A8:C3772")
 
 
 # ENSE 2011
