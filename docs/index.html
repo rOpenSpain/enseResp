@@ -27,6 +27,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -39,26 +41,20 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">enseResp</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="reference/index.html">Reference</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/edugonzaloalmorox/enseResp/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/edugonzaloalmorox/enseResp/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -74,25 +70,26 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="enseresp-" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#enseresp-" class="anchor"></a>enseResp <img src="reference/figures/logo.png" align="right" height="138.5">
+
+<div class="section level1">
+<div class="page-header"><h1 id="enseresp-">enseResp <img src="reference/figures/logo.png" align="right" height="138.5"><a class="anchor" aria-label="anchor" href="#enseresp-"></a>
 </h1></div>
+<p><strong>Author</strong>: Edu Gonzalo Almorox</p>
 <!-- badges: start -->
 
-<p><code>enseResp</code> is a R package to tidily access healthcare data from the <a href="https://www.mscbs.gob.es/estadEstudios/estadisticas/bancoDatos.htm">Spanish Health Survey</a> (SHS) released by the <a href="https://www.mscbs.gob.es/home.htm">Spanish Health Ministry</a>. The main goal of <code>enseResp</code> is to provide data ready for analysis for researchers or other stakeholders interested in exploring health microdata in Spain. The current version of <code>enseResp</code> provides information about the SNS editions of 2017/19 and 2011/12 and compiles the surveys associated with the adult, children and household samples.</p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the development version from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="co"># install.packages("devtools")</span>
-<span class="kw">devtools</span>::<span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span>(<span class="st">"edugonzaloalmorox/enseResp"</span>)
-</pre></div>
+<p><code>enseResp</code> is a R package to tidily access healthcare data from the <a href="https://www.mscbs.gob.es/estadEstudios/estadisticas/bancoDatos.htm" class="external-link">Spanish Health Survey</a> (SHS) released by the <a href="https://www.mscbs.gob.es/home.htm" class="external-link">Spanish Health Ministry</a>. The main goal of <code>enseResp</code> is to provide data ready for analysis for researchers or other stakeholders interested in exploring health microdata in Spain.</p>
+<p>The current version of <code>enseResp</code> provides information about the SNS editions of 2017/19, 2011/12 and 2006/07 and compiles the surveys associated with the adult, children and household samples.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>You can install the development version from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"edugonzaloalmorox/enseResp"</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div id="load-main-datasets" class="section level2">
-<h2 class="hasAnchor">
-<a href="#load-main-datasets" class="anchor"></a>Load main datasets</h2>
+<div class="section level2">
+<h2 id="load-main-datasets">Load main datasets<a class="anchor" aria-label="anchor" href="#load-main-datasets"></a>
+</h2>
 <p>This package contains surveys formatted to be convenient for being accessed and analysed. The current version of the package is composed of the following datsets:</p>
 <ul>
 <li>
@@ -107,74 +104,78 @@
 <code>children_12</code>: Dataset for children survey for 2011/12</li>
 <li>
 <code>household_12</code>: Dataset for household survey for 2011/12</li>
+<li>
+<code>adults_06</code>: Dataset for adults survey for 2006/07</li>
+<li>
+<code>children_06</code>: Dataset for children survey for 2006/07</li>
+<li>
+<code>household_06</code>: Dataset for household survey for 2006/07</li>
 </ul>
 <p>This is a basic example of how to obtain a dataset. For example, the survey of adults corresponding to 2017-19 survey.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://github.com/edugonzaloalmorox/enseResp">enseResp</a></span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://dplyr.tidyverse.org">dplyr</a></span>)
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Attaching package: 'dplyr'</span>
-<span class="co">#&gt; The following objects are masked from 'package:stats':</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;     filter, lag</span>
-<span class="co">#&gt; The following objects are masked from 'package:base':</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;     intersect, setdiff, setequal, union</span>
-
-<span class="kw">enseResp</span>::<span class="kw"><a href="reference/adults_19.html">adults_19</a></span>
-<span class="co">#&gt; # A tibble: 23,089 x 455</span>
-<span class="co">#&gt;    CCAA  IDENTHOGAR A7_2a SEXOa EDADa ACTIVa PROXY_0 PROXY_1 PROXY_2 PROXY_2b</span>
-<span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   </span>
-<span class="co">#&gt;  1 16    00001011   01        2 084        3       1      NA      NA &lt;NA&gt;    </span>
-<span class="co">#&gt;  2 16    00001021   04        1 026        1       1      NA      NA &lt;NA&gt;    </span>
-<span class="co">#&gt;  3 16    00001041   02        2 056        5       1      NA      NA &lt;NA&gt;    </span>
-<span class="co">#&gt;  4 16    00001051   01        1 070        3       1      NA      NA &lt;NA&gt;    </span>
-<span class="co">#&gt;  5 16    00001071   01        1 061        3       1      NA      NA &lt;NA&gt;    </span>
-<span class="co">#&gt;  6 16    00001091   01        2 035        1       1      NA      NA &lt;NA&gt;    </span>
-<span class="co">#&gt;  7 16    00001101   01        2 055        1       1      NA      NA &lt;NA&gt;    </span>
-<span class="co">#&gt;  8 16    00001131   02        1 038        1       1      NA      NA &lt;NA&gt;    </span>
-<span class="co">#&gt;  9 16    00001151   01        1 039        2       1      NA      NA &lt;NA&gt;    </span>
-<span class="co">#&gt; 10 16    00002011   01        2 080        3       1      NA      NA &lt;NA&gt;    </span>
-<span class="co">#&gt; # … with 23,079 more rows, and 445 more variables: PROXY_3b &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   PROXY_4 &lt;chr&gt;, PROXY_5 &lt;dbl&gt;, E1_1 &lt;dbl&gt;, E2_1a &lt;dbl&gt;, E2_1b &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   E2_1c &lt;dbl&gt;, E2_1d &lt;dbl&gt;, E3 &lt;chr&gt;, E4 &lt;dbl&gt;, E4b &lt;dbl&gt;, NIVEST &lt;chr&gt;,</span>
-<span class="co">#&gt; #   F6 &lt;dbl&gt;, F7 &lt;dbl&gt;, F8_2 &lt;chr&gt;, F9_2 &lt;chr&gt;, F10 &lt;dbl&gt;, F11 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   F12 &lt;dbl&gt;, F13 &lt;chr&gt;, F14a &lt;dbl&gt;, F14b &lt;dbl&gt;, F15 &lt;dbl&gt;, F16 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   F17 &lt;chr&gt;, F18a_2 &lt;chr&gt;, F18b_2 &lt;chr&gt;, F19a_2 &lt;dbl&gt;, F19b_2 &lt;chr&gt;,</span>
-<span class="co">#&gt; #   F20 &lt;dbl&gt;, G21 &lt;dbl&gt;, G22 &lt;dbl&gt;, G23 &lt;dbl&gt;, G24 &lt;dbl&gt;, G25a_1 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   G25b_1 &lt;dbl&gt;, G25c_1 &lt;dbl&gt;, G25a_2 &lt;dbl&gt;, G25b_2 &lt;dbl&gt;, G25c_2 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   G25a_3 &lt;dbl&gt;, G25b_3 &lt;dbl&gt;, G25c_3 &lt;dbl&gt;, G25a_4 &lt;dbl&gt;, G25b_4 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   G25c_4 &lt;dbl&gt;, G25a_5 &lt;dbl&gt;, G25b_5 &lt;dbl&gt;, G25c_5 &lt;dbl&gt;, G25a_6 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   G25b_6 &lt;dbl&gt;, G25c_6 &lt;dbl&gt;, G25a_7 &lt;dbl&gt;, G25b_7 &lt;dbl&gt;, G25c_7 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   G25a_8 &lt;dbl&gt;, G25b_8 &lt;dbl&gt;, G25c_8 &lt;dbl&gt;, G25a_9 &lt;dbl&gt;, G25b_9 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   G25c_9 &lt;dbl&gt;, G25a_10 &lt;dbl&gt;, G25b_10 &lt;dbl&gt;, G25c_10 &lt;dbl&gt;, G25a_11 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   G25b_11 &lt;dbl&gt;, G25c_11 &lt;dbl&gt;, G25a_12 &lt;dbl&gt;, G25b_12 &lt;dbl&gt;, G25c_12 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   G25a_13 &lt;dbl&gt;, G25b_13 &lt;dbl&gt;, G25c_13 &lt;dbl&gt;, G25a_14 &lt;dbl&gt;, G25b_14 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   G25c_14 &lt;dbl&gt;, G25a_15 &lt;dbl&gt;, G25b_15 &lt;dbl&gt;, G25c_15 &lt;dbl&gt;, G25a_16 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   G25b_16 &lt;dbl&gt;, G25c_16 &lt;dbl&gt;, G25a_17 &lt;dbl&gt;, G25b_17 &lt;dbl&gt;, G25c_17 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   G25a_18 &lt;dbl&gt;, G25b_18 &lt;dbl&gt;, G25c_18 &lt;dbl&gt;, G25a_19 &lt;dbl&gt;, G25b_19 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   G25c_19 &lt;dbl&gt;, G25a_20 &lt;dbl&gt;, G25b_20 &lt;dbl&gt;, G25c_20 &lt;dbl&gt;, G25a_21 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   G25b_21 &lt;dbl&gt;, G25c_21 &lt;dbl&gt;, G25a_22 &lt;dbl&gt;, G25b_22 &lt;dbl&gt;, G25c_22 &lt;dbl&gt;,</span>
-<span class="co">#&gt; #   …</span>
-</pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/edugonzaloalmorox/enseResp" class="external-link">enseResp</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Attaching package: 'dplyr'</span></span>
+<span><span class="co">#&gt; The following objects are masked from 'package:stats':</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;     filter, lag</span></span>
+<span><span class="co">#&gt; The following objects are masked from 'package:base':</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;     intersect, setdiff, setequal, union</span></span>
+<span></span>
+<span><span class="fu">enseResp</span><span class="fu">::</span><span class="va"><a href="reference/adults_19.html">adults_19</a></span></span>
+<span><span class="co">#&gt; # A tibble: 23,089 x 455</span></span>
+<span><span class="co">#&gt;    CCAA  IDENTHOGAR A7_2a SEXOa EDADa ACTIVa PROXY_0 PROXY_1 PROXY_2 PROXY_2b</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   </span></span>
+<span><span class="co">#&gt;  1 16    00001011   01        2 084        3       1      NA      NA &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt;  2 16    00001021   04        1 026        1       1      NA      NA &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt;  3 16    00001041   02        2 056        5       1      NA      NA &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt;  4 16    00001051   01        1 070        3       1      NA      NA &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt;  5 16    00001071   01        1 061        3       1      NA      NA &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt;  6 16    00001091   01        2 035        1       1      NA      NA &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt;  7 16    00001101   01        2 055        1       1      NA      NA &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt;  8 16    00001131   02        1 038        1       1      NA      NA &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt;  9 16    00001151   01        1 039        2       1      NA      NA &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt; 10 16    00002011   01        2 080        3       1      NA      NA &lt;NA&gt;    </span></span>
+<span><span class="co">#&gt; # … with 23,079 more rows, and 445 more variables: PROXY_3b &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   PROXY_4 &lt;chr&gt;, PROXY_5 &lt;dbl&gt;, E1_1 &lt;dbl&gt;, E2_1a &lt;dbl&gt;, E2_1b &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   E2_1c &lt;dbl&gt;, E2_1d &lt;dbl&gt;, E3 &lt;chr&gt;, E4 &lt;dbl&gt;, E4b &lt;dbl&gt;, NIVEST &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   F6 &lt;dbl&gt;, F7 &lt;dbl&gt;, F8_2 &lt;chr&gt;, F9_2 &lt;chr&gt;, F10 &lt;dbl&gt;, F11 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   F12 &lt;dbl&gt;, F13 &lt;chr&gt;, F14a &lt;dbl&gt;, F14b &lt;dbl&gt;, F15 &lt;dbl&gt;, F16 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   F17 &lt;chr&gt;, F18a_2 &lt;chr&gt;, F18b_2 &lt;chr&gt;, F19a_2 &lt;dbl&gt;, F19b_2 &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   F20 &lt;dbl&gt;, G21 &lt;dbl&gt;, G22 &lt;dbl&gt;, G23 &lt;dbl&gt;, G24 &lt;dbl&gt;, G25a_1 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   G25b_1 &lt;dbl&gt;, G25c_1 &lt;dbl&gt;, G25a_2 &lt;dbl&gt;, G25b_2 &lt;dbl&gt;, G25c_2 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   G25a_3 &lt;dbl&gt;, G25b_3 &lt;dbl&gt;, G25c_3 &lt;dbl&gt;, G25a_4 &lt;dbl&gt;, G25b_4 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   G25c_4 &lt;dbl&gt;, G25a_5 &lt;dbl&gt;, G25b_5 &lt;dbl&gt;, G25c_5 &lt;dbl&gt;, G25a_6 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   G25b_6 &lt;dbl&gt;, G25c_6 &lt;dbl&gt;, G25a_7 &lt;dbl&gt;, G25b_7 &lt;dbl&gt;, G25c_7 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   G25a_8 &lt;dbl&gt;, G25b_8 &lt;dbl&gt;, G25c_8 &lt;dbl&gt;, G25a_9 &lt;dbl&gt;, G25b_9 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   G25c_9 &lt;dbl&gt;, G25a_10 &lt;dbl&gt;, G25b_10 &lt;dbl&gt;, G25c_10 &lt;dbl&gt;, G25a_11 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   G25b_11 &lt;dbl&gt;, G25c_11 &lt;dbl&gt;, G25a_12 &lt;dbl&gt;, G25b_12 &lt;dbl&gt;, G25c_12 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   G25a_13 &lt;dbl&gt;, G25b_13 &lt;dbl&gt;, G25c_13 &lt;dbl&gt;, G25a_14 &lt;dbl&gt;, G25b_14 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   G25c_14 &lt;dbl&gt;, G25a_15 &lt;dbl&gt;, G25b_15 &lt;dbl&gt;, G25c_15 &lt;dbl&gt;, G25a_16 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   G25b_16 &lt;dbl&gt;, G25c_16 &lt;dbl&gt;, G25a_17 &lt;dbl&gt;, G25b_17 &lt;dbl&gt;, G25c_17 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   G25a_18 &lt;dbl&gt;, G25b_18 &lt;dbl&gt;, G25c_18 &lt;dbl&gt;, G25a_19 &lt;dbl&gt;, G25b_19 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   G25c_19 &lt;dbl&gt;, G25a_20 &lt;dbl&gt;, G25b_20 &lt;dbl&gt;, G25c_20 &lt;dbl&gt;, G25a_21 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   G25b_21 &lt;dbl&gt;, G25c_21 &lt;dbl&gt;, G25a_22 &lt;dbl&gt;, G25b_22 &lt;dbl&gt;, G25c_22 &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   …</span></span></code></pre></div>
 </div>
-<div id="variables-information" class="section level2">
-<h2 class="hasAnchor">
-<a href="#variables-information" class="anchor"></a>Variables information</h2>
+<div class="section level2">
+<h2 id="variables-information">Variables information<a class="anchor" aria-label="anchor" href="#variables-information"></a>
+</h2>
 <p><code>adults_19</code> contains 455 variables. <code>adults_19_info</code> provides information about the description of every variable (in Spanish). In addition it offers other information such as the type of variable, the positions in the text archive or the module the variable belongs to (for example, European Health Survey)</p>
-<div class="sourceCode" id="cb3"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://github.com/edugonzaloalmorox/enseResp">enseResp</a></span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://dplyr.tidyverse.org">dplyr</a></span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://yihui.org/knitr">knitr</a></span>)
-
-<span class="kw">enseResp</span>::<span class="kw"><a href="reference/adults_19_info.html">adults_19_info</a></span> <span class="op">%&gt;%</span> 
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span>(<span class="kw">variable_ine</span>, <span class="kw">descripcion_del_campo</span>) <span class="op">%&gt;%</span> 
-  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="fl">10</span>) <span class="op">%&gt;%</span> <span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span>()
-</pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/edugonzaloalmorox/enseResp" class="external-link">enseResp</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://yihui.org/knitr/" class="external-link">knitr</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">enseResp</span><span class="fu">::</span><span class="va"><a href="reference/adults_19_info.html">adults_19_info</a></span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">variable_ine</span>, <span class="va">descripcion_del_campo</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <colgroup>
-<col width="12%">
-<col width="87%">
+<col width="13%">
+<col width="86%">
 </colgroup>
 <thead><tr class="header">
 <th align="left">variable_ine</th>
@@ -224,24 +225,23 @@
 </tbody>
 </table>
 </div>
-<div id="variables-values" class="section level2">
-<h2 class="hasAnchor">
-<a href="#variables-values" class="anchor"></a>Variables values</h2>
+<div class="section level2">
+<h2 id="variables-values">Variables values<a class="anchor" aria-label="anchor" href="#variables-values"></a>
+</h2>
 <p><code>enseResp</code> also provides information on the values for each variable. This is given by the <code>labels</code> datasets. <code>adults_19_labels</code> renders information on the values associated with the variables that compose <code>adults_19</code>. For example, lets check the values in the level of physical activity (variable <code>T111</code>)</p>
-<div class="sourceCode" id="cb4"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://github.com/edugonzaloalmorox/enseResp">enseResp</a></span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://dplyr.tidyverse.org">dplyr</a></span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://yihui.org/knitr">knitr</a></span>)
-
-<span class="kw">enseResp</span>::<span class="kw">adults_19_labels</span> <span class="op">%&gt;%</span> 
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(<span class="kw">variable_ine</span> <span class="op">==</span> <span class="st">"T111"</span>) <span class="op">%&gt;%</span>
- <span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span>()
-</pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/edugonzaloalmorox/enseResp" class="external-link">enseResp</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://yihui.org/knitr/" class="external-link">knitr</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">enseResp</span><span class="fu">::</span><span class="va">adults_19_labels</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">variable_ine</span> <span class="op">==</span> <span class="st">"T111"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span> <span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <colgroup>
-<col width="11%">
-<col width="77%">
-<col width="11%">
+<col width="12%">
+<col width="74%">
+<col width="13%">
 </colgroup>
 <thead><tr class="header">
 <th align="left">valores_ine</th>
@@ -287,112 +287,130 @@
 </tbody>
 </table>
 </div>
-<div id="example-analysis" class="section level2">
-<h2 class="hasAnchor">
-<a href="#example-analysis" class="anchor"></a>Example analysis</h2>
-<div class="sourceCode" id="cb5"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://github.com/edugonzaloalmorox/enseResp">enseResp</a></span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://dplyr.tidyverse.org">dplyr</a></span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://yihui.org/knitr">knitr</a></span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="http://ggplot2.tidyverse.org">ggplot2</a></span>)
-
-<span class="kw">kids</span> <span class="op">=</span> <span class="kw">enseResp</span>::<span class="kw"><a href="reference/children_19.html">children_19</a></span>
-<span class="kw">info</span> <span class="op">=</span> <span class="kw">enseResp</span>::<span class="kw"><a href="reference/children_19_info.html">children_19_info</a></span>
-<span class="kw">labels</span> <span class="op">=</span> <span class="kw">enseResp</span>::<span class="kw">children_19_labels</span>
-
-<span class="co"># Preparo datos --------------------------------</span>
-
-<span class="kw">obesity</span> <span class="op">=</span> <span class="kw">kids</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span>(<span class="kw">CCAA</span>, <span class="kw">IMCm</span>) <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate_all.html">mutate_at</a></span>(<span class="fu"><a href="https://dplyr.tidyverse.org/reference/vars.html">vars</a></span>(<span class="kw">IMCm</span>), <span class="kw">as.factor</span>) <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(IMCm = <span class="fu"><a href="https://dplyr.tidyverse.org/reference/case_when.html">case_when</a></span>(<span class="kw">IMCm</span> <span class="op">==</span> <span class="st">"1"</span><span class="op">~</span>  <span class="st">"Peso insuficiente"</span>,
-          <span class="kw">IMCm</span> <span class="op">==</span> <span class="st">'2'</span> <span class="op">~</span> <span class="st">"Normopeso"</span>, 
-          <span class="kw">IMCm</span> <span class="op">==</span> <span class="st">'3'</span> <span class="op">~</span> <span class="st">"Sobrepeso"</span>, 
-          <span class="kw">IMCm</span> <span class="op">==</span> <span class="st">'4'</span> <span class="op">~</span> <span class="st">"Obesidad"</span>, 
-          <span class="kw">IMCm</span> <span class="op">==</span> <span class="st">'9'</span> <span class="op">~</span> <span class="st">"No consta"</span>, 
-          <span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span>(<span class="kw">IMCm</span>) <span class="op">~</span> <span class="st">"No disponible"</span>))
-
-<span class="kw">obesity</span><span class="op">$</span><span class="kw">IMCm</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span>(<span class="kw">obesity</span><span class="op">$</span><span class="kw">IMCm</span> , levels = <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"No disponible"</span>, 
-                                                <span class="st">"No consta"</span>, 
-                                                <span class="st">"Peso insuficiente"</span>,
-                                                <span class="st">"Normopeso"</span>,
-                                                <span class="st">"Sobrepeso"</span>,
-                                                <span class="st">"Obesidad"</span>))
-
-<span class="kw">ccaa_lab</span> <span class="op">=</span> <span class="kw">labels</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(<span class="kw">variable_ine</span> <span class="op">==</span> <span class="st">"CCAA"</span>) <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span>(<span class="kw">valores_ine</span>, <span class="kw">valores</span>)
-
-<span class="kw">obesity</span> <span class="op">=</span> <span class="kw">obesity</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">left_join</a></span>(<span class="kw">.</span>, <span class="kw">ccaa_lab</span>, by = <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"CCAA"</span> = <span class="st">"valores_ine"</span>))<span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span>(ccaa = <span class="kw">valores</span>, <span class="kw">IMCm</span>, <span class="kw">n</span>)
-
- <span class="kw">obesity</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(<span class="kw">ccaa</span>) <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(prop = <span class="kw">n</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span>(<span class="kw">n</span>)) <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">ungroup</a></span>() <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(x = <span class="fl">2</span>, y = <span class="kw">prop</span>, fill = <span class="kw">IMCm</span>)) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span>(stat = <span class="st">"identity"</span>, width = <span class="fl">1</span>, alpha = <span class="fl">0.85</span>) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html">facet_wrap</a></span>(facets=<span class="kw">.</span> <span class="op">~</span> <span class="kw">ccaa</span>) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/lims.html">xlim</a></span>(<span class="fl">0.5</span>, <span class="fl">2.5</span>) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_polar.html">coord_polar</a></span>(theta = <span class="st">"y"</span>) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_void</a></span>() <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html">scale_fill_brewer</a></span>(palette = <span class="st">"Dark1"</span>) <span class="op">+</span>
-   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span>(title = <span class="st">"Obesidad infantil"</span>, 
-       subtitle = <span class="st">"Propocion IMC"</span>) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span>(legend.position = <span class="st">"bottom"</span>,
-    legend.title = <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_blank</a></span>(), 
-    panel.background  = <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_blank</a></span>(),
-    strip.text.x = <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_text</a></span>(
-      size = <span class="fl">4.75</span>, color = <span class="st">"black"</span>, face = <span class="st">"bold"</span>
-    ))
-<span class="co">#&gt; Warning in pal_name(palette, type): Unknown palette Dark1</span>
-</pre></div>
+<div class="section level2">
+<h2 id="example-analysis">Example analysis<a class="anchor" aria-label="anchor" href="#example-analysis"></a>
+</h2>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/edugonzaloalmorox/enseResp" class="external-link">enseResp</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://yihui.org/knitr/" class="external-link">knitr</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">kids</span> <span class="op">=</span> <span class="fu">enseResp</span><span class="fu">::</span><span class="va"><a href="reference/children_19.html">children_19</a></span></span>
+<span><span class="va">info</span> <span class="op">=</span> <span class="fu">enseResp</span><span class="fu">::</span><span class="va"><a href="reference/children_19_info.html">children_19_info</a></span></span>
+<span><span class="va">labels</span> <span class="op">=</span> <span class="fu">enseResp</span><span class="fu">::</span><span class="va">children_19_labels</span></span>
+<span></span>
+<span><span class="co"># Tidy data  --------------------------------</span></span>
+<span></span>
+<span><span class="va">obesity</span> <span class="op">=</span> <span class="va">kids</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="va">CCAA</span>, <span class="va">IMCm</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate_all.html" class="external-link">mutate_at</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/vars.html" class="external-link">vars</a></span><span class="op">(</span><span class="va">IMCm</span><span class="op">)</span>, <span class="va">as.factor</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>IMCm <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/case_when.html" class="external-link">case_when</a></span><span class="op">(</span><span class="va">IMCm</span> <span class="op">==</span> <span class="st">"1"</span><span class="op">~</span>  <span class="st">"Peso insuficiente"</span>,</span>
+<span>          <span class="va">IMCm</span> <span class="op">==</span> <span class="st">'2'</span> <span class="op">~</span> <span class="st">"Normopeso"</span>, </span>
+<span>          <span class="va">IMCm</span> <span class="op">==</span> <span class="st">'3'</span> <span class="op">~</span> <span class="st">"Sobrepeso"</span>, </span>
+<span>          <span class="va">IMCm</span> <span class="op">==</span> <span class="st">'4'</span> <span class="op">~</span> <span class="st">"Obesidad"</span>, </span>
+<span>          <span class="va">IMCm</span> <span class="op">==</span> <span class="st">'9'</span> <span class="op">~</span> <span class="st">"No consta"</span>, </span>
+<span>          <span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">IMCm</span><span class="op">)</span> <span class="op">~</span> <span class="st">"No disponible"</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">obesity</span><span class="op">$</span><span class="va">IMCm</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">obesity</span><span class="op">$</span><span class="va">IMCm</span> , levels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"No disponible"</span>, </span>
+<span>                                                <span class="st">"No consta"</span>, </span>
+<span>                                                <span class="st">"Peso insuficiente"</span>,</span>
+<span>                                                <span class="st">"Normopeso"</span>,</span>
+<span>                                                <span class="st">"Sobrepeso"</span>,</span>
+<span>                                                <span class="st">"Obesidad"</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">ccaa_lab</span> <span class="op">=</span> <span class="va">labels</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">variable_ine</span> <span class="op">==</span> <span class="st">"CCAA"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">valores_ine</span>, <span class="va">valores</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">obesity</span> <span class="op">=</span> <span class="va">obesity</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">left_join</a></span><span class="op">(</span><span class="va">.</span>, <span class="va">ccaa_lab</span>, by <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"CCAA"</span> <span class="op">=</span> <span class="st">"valores_ine"</span><span class="op">)</span><span class="op">)</span><span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span>ccaa <span class="op">=</span> <span class="va">valores</span>, <span class="va">IMCm</span>, <span class="va">n</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Plot ------------------------------------</span></span>
+<span> <span class="va">obesity</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">ccaa</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>prop <span class="op">=</span> <span class="va">n</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">ungroup</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">2</span>, y <span class="op">=</span> <span class="va">prop</span>, fill <span class="op">=</span> <span class="va">IMCm</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_bar</a></span><span class="op">(</span>stat <span class="op">=</span> <span class="st">"identity"</span>, width <span class="op">=</span> <span class="fl">1</span>, alpha <span class="op">=</span> <span class="fl">0.85</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html" class="external-link">facet_wrap</a></span><span class="op">(</span>facets<span class="op">=</span><span class="va">.</span> <span class="op">~</span> <span class="va">ccaa</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/lims.html" class="external-link">xlim</a></span><span class="op">(</span><span class="fl">0.5</span>, <span class="fl">2.5</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_polar.html" class="external-link">coord_polar</a></span><span class="op">(</span>theta <span class="op">=</span> <span class="st">"y"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_void</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html" class="external-link">scale_fill_brewer</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"Dark1"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Obesidad infantil"</span>, </span>
+<span>       subtitle <span class="op">=</span> <span class="st">"Propocion IMC"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"bottom"</span>,</span>
+<span>    legend.title <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>, </span>
+<span>    panel.background  <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>    strip.text.x <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span></span>
+<span>      size <span class="op">=</span> <span class="fl">4.75</span>, color <span class="op">=</span> <span class="st">"black"</span>, face <span class="op">=</span> <span class="st">"bold"</span></span>
+<span>    <span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Warning in pal_name(palette, type): Unknown palette Dark1</span></span></code></pre></div>
 <p><img src="reference/figures/README-example-1.png" width="100%"></p>
 </div>
 </div>
+<div class="section level1">
+<h1 id="issues-and-bugs">Issues and bugs<a class="anchor" aria-label="anchor" href="#issues-and-bugs"></a>
+</h1>
+<p>If you find issues or bugs while using <code>enseResp</code> report the bug <a href="https://github.com/edugonzaloalmorox/enseResp/issues" class="external-link">here</a> or reach me out on <a href="https://twitter.com/EdudinGonzalo" class="external-link">Twitter</a></p>
+</div>
+
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/edugonzaloalmorox/enseResp/">https://​github.com/​edugonzaloalmorox/​enseResp/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/edugonzaloalmorox/enseResp/issues">https://​github.com/​edugonzaloalmorox/​enseResp/​issues</a>
-</li>
+<li><a href="https://github.com/edugonzaloalmorox/enseResp/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/edugonzaloalmorox/enseResp/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li>What license is it under?</li>
+<li><a href="LICENSE.html">Full license</a></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> License</small></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing enseResp</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Edu Gonzalo Almorox <br><small class="roles"> Maintainer </small>  </li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/edugonzaloalmorox/enseResp"><img src="https://img.shields.io/badge/devel%20version-0.1.0-blue.svg"></a></li>
-<li><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://github.com/edugonzaloalmorox/enseResp" class="external-link"><img src="https://img.shields.io/badge/devel%20version-0.1.0-blue.svg"></a></li>
+<li><a href="https://www.tidyverse.org/lifecycle/#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
 </ul>
 </div>
-</div>
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Edu Gonzalo Almorox.</p>
+  <p></p>
+<p>Developed by Edu Gonzalo Almorox.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer>
@@ -400,6 +418,8 @@
 
   
 
+
+  
 
   </body>
 </html>
