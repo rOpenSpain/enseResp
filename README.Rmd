@@ -9,18 +9,20 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
+  dev = "ragg_png",
+  dpi = 300,
   out.width = "100%"
 )
 ```
 
-# enseResp <img src='man/figures/logo.png' align="right" height="138.5" />
+# enseResp <img src="man/figures/logo.png" align="right" width="120"/>
 
 **Author**: Edu Gonzalo Almorox
 
 <!-- badges: start -->
 
-`r badger::badge_devel("edugonzaloalmorox/enseResp", "blue")``r usethis::use_lifecycle_badge("experimental")`
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+`r badger::badge_devel("rOpenSpain/enseResp", "blue")`
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 `enseResp` is a R package to tidily access healthcare data from the [Spanish Health Survey](https://www.mscbs.gob.es/estadEstudios/estadisticas/bancoDatos.htm) (SHS) released by the [Spanish Health Ministry](https://www.mscbs.gob.es/home.htm). The main goal of `enseResp` is to provide data ready for analysis for researchers or other stakeholders interested in exploring health microdata in Spain. The current version of `enseResp` provides  information about the SNS editions of 2017/19, 2011/12 and 2006/07 and compiles the surveys associated with the adult, children and household samples.
@@ -153,5 +155,5 @@ obesity = obesity %>%
 
 # Issues and bugs
 
-If you find issues or bugs while using `enseResp` report the bug [here](https://github.com/edugonzaloalmorox/enseResp/issues) or reach me out on 
+If you find issues or bugs while using `enseResp` report the bug [here](https://github.com/rOpenSpain/enseResp/issues) or reach me out on 
 [Twitter](https://twitter.com/EdudinGonzalo)

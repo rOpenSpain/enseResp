@@ -4,16 +4,25 @@
     <loc>/404.html</loc>
   </url>
   <url>
-    <loc>/LICENSE.html</loc>
-  </url>
-  <url>
     <loc>/authors.html</loc>
   </url>
   <url>
     <loc>/index.html</loc>
   </url>
   <url>
-    <loc>/reference/adult_info.html</loc>
+    <loc>/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>/reference/adults_06.html</loc>
+  </url>
+  <url>
+    <loc>/reference/adults_12.html</loc>
+  </url>
+  <url>
+    <loc>/reference/adults_12_labels.html</loc>
   </url>
   <url>
     <loc>/reference/adults_19.html</loc>
@@ -22,25 +31,52 @@
     <loc>/reference/adults_19_info.html</loc>
   </url>
   <url>
+    <loc>/reference/adults_19_labels.html</loc>
+  </url>
+  <url>
+    <loc>/reference/children_06.html</loc>
+  </url>
+  <url>
+    <loc>/reference/children_06_info.html</loc>
+  </url>
+  <url>
+    <loc>/reference/children_06_labels.html</loc>
+  </url>
+  <url>
+    <loc>/reference/children_12.html</loc>
+  </url>
+  <url>
+    <loc>/reference/children_12_info.html</loc>
+  </url>
+  <url>
+    <loc>/reference/children_12_labels.html</loc>
+  </url>
+  <url>
     <loc>/reference/children_19.html</loc>
   </url>
   <url>
     <loc>/reference/children_19_info.html</loc>
   </url>
   <url>
+    <loc>/reference/children_19_labels.html</loc>
+  </url>
+  <url>
     <loc>/reference/enseResp-package.html</loc>
   </url>
   <url>
-    <loc>/reference/get_region.html</loc>
+    <loc>/reference/household_06.html</loc>
   </url>
   <url>
-    <loc>/reference/get_variable.html</loc>
+    <loc>/reference/household_06_info.html</loc>
   </url>
   <url>
     <loc>/reference/household_19.html</loc>
   </url>
   <url>
     <loc>/reference/household_19_info.html</loc>
+  </url>
+  <url>
+    <loc>/reference/household_19_labels.html</loc>
   </url>
   <url>
     <loc>/reference/index.html</loc>
