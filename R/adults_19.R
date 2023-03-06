@@ -459,5 +459,5 @@
 #'   \item{\code{CMD2}}{}
 #'   \item{\code{CMD3}}{}
 #'}
-#' @NA NULL
+#' @details DETAILS
 "adults_19"

@@ -6,17 +6,20 @@
 \alias{enseResp-package}
 \title{enseResp: Information on the Spanish Health Survey}
 \description{
-\if{html}{\figure{logo.png}{options: align='right'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-This package provides information in the Spanish Health Survey. It contains three
-   samples: adults, households and kids.
+This package provides information in the Spanish Health Survey. It contains three samples: adults, households and kids.
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/edugonzaloalmorox/enseResp}
-  \item Report bugs at \url{https://github.com/edugonzaloalmorox/enseResp/issues}
+  \item \url{https://github.com/rOpenSpain/enseResp}
+  \item Report bugs at \url{https://github.com/rOpenSpain/enseResp/issues}
 }
+
+}
+\author{
+\strong{Maintainer}: Edu Gonzalo Almorox \email{eduardogonzaloalmorox@gmail.com} [copyright holder]
 
 }
 \keyword{internal}
