@@ -1,0 +1,18 @@
+#' @title regional_map
+#' @description Polygon coordinates for Spanish autonomous communities (CCAA),
+#'   suitable for choropleth mapping.
+#' @format A data frame with 40111 rows and 11 variables:
+#' \describe{
+#'   \item{\code{long}}{longitude of polygon vertex}
+#'   \item{\code{lat}}{latitude of polygon vertex}
+#'   \item{\code{order}}{vertex order within the polygon}
+#'   \item{\code{hole}}{logical; TRUE if the polygon is a hole}
+#'   \item{\code{piece}}{polygon piece identifier}
+#'   \item{\code{group}}{group identifier for the polygon}
+#'   \item{\code{id}}{region identifier}
+#'   \item{\code{ccaa}}{name of the autonomous community}
+#'   \item{\code{id_ense}}{ENSE region code matching the CCAA column in survey datasets}
+#'   \item{\code{lat_c}}{latitude of the region centroid}
+#'   \item{\code{long_c}}{longitude of the region centroid}
+#' }
+"regional_map"

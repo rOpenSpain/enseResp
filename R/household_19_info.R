@@ -1,13 +1,12 @@
 #' @title household_19_info
-#' @description Design of the survey. Variable characteristics of children survey ENSE 2017/19.
+#' @description Design of the survey. Variable characteristics of household survey ENSE 2017/19.
 #' @format A data frame with 58 rows and 6 variables:
 #' \describe{
-#'   \item{\code{campo}}{Name of the variable}
-#'   \item{\code{longitud}}{Length of the variable. Number of possible characters it may take.}
-#'   \item{\code{posicion_inicio}}{Initial position in the text file. Information for parsing microdata}
-#'   \item{\code{posicion_final}}{Final position in the text file. Information for parsing microdata}
-#'   \item{\code{descripcion_del_campo}}{Description of the variable (in Spanish)}
-#'   \item{\code{valores_validos}}{Possible values the variable may take}
-#'}
-#' @details DETAILS
+#'   \item{\code{variable_ine}}{variable name}
+#'   \item{\code{longitud}}{field length}
+#'   \item{\code{posicion_inicio}}{start position in fixed-width file}
+#'   \item{\code{posicion_final}}{end position in fixed-width file}
+#'   \item{\code{descripcion_del_campo}}{variable description}
+#'   \item{\code{tipo_variable}}{thematic category of the variable}
+#' }
 "household_19_info"

@@ -1,5 +1,5 @@
 #' @title adults_06
-#' @description Variables of adult survey of the ENSE 2006/07
+#' @description Adult survey of the ENSE 2006/07.
 #' @format A data frame with 29478 rows and 619 variables:
 #' \describe{
 #'   \item{\code{NIVEL}}{}
@@ -9,7 +9,7 @@
 #'   \item{\code{SECCION}}{}
 #'   \item{\code{SECC_DC}}{}
 #'   \item{\code{NIDENTIF}}{}
-#'   \item{\code{A??O}}{}
+#'   \item{\code{AÑO}}{}
 #'   \item{\code{TRIM *}}{}
 #'   \item{\code{NORDEN}}{}
 #'   \item{\code{EDAD}}{}
@@ -621,6 +621,5 @@
 #'   \item{\code{ASAPSOCIAL}}{}
 #'   \item{\code{ASFUNFAMI}}{}
 #'   \item{\code{ASIMC}}{}
-#'}
-#' @details DETAILS
+#' }
 "adults_06"

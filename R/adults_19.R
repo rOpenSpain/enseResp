@@ -1,5 +1,5 @@
 #' @title adults_19
-#' @description Variables of adult survey of the ENSE 2017/19
+#' @description Adult survey of the ENSE 2017/19.
 #' @format A data frame with 23089 rows and 455 variables:
 #' \describe{
 #'   \item{\code{CCAA}}{}
@@ -8,7 +8,6 @@
 #'   \item{\code{SEXOa}}{}
 #'   \item{\code{EDADa}}{}
 #'   \item{\code{ACTIVa}}{}
-#'   \item{\code{PROXY_0}}{}
 #'   \item{\code{PROXY_0}}{}
 #'   \item{\code{PROXY_1}}{}
 #'   \item{\code{PROXY_2}}{}
@@ -458,6 +457,5 @@
 #'   \item{\code{CMD1}}{}
 #'   \item{\code{CMD2}}{}
 #'   \item{\code{CMD3}}{}
-#'}
-#' @NA NULL
+#' }
 "adults_19"

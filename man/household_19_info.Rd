@@ -4,22 +4,21 @@
 \name{household_19_info}
 \alias{household_19_info}
 \title{household_19_info}
-\format{A data frame with 58 rows and 6 variables:
+\format{
+A data frame with 58 rows and 6 variables:
 \describe{
-  \item{\code{variable_ine}}{character COLUMN_DESCRIPTION}
-  \item{\code{longitud}}{double COLUMN_DESCRIPTION}
-  \item{\code{posicion_inicio}}{double COLUMN_DESCRIPTION}
-  \item{\code{posicion_final}}{double COLUMN_DESCRIPTION}
-  \item{\code{descripcion_del_campo}}{character COLUMN_DESCRIPTION}
-  \item{\code{tipo_variable}}{character COLUMN_DESCRIPTION}
-}}
+  \item{\code{variable_ine}}{variable name}
+  \item{\code{longitud}}{field length}
+  \item{\code{posicion_inicio}}{start position in fixed-width file}
+  \item{\code{posicion_final}}{end position in fixed-width file}
+  \item{\code{descripcion_del_campo}}{variable description}
+  \item{\code{tipo_variable}}{thematic category of the variable}
+}
+}
 \usage{
 household_19_info
 }
 \description{
-Design of the survey. Variable characteristics of children survey.
-}
-\details{
-DETAILS
+Design of the survey. Variable characteristics of household survey ENSE 2017/19.
 }
 \keyword{datasets}

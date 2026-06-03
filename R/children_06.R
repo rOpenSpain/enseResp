@@ -1,5 +1,5 @@
 #' @title children_06
-#' @description Variables of children survey of the ENSE 2006/07
+#' @description Children survey of the ENSE 2006/07.
 #' @format A data frame with 9122 rows and 350 variables:
 #' \describe{
 #'   \item{\code{NIVEL}}{}
@@ -9,7 +9,7 @@
 #'   \item{\code{SECCION}}{}
 #'   \item{\code{SECC_DC}}{}
 #'   \item{\code{NIDENTIF}}{}
-#'   \item{\code{A??O}}{}
+#'   \item{\code{AÑO}}{}
 #'   \item{\code{TRIM}}{}
 #'   \item{\code{NORDEN}}{}
 #'   \item{\code{EDAD}}{}
@@ -352,6 +352,5 @@
 #'   \item{\code{MSSALMENT4}}{}
 #'   \item{\code{MSSALMENT5}}{}
 #'   \item{\code{MSIMC}}{}
-#'}
-#' @details DETAILS
+#' }
 "children_06"
