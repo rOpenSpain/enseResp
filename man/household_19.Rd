@@ -4,67 +4,69 @@
 \name{household_19}
 \alias{household_19}
 \title{household_19}
-\format{A data frame with 60143 rows and 58 variables:
+\format{
+A data frame with 60143 rows and 58 variables:
 \describe{
-  \item{\code{CCAA}}{character COLUMN_DESCRIPTION}
-  \item{\code{IDENTHOGAR}}{character COLUMN_DESCRIPTION}
-  \item{\code{ESTRATO}}{double COLUMN_DESCRIPTION}
-  \item{\code{SEXO_i}}{double COLUMN_DESCRIPTION}
-  \item{\code{EDAD_i}}{character COLUMN_DESCRIPTION}
-  \item{\code{NORDEN_Ai}}{character COLUMN_DESCRIPTION}
-  \item{\code{NORDEN_Mi}}{double COLUMN_DESCRIPTION}
-  \item{\code{NADULTOS}}{character COLUMN_DESCRIPTION}
-  \item{\code{NMENORES}}{character COLUMN_DESCRIPTION}
-  \item{\code{A7_1_i}}{double COLUMN_DESCRIPTION}
-  \item{\code{NORDEN_Pref}}{character COLUMN_DESCRIPTION}
-  \item{\code{A7_2a}}{character COLUMN_DESCRIPTION}
-  \item{\code{A7_2m}}{double COLUMN_DESCRIPTION}
-  \item{\code{A8_1_i}}{double COLUMN_DESCRIPTION}
-  \item{\code{A8_2_i}}{character COLUMN_DESCRIPTION}
-  \item{\code{NORINF}}{character COLUMN_DESCRIPTION}
-  \item{\code{A9_otra}}{double COLUMN_DESCRIPTION}
-  \item{\code{A10_i}}{character COLUMN_DESCRIPTION}
-  \item{\code{A11_i}}{double COLUMN_DESCRIPTION}
-  \item{\code{A12}}{double COLUMN_DESCRIPTION}
-  \item{\code{B13}}{double COLUMN_DESCRIPTION}
-  \item{\code{B14}}{double COLUMN_DESCRIPTION}
-  \item{\code{B15_2}}{character COLUMN_DESCRIPTION}
-  \item{\code{B16_2}}{double COLUMN_DESCRIPTION}
-  \item{\code{B17}}{double COLUMN_DESCRIPTION}
-  \item{\code{B18}}{double COLUMN_DESCRIPTION}
-  \item{\code{B19a_2}}{character COLUMN_DESCRIPTION}
-  \item{\code{B19b_2}}{character COLUMN_DESCRIPTION}
-  \item{\code{B20a_2}}{character COLUMN_DESCRIPTION}
-  \item{\code{B20b_2}}{character COLUMN_DESCRIPTION}
-  \item{\code{B21a}}{double COLUMN_DESCRIPTION}
-  \item{\code{B21b}}{double COLUMN_DESCRIPTION}
-  \item{\code{C22}}{character COLUMN_DESCRIPTION}
-  \item{\code{C23}}{character COLUMN_DESCRIPTION}
-  \item{\code{C24_1}}{double COLUMN_DESCRIPTION}
-  \item{\code{C24_2}}{double COLUMN_DESCRIPTION}
-  \item{\code{C24_3}}{double COLUMN_DESCRIPTION}
-  \item{\code{C24_4}}{double COLUMN_DESCRIPTION}
-  \item{\code{C24_5}}{double COLUMN_DESCRIPTION}
-  \item{\code{C24_6}}{double COLUMN_DESCRIPTION}
-  \item{\code{C24_7}}{double COLUMN_DESCRIPTION}
-  \item{\code{C24_8}}{double COLUMN_DESCRIPTION}
-  \item{\code{C24_9}}{double COLUMN_DESCRIPTION}
-  \item{\code{D26_1}}{double COLUMN_DESCRIPTION}
-  \item{\code{D26_2}}{double COLUMN_DESCRIPTION}
-  \item{\code{D26_3}}{double COLUMN_DESCRIPTION}
-  \item{\code{D26_4}}{double COLUMN_DESCRIPTION}
-  \item{\code{D26_5}}{double COLUMN_DESCRIPTION}
-  \item{\code{D26_6}}{double COLUMN_DESCRIPTION}
-  \item{\code{D26_7}}{double COLUMN_DESCRIPTION}
-  \item{\code{D26_8}}{double COLUMN_DESCRIPTION}
-  \item{\code{D26_9}}{double COLUMN_DESCRIPTION}
-  \item{\code{D26_10}}{double COLUMN_DESCRIPTION}
-  \item{\code{D26_11}}{double COLUMN_DESCRIPTION}
-  \item{\code{D27}}{double COLUMN_DESCRIPTION}
-  \item{\code{D29}}{character COLUMN_DESCRIPTION}
-  \item{\code{FACTORHOGAR}}{double COLUMN_DESCRIPTION}
-  \item{\code{CLASE_PR}}{double COLUMN_DESCRIPTION}
-}}
+  \item{\code{CCAA}}{}
+  \item{\code{IDENTHOGAR}}{}
+  \item{\code{ESTRATO}}{}
+  \item{\code{SEXO_i}}{}
+  \item{\code{EDAD_i}}{}
+  \item{\code{NORDEN_Ai}}{}
+  \item{\code{NORDEN_Mi}}{}
+  \item{\code{NADULTOS}}{}
+  \item{\code{NMENORES}}{}
+  \item{\code{A7_1_i}}{}
+  \item{\code{NORDEN_Pref}}{}
+  \item{\code{A7_2a}}{}
+  \item{\code{A7_2m}}{}
+  \item{\code{A8_1_i}}{}
+  \item{\code{A8_2_i}}{}
+  \item{\code{NORINF}}{}
+  \item{\code{A9_otra}}{}
+  \item{\code{A10_i}}{}
+  \item{\code{A11_i}}{}
+  \item{\code{A12}}{}
+  \item{\code{B13}}{}
+  \item{\code{B14}}{}
+  \item{\code{B15_2}}{}
+  \item{\code{B16_2}}{}
+  \item{\code{B17}}{}
+  \item{\code{B18}}{}
+  \item{\code{B19a_2}}{}
+  \item{\code{B19b_2}}{}
+  \item{\code{B20a_2}}{}
+  \item{\code{B20b_2}}{}
+  \item{\code{B21a}}{}
+  \item{\code{B21b}}{}
+  \item{\code{C22}}{}
+  \item{\code{C23}}{}
+  \item{\code{C24_1}}{}
+  \item{\code{C24_2}}{}
+  \item{\code{C24_3}}{}
+  \item{\code{C24_4}}{}
+  \item{\code{C24_5}}{}
+  \item{\code{C24_6}}{}
+  \item{\code{C24_7}}{}
+  \item{\code{C24_8}}{}
+  \item{\code{C24_9}}{}
+  \item{\code{D26_1}}{}
+  \item{\code{D26_2}}{}
+  \item{\code{D26_3}}{}
+  \item{\code{D26_4}}{}
+  \item{\code{D26_5}}{}
+  \item{\code{D26_6}}{}
+  \item{\code{D26_7}}{}
+  \item{\code{D26_8}}{}
+  \item{\code{D26_9}}{}
+  \item{\code{D26_10}}{}
+  \item{\code{D26_11}}{}
+  \item{\code{D27}}{}
+  \item{\code{D29}}{}
+  \item{\code{FACTORHOGAR}}{}
+  \item{\code{CLASE_PR}}{}
+}
+}
 \usage{
 household_19
 }

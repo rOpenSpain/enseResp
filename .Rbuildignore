@@ -5,3 +5,10 @@
 ^\.github$
 ^docs$
 ^_pkgdown\.yml$
+^\.positai$
+^\.claude$
+^documentation$
+^funs$
+^logo$
+^pkgdown$
+^LICENSE[.]md$

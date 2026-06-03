@@ -1,5 +1,5 @@
 #' @title household_06
-#' @description Variables of household survey of the ENSE 2017/19
+#' @description Household survey of the ENSE 2006/07.
 #' @format A data frame with 85044 rows and 84 variables:
 #' \describe{
 #'   \item{\code{NIVEL}}{}
@@ -9,7 +9,7 @@
 #'   \item{\code{SECCION}}{}
 #'   \item{\code{SECC_DC}}{}
 #'   \item{\code{NIDENTIF}}{}
-#'   \item{\code{A??O}}{}
+#'   \item{\code{AÑO}}{}
 #'   \item{\code{TRIM}}{}
 #'   \item{\code{NORDEN}}{}
 #'   \item{\code{P3_2}}{}
@@ -86,6 +86,5 @@
 #'   \item{\code{CADULTO}}{}
 #'   \item{\code{CNINO}}{}
 #'   \item{\code{SPCLASE}}{}
-#'}
-#' @details DETAILS
+#' }
 "household_06"

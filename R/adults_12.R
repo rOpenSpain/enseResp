@@ -1,5 +1,5 @@
 #' @title adults_12
-#' @description Variables of adult survey of the ENSE 2011/12
+#' @description Adult survey of the ENSE 2011/12.
 #' @format A data frame with 21007 rows and 577 variables:
 #' \describe{
 #'   \item{\code{CCAA}}{}
@@ -579,6 +579,5 @@
 #'   \item{\code{CMD1}}{}
 #'   \item{\code{CMD2}}{}
 #'   \item{\code{CMD3}}{}
-#'}
-#' @details DETAILS
+#' }
 "adults_12"
